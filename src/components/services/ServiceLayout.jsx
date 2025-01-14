@@ -1,10 +1,8 @@
-import React from 'react'
-import Img1 from "@/assets/images/service-hero.png"
-import sectionImg2 from "@/assets/images/serviceImg2.png"
+import React from 'react';
+import Img1 from "@/assets/images/service-hero.png";
+import sectionImg2 from "@/assets/images/serviceImg2.png";
 import CallUsButton from '../common/CallUsButton';
 import CaringJournal from './CaringJournal';
-
-
 
 export default function ServiceLayout() {
     const serviceDatas = {
@@ -44,22 +42,21 @@ export default function ServiceLayout() {
                 ]
             },
         }
-    }
+    };
 
     const serviceData = serviceDatas.data;
-    console.log(serviceData.section3?.cards);
+
     return (
         <section>
             <div
                 style={{ backgroundImage: `url(${serviceData.section1.img})` }}
-                className='bg-cover bg-center min-h-fit h-[80vh] overlay content-center'
+                className='bg-cover bg-center min-h-fit h-[80vh] overlay content-center flex items-center'
             >
-                <div className='w-1/2 p-20 space-y-6 ml-24'>
-                    <h1 className='text-primary mr-60'>{serviceData.section1.heading}</h1>
-                    {/* <p dangerouslySetInnerHTML={{ __html: serviceData.section1.desc }}/> */}
+                <div className='w-full lg:w-1/2 p-8 lg:p-20 space-y-6 ml-4 lg:ml-24'>
+                    <h1 className='text-primary text-2xl lg:text-4xl'>{serviceData.section1.heading}</h1>
                     <p>
                         {serviceData.section1.desc.split("</br>").map((line, index) => (
-                            <span key={index} className="block my-6">
+                            <span key={index} className="block my-4">
                                 {line}
                             </span>
                         ))}
@@ -68,52 +65,52 @@ export default function ServiceLayout() {
                 </div>
             </div>
 
-            <div className='bg-secondary text-center p-20 text-white'>
+            <div className='bg-secondary text-center p-8 lg:p-20 text-white'>
                 <div className='max-w-[980px] m-auto space-y-4'>
-                    <h2 className='mx-20'>{serviceData.section2.heading}</h2>
+                    <h2 className='text-xl lg:text-3xl'>{serviceData.section2.heading}</h2>
                     <p>{serviceData.section2.desc}</p>
                 </div>
             </div>
 
-            <div className='flex my-8'>
-                <div className='w-3/5 p-16'>
-                    <h2>{serviceData.section3.heading}</h2>
+            <div className='flex flex-col lg:flex-row my-8'>
+                <div className='w-full lg:w-3/5 p-8 lg:p-16'>
+                    <h2 className='text-xl lg:text-3xl'>{serviceData.section3.heading}</h2>
                     <p>
                         {serviceData.section3.desc.split("</br>").map((line, index) => (
-                            <span key={index} className="block my-6">
+                            <span key={index} className="block my-4">
                                 {line}
                             </span>
                         ))}
                     </p>
-                    <div className='flex gap-6'>
-                        {serviceData.section3.cards.map((card) => (
-                            <div className='p-8 bg-primary text-primary-foreground'>
-                                <h3>{card.title}</h3>
+                    <div className='flex flex-wrap gap-6'>
+                        {serviceData.section3.cards.map((card, idx) => (
+                            <div key={idx} className='p-6 bg-primary text-primary-foreground w-full md:w-1/2'>
+                                <h3 className='text-lg font-bold'>{card.title}</h3>
                                 <p className='text-sm'>{card.desc}</p>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div
-                    className='w-2/5 bg-cover bg-center'
+                    className='w-full lg:w-2/5 bg-cover bg-center h-60 lg:h-auto'
                     style={{ backgroundImage: `url(${serviceData.section3.img})` }}
                 ></div>
             </div>
 
             <div className='bg-secondary/10'>
-                <div className=' mx-60 flex gap-16 h-fit p-16 text-center'>
-                    <div className='space-y-2'>
-                        <h2 className='mx-16'>The benefits of in home care services</h2>
+                <div className='mx-4 lg:mx-60 flex flex-col lg:flex-row gap-8 lg:gap-16 h-fit p-8 lg:p-16 text-center'>
+                    <div className='space-y-4'>
+                        <h2 className='text-lg lg:text-2xl'>The benefits of in home care services</h2>
                         <p>One to One Health simplifies home care administration by pairing you with a dedicated care manager. They coordinate care, communication, and planning between your family, care team, doctors, and healthcare providers, easing the stress of senior care and supporting short- and long-term goals.</p>
                     </div>
-                    <span className='block w-2 bg-primary' />
-                    <div className='space-y-2'>
-                        <h2 className='mx-16' >Home health care services you can rely on</h2>
+                    <span className='block w-full lg:w-2 bg-primary mx-auto'></span>
+                    <div className='space-y-4'>
+                        <h2 className='text-lg lg:text-2xl'>Home health care services you can rely on</h2>
                         <p>We understand the importance of consistent, reliable caregivers for quality home nursing care. At One to One, we ensure continuity of care with a familiar, dependable team, providing daily support so you can live your life as usual. Our comprehensive home care programs are designed to bring you peace of mind and happiness every day.</p>
                     </div>
                 </div>
             </div>
-            <CaringJournal/>
-        </section >
-    )
+            <CaringJournal />
+        </section>
+    );
 }

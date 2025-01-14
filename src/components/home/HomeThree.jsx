@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import CallUsButton from '../common/CallUsButton';
 
 /** MUI Icons */
@@ -10,7 +10,6 @@ import SelfImprovementIcon from "@mui/icons-material/SelfImprovement"; // For re
 import FaceIcon from "@mui/icons-material/Face"; // For personal care
 import FavoriteIcon from "@mui/icons-material/Favorite"; // For end-of-life
 import CommuteIcon from "@mui/icons-material/Commute"; // For transportation
-
 
 export default function HomeThree() {
 
@@ -66,29 +65,31 @@ export default function HomeThree() {
     ];
 
     return (
-        <div className='flex gap-32 ml-44 py-32'>
-            <div className='w-1/5 space-y-8'>
-                <div className='flex gap-8 justify-start'>
+        <div className='flex flex-col lg:flex-row gap-12 px-4 lg:px-20 py-16'>
+            {/* Left Section */}
+            <div className='lg:w-1/5 w-full space-y-8'>
+                <div className='flex gap-4 justify-start'>
                     <p className='text-secondary font-extrabold'>—</p>
                     <p className='text-sm'>Free in-home Caring Consult with no obligation to book</p>
                 </div>
                 <CallUsButton className="w-full" />
             </div>
-            <div className='grid grid-cols-12 gap-12 px-20 w-4/5'>
-                {servicesData.map((service) => {
+
+            {/* Right Section */}
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 w-full'>
+                {servicesData.map((service, index) => {
                     const { IconComponent, title, description } = service;
                     return (
-                        <div className='col-span-3 space-y-6'>
-                            <span className='bg-primary p-8 aspect-square size-20 rounded-full items-center flex justify-center'>
-                                <IconComponent className='size-8 text-primary-foreground' />
+                        <div key={index} className='space-y-6'>
+                            <span className='bg-primary p-6 lg:p-8 aspect-square rounded-full flex items-center justify-center'>
+                                <IconComponent className='text-primary-foreground text-4xl lg:text-6xl' />
                             </span>
-                            <p className='text-secondary font-bold text-2xl'>{title}</p>
-                            <p className='text-sm'>{description}</p>
+                            <p className='text-secondary font-bold text-lg lg:text-2xl text-center'>{title}</p>
+                            <p className='text-sm text-center'>{description}</p>
                         </div>
-                    )
-                }
-                )}
+                    );
+                })}
             </div>
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import Jrnl1Img from "@/assets/images/jrnl1.jpg"
-import Jrnl2Img from "@/assets/images/jrnl2.png"
+import React from 'react';
+import Jrnl1Img from "@/assets/images/jrnl1.jpg";
+import Jrnl2Img from "@/assets/images/jrnl2.png";
 
 const caringJournalData = [
     {
@@ -18,31 +18,32 @@ const caringJournalData = [
         title: "Connect with One to One Health",
         desc: "Once your care plan has been developed, our Care Team will work with you to schedule your first visit. We’ll be there to provide support and assistance every step of the way.",
     },
-]
+];
+
 export default function CaringJournal() {
     return (
-        <div className='text-center p-20 space-y-16'>
-            <div className='mx-96'>
-                <h2 className='text-primary'>The Caring Journal</h2>
-                <p className='text-base mx-24'>
+        <div className="text-center px-6 py-12 space-y-12">
+            <div className="max-w-4xl mx-auto">
+                <h2 className="text-primary text-2xl md:text-3xl">The Caring Journal</h2>
+                <p className="text-base md:text-lg mt-4">
                     The Caring Journal is full of informative resources, client stories and offers a viewfinder into the wonderful world of senior home care. Read the latest blogs here.
                 </p>
             </div>
 
-            <div className='grid grid-cols-3 gap-6 max-w-[1120px] m-auto'>
-                {caringJournalData.map((item) => (
-                    <div className='bg-primary/10 p-4 text-center rounded-3xl'>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {caringJournalData.map((item, index) => (
+                    <div key={index} className="bg-primary/10 p-4 text-center rounded-3xl">
                         <div
-                            className='w-full min-h-96 !bg-cover !bg-center rounded-xl'
-                            style={{ background: `url(${item.img})` }}
+                            className="w-full h-48 md:h-60 bg-cover bg-center rounded-xl"
+                            style={{ backgroundImage: `url(${item.img})` }}
                         ></div>
-                        <div className='my-6'>
-                        <h4 className='text-primary' >{item.title}</h4>
-                        <p className='text-sm'>{item.desc}</p>
+                        <div className="mt-6">
+                            <h4 className="text-primary text-lg md:text-xl">{item.title}</h4>
+                            <p className="text-sm md:text-base mt-2">{item.desc}</p>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }

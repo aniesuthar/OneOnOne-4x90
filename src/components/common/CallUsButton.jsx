@@ -1,9 +1,16 @@
-import React from 'react'
-import { Button } from '../ui/button'
-import { cn } from '@/lib/utils'
+import React from 'react';
+import { Button } from '../ui/button';
+import { cn } from '@/lib/utils';
 
-export default function CallUsButton({className}) {
+export default function CallUsButton({ className }) {
     return (
-        <Button className={cn("rounded-none p-8 text-md font-bold", className)}>CALL US NOW</Button>
-    )
+        <Button
+            className={cn(
+                "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-sm md:text-md lg:text-lg font-bold",
+                className
+            )}
+        >
+            CALL US NOW
+        </Button>
+    );
 }
