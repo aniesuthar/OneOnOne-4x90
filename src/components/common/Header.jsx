@@ -30,7 +30,7 @@ export default function Header() {
                   <Link key={idx} className='block hover:underline' href={item.href}>
                     {item.title}
                   </Link>
-                ))}
+              ))}
               </HoverCardContent>
             </HoverCard>
           ) : (
@@ -42,10 +42,10 @@ export default function Header() {
       </div>
 
       {/* Action Buttons */}
-      <div className='action-btn-cont flex flex-col lg:flex-row items-center gap-4 mt-4 lg:mt-0'>
+      <div className='action-btn-cont flex flex-col lg:flex-row items-center gap-8 mt-4 lg:mt-0'>
         <div className='call-num text-center lg:text-left'>
-          <span className='inline-block text-sm lg:text-base'>Call us <b>toll-free</b> any time 24/7</span>
-          <h2 className='inline-block text-secondary text-lg lg:text-xl font-bold'>1-877-588-8609</h2>
+          <span className='block text-sm lg:text-base'>Call us <b>toll-free</b> any time 24/7</span>
+          <h2 className='block text-secondary text-lg lg:text-2xl font-bold'>1-877-588-8609</h2>
         </div>
         <div className='call-btn'>
           <CallUsButton />

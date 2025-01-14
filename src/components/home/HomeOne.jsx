@@ -18,7 +18,7 @@ export default function HomeOne() {
             {/* Right Section */}
             <div className='lg:w-3/5 w-full'>
                 <div className='py-8 px-6 lg:py-12 lg:px-24 space-y-6'>
-                    <h1 className='font-semibold text-2xl lg:text-3xl text-center lg:text-left'>
+                    <h1 className='lg:text-left text-center'>
                         Home Care Services that Make Lives Better
                     </h1>
                     <p className='text-lg lg:text-xl text-center lg:text-left'>

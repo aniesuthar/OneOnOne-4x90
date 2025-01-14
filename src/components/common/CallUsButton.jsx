@@ -6,7 +6,7 @@ export default function CallUsButton({ className }) {
     return (
         <Button
             className={cn(
-                "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-sm md:text-md lg:text-lg font-bold",
+                "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-8 text-sm md:text-md lg:text-lg font-bold",
                 className
             )}
         >

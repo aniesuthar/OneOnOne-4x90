@@ -65,7 +65,7 @@ export default function HomeThree() {
     ];
 
     return (
-        <div className='flex flex-col lg:flex-row gap-12 px-4 lg:px-20 py-16'>
+        <div className='flex flex-col lg:flex-row gap-24 px-4 lg:px-20 py-16'>
             {/* Left Section */}
             <div className='lg:w-1/5 w-full space-y-8'>
                 <div className='flex gap-4 justify-start'>
@@ -81,8 +81,8 @@ export default function HomeThree() {
                     const { IconComponent, title, description } = service;
                     return (
                         <div key={index} className='space-y-6'>
-                            <span className='bg-primary p-6 lg:p-8 aspect-square rounded-full flex items-center justify-center'>
-                                <IconComponent className='text-primary-foreground text-4xl lg:text-6xl' />
+                            <span className='m-auto bg-primary size-16 p-6 lg:p-8 aspect-square rounded-full flex items-center justify-center'>
+                                <IconComponent className='text-primary-foreground text-xl lg:text-2xl' />
                             </span>
                             <p className='text-secondary font-bold text-lg lg:text-2xl text-center'>{title}</p>
                             <p className='text-sm text-center'>{description}</p>
