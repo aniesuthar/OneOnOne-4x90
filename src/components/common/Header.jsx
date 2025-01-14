@@ -8,12 +8,11 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import { Button } from '../ui/button'
+// import {
+//   Popover,
+//   PopoverContent,
+//   PopoverTrigger,
+// } from "@/components/ui/popover"
 import CallUsButton from './CallUsButton'
 
 
@@ -28,9 +27,8 @@ export default function Header() {
           menuItem.hasChildren ?
             <HoverCard openDelay={0} closeDelay={200}>
               <HoverCardTrigger > <span className='menu-item' href={menuItem.href} >{menuItem.title}</span> </HoverCardTrigger>
-              <HoverCardContent>
-                {menuItem.children.map((item) => <Link href={menuItem.href} >{item.title} </Link>)}
-
+              <HoverCardContent className="w-fit font-medium space-y-2 text-sm">
+                {menuItem.children.map((item) => <Link className='block' href={item.href} >{item.title} </Link>)}
               </HoverCardContent>
             </HoverCard>
             :

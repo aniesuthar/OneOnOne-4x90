@@ -22,7 +22,7 @@ export const menuList = [
         children: servicesList.map((service) => ({
             isChildren: true,
             title: service,
-            href: `/${service.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+            href: `/services/${service.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
         })),
     },
     {
