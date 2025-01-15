@@ -1,4 +1,6 @@
-const servicesList = [
+import { slugify } from "./utils";
+
+export const servicesList = [
     "Comprehensive Home Care",
     "Alzheimer’s and Dementia Care",
     "In-Home Nursing Care",
@@ -22,7 +24,7 @@ export const menuList = [
         children: servicesList.map((service) => ({
             isChildren: true,
             title: service,
-            href: `/services/${service.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+            href: `/services/${slugify(service)}`,
         })),
     },
     {

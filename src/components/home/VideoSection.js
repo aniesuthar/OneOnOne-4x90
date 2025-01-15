@@ -52,7 +52,6 @@ const videos = [
 ]
 
 export default function VideoSection() {
-    console.log(Thumb1);
     return (
         <div className='max-w-[90%] m-auto'>
             <Carousel
