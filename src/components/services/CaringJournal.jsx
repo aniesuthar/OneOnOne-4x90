@@ -1,6 +1,7 @@
 import React from 'react';
 import Jrnl1Img from "@/assets/images/jrnl1.jpg";
 import Jrnl2Img from "@/assets/images/jrnl2.png";
+import { cn } from '@/lib/utils';
 
 const caringJournalData = [
     {
@@ -20,9 +21,9 @@ const caringJournalData = [
     },
 ];
 
-export default function CaringJournal() {
+export default function CaringJournal({className}) {
     return (
-        <div className="text-center px-6 py-12 space-y-12">
+        <div className={cn("text-center px-6 py-12 space-y-12", className)}>
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-primary text-2xl md:text-3xl">The Caring Journal</h2>
                 <p className="text-base md:text-lg mt-4">

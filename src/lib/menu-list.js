@@ -18,7 +18,7 @@ export const servicesList = [
 
 export const menuList = [
     {
-        title: "Our Services",
+        title: "Services",
         href: "#",
         hasChildren: true,
         children: servicesList.map((service) => ({
@@ -28,11 +28,43 @@ export const menuList = [
         })),
     },
     {
-        title: "Happier Aging",
-        href: "/happier-aging",
+        title: "TextCare",
+        href: "/text-care",
+    },
+    {
+        title: "Why One on One",
+        href: "/why-one-on-one",
+        hasChildren: true,
+        children: [
+            {
+                title: "Career",
+                href: "/career",
+            },
+            {
+                title: "Career in Nursing",
+                href: "/career/nursing",
+            },
+            {
+                title: "Career in Caregiving",
+                href: "/career/caregiving",
+            },
+        ]
     },
     {
         title: "About Us",
-        href: "about-us",
+        href: "/about-us",
+        hasChildren: true,
+        children: [
+            {
+                title: "Our Team",
+                href: "/our-team",
+            },
+            {
+                title: "Our Philosophy",
+                href: "/our-philosophy",
+            },
+        ]
     }
 ]
+
+export const NonTransparentHeader = ["/career", "/services"]

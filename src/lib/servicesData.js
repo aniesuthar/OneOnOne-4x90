@@ -1,6 +1,7 @@
 import { servicesList } from "./menu-list";
 import Img1 from "@/assets/images/service-hero.png";
 import sectionImg2 from "@/assets/images/serviceImg2.png";
+import sectionImg3 from "@/assets/images/serviceImg3.jpg";
 
 export const servicesDatas = [
     // 1
@@ -40,6 +41,19 @@ export const servicesDatas = [
                     },
                 ]
             },
+            section4: {
+                twoCol: true,
+                cols: [
+                    {
+                        heading: "The benefits of in home care services",
+                        desc: "One to One Health simplifies home care administration by pairing you with a dedicated care manager. They coordinate care, communication, and planning between your family, care team, doctors, and healthcare providers, easing the stress of senior care and supporting short- and long-term goals."
+                    },
+                    {
+                        heading: "Home health care services you can rely on",
+                        desc: "We understand the importance of consistent, reliable caregivers for quality home nursing care. At One to One, we ensure continuity of care with a familiar, dependable team, providing daily support so you can live your life as usual. Our comprehensive home care programs are designed to bring you peace of mind and happiness every day."
+                    }
+                ]
+            }
         }
     },
     // 2
@@ -60,23 +74,33 @@ export const servicesDatas = [
             },
             section3: {
                 heading: "Prevent wandering",
+                quote: {
+                    quote: `Three out of five people with dementia will go missing as some individuals with Alzheimer’s disease may become disoriented when they are outside their home or in unfamiliar surroundings.`,
+                    author: `Alzheimer’s Association`
+                },
                 desc: `Along with preliminary symptoms, there are also substantial risks with Alzheimer’s and related dementias like wandering. To prevent wandering, Nurse Next Door’s priority through its dementia care is clients’ safety and allowing them to receive care in a familiar setting – their own home.`,
-                img: sectionImg2.src,
+                img: sectionImg3.src,
+            },
+            sectionCards: {
                 cards: [
                     {
                         title: "24/7 Care, Consistent Visits",
+                        img: Img1.src,
                         desc: "Our 24/7 dementia care & Alzheimer care service gives you peace of mind and reassurance that your loved one is receiving quality one-on-one care, minimizing any risk or harm to them. Our clients are carefully matched with caregivers based on our expert Care Designer’s assessment. To avoid confusion for clients, we always strive for consistency when sending in caregivers so they can recognize any inconsistencies in a client’s routine and clients are comfortable receiving care from someone they trust."
                     },
                     {
                         title: "Caregivers trained in Dementia care & Alzheimer’s care",
+                        img: Img1.src,
                         desc: "Our caregivers are trained in dementia care & Alzheimer’s care so that they can competently deal with Alzheimer’s and related dementia. We recognize that each situation is unique. We understand how Alzheimer’s & dementia can affect clients and their families as it is a difficult process for both. Nurse Next Door provides support and guidance to clients and their families in dealing with ongoing challenges and responsibilities of providing care."
                     },
                     {
                         title: "Relieve Family Members",
+                        img: Img1.src,
                         desc: "In many situations, family members often act as caregivers for those with Alzheimer’s and related dementia which causes a stressful environment for both parties. Our goal is to relieve family members and provide respite care so that you never need to worry if your loved one is safe."
                     },
                     {
                         title: "Activities of Daily Living & Independence",
+                        img: Img1.src,
                         desc: "Alzheimer’s and related dementia can greatly impact a senior’s daily routine so Nurse Next Door’s goal is to help clients get back to doing what they love. Our caregivers will not only help clients with instrumental activities of daily living (IADLs) and personal activities of daily living (ADLs), but they will also ensure that clients are able to maintain their independence under our caregivers’ supervision."
                     },
                 ]
@@ -84,20 +108,14 @@ export const servicesDatas = [
             section4: {
                 heading: "Our services include:",
                 desc: `Providing techniques to improve communication</br>
-
                        Coping strategies for family caregivers to deal with challenging behavior's</br>
-
                        Maintaining a familiar and safe environment with a daily routine</br>
-
                        Using memory games and activities for mental stimulation</br>
-
                        Family support through resources, training and educating</br>
-
                        Providing respite care</br>
-
                        Personal support services</br>
-
                        Promoting a physical activity plan`,
+                img: sectionImg3.src,
             },
         }
     },
@@ -151,7 +169,7 @@ export const servicesDatas = [
             section3: {
                 heading: "Post-Operative Care Services",
                 desc: `The right care can help make the at-home recovery process as smooth as possible. When being discharged from the hospital, it’s important to have a plan in place – our team of highly trained caregivers work with your medical providers to develop a personalized care plan tailored to your individual situation. Whether you need assistance with the discharge itself, around-the-clock monitoring after you get home or ongoing assistance with daily tasks over a longer-term, we’re here to help you with the highest-quality care along every step of the recovery journey.`,
-                img: sectionImg2.src,
+                img: sectionImg3.src,
             },
             section4: {
                 heading: "Post Operative Care Services include:",
@@ -161,6 +179,7 @@ export const servicesDatas = [
                         Medication reminders</br>
                         Help with meal preparation</br>
                         Liaising with healthcare providers and communicating information with your loved ones`,
+                img: sectionImg3.src,
             },
         }
     },

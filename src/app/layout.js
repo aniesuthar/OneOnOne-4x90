@@ -23,9 +23,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        </style>
+        {/* Google Fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap"
+          rel="stylesheet"
+        />
+        {/* Inline Styles */}
+        <style>{`
+          body[data-scroll-locked] {
+            margin-right: 0px !important;
+          }
+        `}</style>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
