@@ -21,7 +21,6 @@ import PlayIcon from "@/assets/images/playicon.svg"
 export default function page() {
   return (
     <section>
-
       <div
         className='min-h-[50vh] h-[50vh] bg-cover bg-center bg-no-repeat relative z-0 text-center text-primary-foreground'
         style={{ backgroundImage: `url("${CareerBgImg.src}")` }}

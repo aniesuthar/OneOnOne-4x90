@@ -167,3 +167,16 @@ body[data-scroll-locked] {
   list-style-type: circle;
   list-style-position: inside;
 }
+
+.application-form input{
+  padding: 32px;
+  border-radius: 0;
+}
+.application-form input[type="file"]{
+  padding: 8px;
+  border-color: transparent;
+  cursor: crosshair;
+}
+.application-form label{
+  color: hsl(var(--primary-foreground));
+}
