@@ -30,6 +30,13 @@ export const menuList = [
     {
         title: "TextCare",
         href: "/text-care",
+        hasChildren: true,
+        children: [
+            {
+                title: "Locations",
+                href: "/locations",
+            },
+        ]
     },
     {
         title: "Why One on One",
