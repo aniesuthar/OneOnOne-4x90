@@ -40,7 +40,7 @@ export default function Header() {
   const haveBg = NonTransparentHeader.some((headerPath) => path.startsWith(headerPath));
 
   return (
-    <nav className={cn('p-2 bg-transparent absolute top-0 left-0 right-0', 'static')}>
+    <nav className={cn('p-2 bg-transparent absolute top-0 left-0 right-0', haveBg && 'static')}>
       <Box className="flex justify-between" >
         {/* Logo Section */}
         <div className='logo-cont'>

@@ -23,7 +23,7 @@ export default function page() {
     <section>
 
       <div
-        className='min-h-[70vh] h-[70vh] bg-cover bg-center bg-no-repeat relative z-0 text-center text-primary-foreground'
+        className='min-h-[50vh] h-[50vh] bg-cover bg-center bg-no-repeat relative z-0 text-center text-primary-foreground'
         style={{ backgroundImage: `url("${CareerBgImg.src}")` }}
       >
         <div className='bg-primary/75 bg-blend-multiply absolute size-full z-0'></div>

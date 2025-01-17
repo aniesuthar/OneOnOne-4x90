@@ -37,8 +37,8 @@ export const menuList = [
         hasChildren: true,
         children: [
             {
-                title: "Career",
-                href: "/career",
+                title: "Careers",
+                href: "/careers",
             },
             {
                 title: "Career in Nursing",
