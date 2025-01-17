@@ -53,7 +53,7 @@ export default function DepratmentsJobList() {
             <div>
                 <BoxLayout className="py-6 space-y-4">
                     {careerDepartment.careerList.map((career, i) => (
-                        <Link className='block text-primary border-b border-primary py-8' key={i} href={`/career/${department}/${career.id}`}>
+                        <Link className='block text-primary border-b border-primary py-8' key={i} href={`/careers/${department}/${career.id}`}>
                             <div className='flex justify-between'>
                                 <h3 className='font-medium'>
                                     {career.title}

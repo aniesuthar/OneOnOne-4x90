@@ -42,11 +42,11 @@ export const menuList = [
             },
             {
                 title: "Career in Nursing",
-                href: "/career/nursing",
+                href: "/careers/nursing",
             },
             {
                 title: "Career in Caregiving",
-                href: "/career/caregiving",
+                href: "/careers/caregiving",
             },
         ]
     },
