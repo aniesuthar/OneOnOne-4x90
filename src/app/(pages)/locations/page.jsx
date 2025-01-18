@@ -6,16 +6,21 @@ import { Input } from '@/components/ui/input'
 import { LocationOn, West } from '@mui/icons-material'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { locationsList } from "@/lib/locations-list"
+import HereMapWithCircle, { MapWithMarkers } from '@/components/common/Map'
 
 
 export default function page() {
-    // const locations = locationsList.find((lc)=>lc.region == "Ontario");
+
+    const locations = [
+        { lat: 52.5200, lng: 13.4050, title: "Berlin" },
+        { lat: 48.8566, lng: 2.3522, title: "Paris" },
+        { lat: 40.7128, lng: -74.0060, title: "New York" },
+    ];
+
     return (
         <div>
-            <div className='bg-primary/40 min-h-[50vh]'>
-                <BoxLayout>
-                    Map
-                </BoxLayout>
+            <div className='bg-primary/40 h-[360px] min-h-[360px]'>
+                <MapWithMarkers locations={locations} />
             </div>
             <div>
                 <BoxLayout className="space-y-8">

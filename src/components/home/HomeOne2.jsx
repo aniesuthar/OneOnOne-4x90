@@ -1,7 +1,11 @@
 import React from 'react'
 import BoxLayout from '../common/Box'
 import MapImage from "@/assets/images/map.png";
+import HereMap from "@/components/common/Map";
 import { Input } from '../ui/input';
+import Script from "next/script";
+import HereMapWithCircle from '@/components/common/Map';
+
 
 
 export default function HomeOne2() {
@@ -21,8 +25,14 @@ export default function HomeOne2() {
                 {/* Map Section */}
                 <div
                     className='bg-cover w-full lg:w-3/5 h-60 lg:h-96 z-10'
-                    style={{ backgroundImage: `url(${MapImage.src})` }}
-                ></div>
+                    // style={{ backgroundImage: `url(${MapImage.src})` }}
+                    id="map"
+                >
+                    <HereMapWithCircle
+                        center={{ lat: 37.7749, lng: -122.4194 }} // Replace with desired coordinates
+                        radius={2000} // Radius in meters
+                    />
+                </div>
             </BoxLayout>
         </div>
     )
