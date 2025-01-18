@@ -8,9 +8,9 @@ export default function page() {
         <React.Fragment>
             <JobDetails />
             <div className='bg-secondary/10'>
-                <BoxLayout className="text-primary py-10 space-y-16">
-                    <h2 className='text-center font-medium'>Start Your Career Right</h2>
-                    <div className='grid grid-cols-2 gap-20'>
+                <BoxLayout className="text-primary py-10 space-y-8 lg:space-y-16">
+                    <h2 className='lg:text-center font-medium'>Start Your Career Right</h2>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20'>
                         {[
                             {
                                 title: "Premium Employer",

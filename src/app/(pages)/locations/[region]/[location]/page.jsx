@@ -93,10 +93,10 @@ export default function page() {
         <div>
             <div
                 style={{ backgroundImage: `url(${Img1.src})` }}
-                className={`bg-cover bg-center min-h-fit lg:h-[80vh] overlay content-center`}
+                className={`bg-cover bg-center min-h-[60vh] lg:h-[80vh] overlay lg:content-center content-end`}
             >
                 <BoxLayout className="flex items-center" >
-                    <div className="w-full lg:w-1/2 p-8 lg:pt-28 lg:py-20 lg:px-0 space-y-6">
+                    <div className="w-full lg:w-1/2 py-8 px-4 lg:pt-28 lg:py-20 lg:px-0 space-y-6">
                         <h1 className="text-primary text-4xl lg:text-6xl lg:mr-60">
                             Home Care Services in <span className='capitalize'>{location}</span>, ON
                         </h1>
@@ -134,8 +134,8 @@ export default function page() {
             </div>
             <div className='bg-secondary/10 flex gap-24 py-8'>
                 <BoxLayout className='text-center space-y-16'>
-                    <h2 className='font-medium'>What people say about us</h2>
-                    <Carousel className="max-w-[660px] m-auto" opts={{ slidesToScroll: slidesToScroll }}>
+                    <h2 className='font-medium mx-6'>What people say about us</h2>
+                    <Carousel className="max-w-[300px] lg:max-w-[660px] m-auto" opts={{ slidesToScroll: slidesToScroll }}>
                         <CarouselContent>
                             {[{
                                 quote: "Overall, what she gets is care, honest-to-goodness care. I get the peace of mind of knowing that my mother is with a company that sincerely cares about her. They give you basic respect, dignity and the tender loving care that all of our parents want and that we want for our parents.",
@@ -154,7 +154,7 @@ export default function page() {
                             },
                             ].map((item) => (
                                 <CarouselItem style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
-                                    <div className='space-y-10 mx-20'>
+                                    <div className='space-y-10 lg:mx-20'>
                                         <FormatQuoteIcon />
                                         <p className='font-fancy'>{item.quote}</p>
                                         <h4 className='mt-8'>{item.author}</h4>
@@ -178,9 +178,9 @@ export default function page() {
                     ></div>
 
                     {/* Right Section */}
-                    <div className='bg-primary text-primary-foreground lg:w-2/3 w-full p-6 lg:p-16 space-y-8 lg:space-y-14'>
-                        <div className='space-y-3 text-center lg:text-left'>
-                            <h2 className='text-2xl lg:text-4xl font-medium'>
+                    <div className='bg-primary text-primary-foreground lg:w-2/3 w-full p-6 lg:p-16 space-y-12 lg:space-y-14'>
+                        <div className='space-y-3'>
+                            <h2 className='text-2xl lg:text-4xl font-normal md:font-medium'>
                                 We're Local!
                             </h2>
                             <p className='text-lg lg:text-xl'>Our Nurse Next Door office in Ancaster is available to help 24/7.</p>
@@ -203,7 +203,7 @@ export default function page() {
                 </div>
             </div>
             <div className='my-20'>
-                Anil
+            
             </div>
         </div>
     )

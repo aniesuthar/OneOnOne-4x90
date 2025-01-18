@@ -19,8 +19,8 @@ export default function page() {
             </div>
             <div>
                 <BoxLayout className="space-y-8">
-                    <div className='flex gap-4 -translate-y-1/2 justify-center'>
-                        <div className='bg-primary p-2 flex '>
+                    <div className='flex flex-col lg:flex-row gap-4 -translate-y-7 lg:-translate-y-1/2 justify-center'>
+                        <div className='bg-primary p-2 flex flex-col lg:flex-row gap-4 lg:gap-0'>
                             <Input placeholder="Where do you need care?" className="lg:min-w-72" />
                             <Button> <LocationOn /> Use my location </Button>
                         </div>

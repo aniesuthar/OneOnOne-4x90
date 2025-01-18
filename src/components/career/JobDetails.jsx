@@ -22,7 +22,7 @@ export default function JobDetails() {
                                 <p className='text-base font-semibold'><LocationOnIcon /> {job.location}</p>
                                 <p>{job.about}</p>
                             </div>
-                            <div className='flex gap-8 items-center pt-8'>
+                            <div className='flex flex-col lg:flex-row gap-4  lg:gap-8 items-start lg:items-center pt-8'>
                                 <Button className='max-w-fit rounded-none size-full px-12 py-4' variant="secondary">Call 1-877-355-3660</Button>
                                 <Button className='max-w-fit rounded-none size-full px-12 py-4' variant="secondary">Apply Now</Button>
                             </div>

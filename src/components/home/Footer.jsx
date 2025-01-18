@@ -22,21 +22,21 @@ export default function Footer() {
                     </p>
                 </BoxLayout>
             </div>
-            <div className='bg-primary text-primary-foreground/80 font-light space-y-4 py-10 application-form'>
+            <div className='bg-primary text-primary-foreground/80 font-light space-y-4 lg:py-10 application-form'>
                 <BoxLayout className="divide-y divide-primary-foreground/20">
-                    <div className='flex justify-between items-center py-4'>
+                    <div className='flex flex-col lg:flex-row justify-between items-start gap-6 lg:items-center py-4'>
                         <h3 className='text-secondary font-medium'>One to One Health: Healthcare That Cares</h3>
                         <p className='text-secondary font-medium text-end'>We are here for you.</p>
                     </div>
-                    <div className='flex justify-between items-center py-4'>
-                        <menu className='flex gap-6'>
+                    <div className='flex flex-col lg:flex-row items-start gap-6 lg:justify-between lg:items-center py-4'>
+                        <menu className='flex flex-col lg:flex-row gap-6'>
                             {menuList.map((menu) => (
-                                <Link href={menu.href} className='hover:text-primary-foreground'>{menu.title}</Link>
+                                <Link href={menu.href} className=' hover:text-primary-foreground'>{menu.title}</Link>
                             ))}
                         </menu>
                         <Button variant="secondary">Contact Us</Button>
                     </div>
-                    <div className='flex justify-between items-center py-4'>
+                    <div className='flex flex-col lg:flex-row lg:justify-between items-start lg:items-center py-4'>
                         <p className='text-base'>© {new Date().getFullYear()} One to One Health.</p>
                     </div>
                 </BoxLayout>

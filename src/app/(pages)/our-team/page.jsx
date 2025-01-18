@@ -36,11 +36,11 @@ export default function page() {
             />
             <div className='bg-secondary text-secondary-foreground pt-12 pb-36'>
                 <BoxLayout>
-                    <div className='text-center mb-16'>
+                    <div className='lg:text-center mb-8 lg:mb-16'>
                         <h6 className='font-fancy'>Introducing</h6>
-                        <h1 className='text-center' >Your Care Team</h1>
+                        <h1 className='lg:text-center' >Your Care Team</h1>
                     </div>
-                    <div className='flex gap-24'>
+                    <div className='flex flex-col lg:flex-row gap-4 lg:gap-24'>
                         <div className='space-y-8'>
                             <p>
                                 Mom and Dad deserve the best. To find a perfect match, each Nurse Next Door caregiver is carefully screened, interviewed, and selected not only for experience, but their passion for making a difference.
@@ -55,14 +55,14 @@ export default function page() {
                     </div>
                 </BoxLayout>
             </div>
-            <BoxLayout className="pb-24">
+            <BoxLayout className="pb-4 lg:pb-24">
                 <div className='-mt-20'>
                     <ImageCards className="text-left" cardData={cardData} />
                 </div>
             </BoxLayout>
             <div className='bg-secondary/10'>
-                <BoxLayout className="flex gap-16 items-center" >
-                    <div className='py-16 space-y-8'>
+                <BoxLayout className="flex flex-col lg:flex-row gap-4 lg:gap-16 items-center space-y-4 py-8 lg:py-16" >
+                    <div className='space-y-8'>
                         <div>
                             <h2 className='text-primary'>Rigorous Hiring and Screening</h2>
                             <p>All of our caregivers and nurses are qualified, attentive, and willing to go above and beyond. Here’s how we train the team at Nurse Next Door.</p>
@@ -79,16 +79,16 @@ export default function page() {
                         </div>
                     </div>
                     <div>
-                        <img src={Img1.src} alt=""  className='max-h-[1240px]'/>
+                        <img src={Img1.src} alt=""  className='max-h-[1240px] object-cover'/>
                     </div>
                 </BoxLayout>
             </div>
             <div>
-                <BoxLayout className="flex gap-32 items-center" >
-                    <div>
-                        <img src={Img1.src} alt="" className='max-h-[840px]' />
+                <BoxLayout className="flex flex-col lg:flex-row gap-4 py-6 lg:py-0 lg:gap-16 items-center" >
+                    <div className='order-2 lg:order-1 '>
+                        <img src={Img1.src} alt="" className='max-h-[1260px]' />
                     </div>
-                    <div className='space-y-6'>
+                    <div className='space-y-6 order-1 lg:order-2'>
                         {[{
                             title: "Comprehensive Training",
                             desc: "To set them up for success, our training prepares caregivers to align with our core values and brand promises. They get access to scenarios for providing quality home health care."

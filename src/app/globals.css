@@ -20,8 +20,7 @@ body {
   position: relative;
 }
 nav{
-
-  z-index: 999;
+  z-index: 39;
 }
 @layer base {
   :root {
@@ -96,7 +95,7 @@ nav{
   }
 
   h2 {
-    @apply text-4xl font-bold leading-snug;
+    @apply text-3xl lg:text-4xl font-bold leading-snug;
   }
 
   h3 {
@@ -119,14 +118,6 @@ nav{
     @apply lg:text-xl;
   }
 }
-
-/* @media only screen and (max-width: 768px) {
-  @layer base {
-    p {
-      @apply text-xl;
-    }
-  }
-} */
 
 .overlay {
   position: relative;
@@ -179,4 +170,10 @@ body[data-scroll-locked] {
 }
 .application-form label{
   color: hsl(var(--primary-foreground));
+}
+
+@media only screen and (max-width: 768px) {
+  .application-form input{
+    padding: 20px;
+  }
 }

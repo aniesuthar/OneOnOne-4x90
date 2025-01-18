@@ -21,7 +21,7 @@ export default function page() {
                 </BoxLayout>
             </div>
             <div>
-                <BoxLayout className="py-16">
+                <BoxLayout className="py-6 lg:py-16">
                     <div className="columns-2 lg:columns-4 text-primary">
                         {regionalLocations?.locations?.map((location) => (
                             <Link

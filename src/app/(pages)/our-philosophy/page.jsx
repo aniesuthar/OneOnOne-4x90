@@ -29,19 +29,19 @@ export default function page() {
             />
             <div className='bg-secondary text-secondary-foreground py-12'>
                 <BoxLayout>
-                    <div className='text-center mb-16'>
+                    <div className='lg:text-center mb-8 lg:mb-16'>
                         <h6 className='font-fancy'>IWhat is Happier Aging? It starts with one simple question...</h6>
-                        <h1 className='text-center' >What did you use to love doing that you no longer do?</h1>
+                        <h1>What did you use to love doing that you no longer do?</h1>
                     </div>
-                    <div className='lg:mx-32 grid grid-cols-2'>
-                        <img src={Img1.src} alt={Img1.src} className='max-h-[460px] w-full object-cover ml-10' />
-                        <img src={Img1.src} alt={Img1.src} className='max-h-[460px] w-full object-cover -ml-10 mt-32' />
-                        <div className='-mt-28 m-10'>
+                    <div className='lg:mx-32 grid grid-cols-1 lg:grid-cols-2'>
+                        <img src={Img1.src} alt={Img1.src} className='max-h-[460px] w-full object-cover lg:ml-10' />
+                        <img src={Img1.src} alt={Img1.src} className='hidden lg:inline-block max-h-[460px] w-full object-cover -ml-10 mt-32' />
+                        <div className='mt-4 lg:-mt-28 lg:m-10'>
                             <h4>Happier Aging is Nurse Next Door’s philosophy of care: for our clients, their families, our people and everyone we meet.</h4>
                         </div>
                     </div>
-                    <hr className='mb-8 opacity-50' />
-                    <p className='pt-12 text-center lg:mx-32 text-base'>
+                    <hr className='my-8 opacity-50' />
+                    <p className='lg:text-center lg:mx-32 text-base'>
                         At Nurse Next Door, we want to change the perceptions of aging, We believe that getting older doesnt have to feel sad or helpless; instead, aging is something worth celebrating.
                         <br></br>
                         <br></br>
@@ -53,7 +53,7 @@ export default function page() {
                 </BoxLayout>
             </div>
             <div className='bg-secondary/10 flex gap-24 py-16'>
-                <BoxLayout className="flex">
+                <BoxLayout className="flex flex-col lg:flex-row gap-12">
                     {[{
                         quote: "Overall, what she gets is care, honest-to-goodness care. I get the peace of mind of knowing that my mother is with a company that sincerely cares about her. They give you basic respect, dignity and the tender loving care that all of our parents want and that we want for our parents.",
                         author: "Andrea S",
@@ -65,7 +65,7 @@ export default function page() {
                         designation: "Client's Daughter"
                     },
                     ].map((item) => (
-                        <div className='text-center mx-24'>
+                        <div className='text-center mx-6 lg:mx-24'>
                             <FormatQuoteIcon />
                             <p className='font-fancy'>{item.quote}</p>
                             <h4 className='mt-8'>{item.author}</h4>
@@ -113,11 +113,11 @@ export default function page() {
             <div>
                 <BoxLayout>
                     <h2 className='text-primary text-center'>Happier Aging™ in action</h2>
-                    <p>Happier Aging™ has given seniors a chance to rekindle passions and interests while staying at home.</p>
+                    <p className='text-center'>Happier Aging™ has given seniors a chance to rekindle passions and interests while staying at home.</p>
                 </BoxLayout>
                 <div className='bg-primary/10'>
                     <BoxLayout className="py-12 my-6">
-                        <Carousel className="w-full" opts={{ slidesToScroll: slidesToScroll }}>
+                        <Carousel className="w-full max-w-[72vw] lg:max-w-full m-auto" opts={{ slidesToScroll: slidesToScroll }}>
                             <CarouselContent>
                                 {/* Items Arrys aayega  */}
                                 {[
@@ -144,8 +144,8 @@ export default function page() {
                                     },
                                 ].map((item) => (
                                     <CarouselItem style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
-                                        <div className="flex gap-20 items-center">
-                                            <div className='space-y-10'>
+                                        <div className="flex flex-col lg:flex-row gap-4  lg:gap-20 items-center">
+                                            <div className='space-y-10 order-2 lg:order-1'>
                                                 <h2>{item.title}</h2>
                                                 <p className='text-base'>{item.desc}</p>
                                                 <div>
@@ -154,7 +154,7 @@ export default function page() {
                                                     ))}
                                                 </div>
                                             </div>
-                                            <Link href={item.videoLink} target="_blank" className="bg-cover bg-center block bg-no-repeat  w-full min-h-[340px] content-center relative" style={{ backgroundImage: `url(${item.thumbnail})` }}>
+                                            <Link href={item.videoLink} target="_blank" className="bg-cover bg-center block bg-no-repeat  w-full min-h-[340px] content-center  order-1 lg:order-2 relative" style={{ backgroundImage: `url(${item.thumbnail})` }}>
                                                 <img src={PlayIcon.src} className='w-16 m-auto' alt="" />
                                             </Link>
                                         </div>
