@@ -24,10 +24,15 @@ import icon5 from "@/assets/images/icons/5.png";
 import icon6 from "@/assets/images/icons/6.png";
 import icon7 from "@/assets/images/icons/7.png";
 import icon8 from "@/assets/images/icons/8.png";
+import HereMapWithCircle from '@/components/common/Map';
+import { locationsList } from '@/lib/locations-list';
 
 export default function page() {
     const { region, location } = useParams();
     const slidesToScroll = 1;
+    const regionItem = locationsList.find((r)=>r.region.toLowerCase()==region);
+    const locationItem = regionItem.locations.find((l)=>l.name.toLowerCase()==location);
+    const cordinates = { lat: locationItem.lat, lng: locationItem.lng};
 
     const services = [
         {
@@ -174,8 +179,10 @@ export default function page() {
                     {/* Left Section */}
                     <div
                         className='lg:w-2/5 w-full h-60 lg:h-auto bg-cover z-10'
-                        style={{ backgroundImage: `url(${MapImage.src})` }}
-                    ></div>
+                        // style={{ backgroundImage: `url(${MapImage.src})` }}
+                    >
+                        <HereMapWithCircle cordinate={cordinates}/>
+                    </div>
 
                     {/* Right Section */}
                     <div className='bg-primary text-primary-foreground lg:w-2/3 w-full p-6 lg:p-16 space-y-12 lg:space-y-14'>
@@ -183,7 +190,7 @@ export default function page() {
                             <h2 className='text-2xl lg:text-4xl font-normal md:font-medium'>
                                 We're Local!
                             </h2>
-                            <p className='text-lg lg:text-xl'>Our Nurse Next Door office in Ancaster is available to help 24/7.</p>
+                            <p className='text-lg lg:text-xl'>Our Nurse Next Door office in <span className='capitalize'>{location}</span> is available to help 24/7.</p>
                         </div>
                         <div>
                             <p>Some of the communities we serve</p>
