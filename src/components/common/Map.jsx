@@ -27,7 +27,6 @@ const HereMapWithCircle = ({ cordinate, radius = 1000 }) => {
         checkHereMaps();
     }, []);
 
-
     useEffect(() => {
         if (!isHereMapsLoaded) return;
 
