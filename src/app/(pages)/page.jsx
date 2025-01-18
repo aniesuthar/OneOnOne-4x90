@@ -7,6 +7,7 @@ import OurTeamSection from '@/components/home/OurTeamSection'
 import VideoSection from '@/components/home/VideoSection'
 import HomeHeroImg from '@/assets/images/home-hero.jpg'
 import React from 'react'
+import CaringJournal from '@/components/services/CaringJournal'
 
 export default function page() {
   return (
@@ -23,6 +24,7 @@ export default function page() {
       <HomeThree />
       <VideoSection />
       <OurTeamSection />
+      <CaringJournal/>
     </>
   )
 }

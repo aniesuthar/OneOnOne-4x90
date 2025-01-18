@@ -2,6 +2,9 @@ import { servicesList } from "./menu-list";
 import Img1 from "@/assets/images/service-hero.png";
 import sectionImg2 from "@/assets/images/serviceImg2.png";
 import sectionImg3 from "@/assets/images/serviceImg3.jpg";
+import Sr2 from "@/assets/images/service2.jpg"
+import Sr3 from "@/assets/images/service3.png"
+import Sr4 from "@/assets/images/service4.jpg"
 
 export const servicesDatas = [
     // 1
@@ -64,7 +67,7 @@ export const servicesDatas = [
             section1: {
                 heading: "In-Home Alzheimer's Care and Dementia Care",
                 desc: `We help clients maintain their dignity by letting them continue their regular routines despite cognitive decline.`,
-                img: Img1.src
+                img: Sr2.src
             },
             section2: {
                 heading: "",
@@ -79,7 +82,7 @@ export const servicesDatas = [
                     author: `Alzheimer’s Association`
                 },
                 desc: `Along with preliminary symptoms, there are also substantial risks with Alzheimer’s and related dementias like wandering. To prevent wandering, Nurse Next Door’s priority through its dementia care is clients’ safety and allowing them to receive care in a familiar setting – their own home.`,
-                img: sectionImg3.src,
+                img: Sr2.src,
             },
             sectionCards: {
                 cards: [
@@ -127,7 +130,7 @@ export const servicesDatas = [
             section1: {
                 heading: `In-Home Nursing Care`,
                 desc: `There’s no place like home. We deeply appreciate how important it is for you to enjoy the comfort of your own home for as long as possible. That’s why we offer in-home nursing care for you including medical support when necessary.`,
-                img: Img1.src
+                img: Sr3.src
             },
             section2: {
                 heading: `In-Home Nursing Care That Brings Balance to Your Life`,
@@ -138,7 +141,7 @@ export const servicesDatas = [
                 desc: `Ensuring you can continue your personal relationships with your family and circle of friends is one of Nurse Next Door’s top priorities. That’s why our around-the-clock home care program is designed to include open visiting hours for anyone coming to and from your home. Your relations can come and go as they please, join you for a spot of tea or stop-in for mealtime just as they always have.</br>
 
                     Our licensed care team will be available whenever you need them. From scheduled nursing visits to hourly care, someone will always be there to help you 24 hours a day, seven days a week. We work with your medical team to ensure you’re receiving the highest level of professional support care that you require. It’s our mission to make sure you can continue to live in the comfort of your own home while still receiving the love and support you need.`,
-                img: sectionImg2.src,
+                img: Img1.src,
             },
             section4: {
                 heading: `Medical & Non Medical Private Nursing Care Available`,
@@ -158,7 +161,7 @@ export const servicesDatas = [
             section1: {
                 heading: `Post Operative Care`,
                 desc: `Post operative care services to make sure you or your loved one recovers safely at the comfort of your own home.`,
-                img: Img1.src
+                img: Sr4.src
             },
             section2: {
                 heading: ``,

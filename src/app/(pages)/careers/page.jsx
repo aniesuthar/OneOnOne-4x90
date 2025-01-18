@@ -211,6 +211,7 @@ export default function page() {
           <Button className='w-full lg:max-w-fit rounded-none size-full px-12 py-2'>Go</Button>
         </div>
       </BoxLayout>
+      <div className='h-10 lg:h-20'></div>
     </section >
 
   )
