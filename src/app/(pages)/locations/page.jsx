@@ -44,8 +44,8 @@ export default function page() {
                             <TabsTrigger value="us">US Locations</TabsTrigger>
                         </TabsList>
                         <TabsContent value="canada" className="m-auto space-y-4">
-                            {locationsList.map((area) => (
-                                <React.Fragment>
+                            {locationsList.map((area, i) => (
+                                <React.Fragment key={i}>
                                     <h3>{area.region}</h3>
                                     <div className="columns-2 lg:columns-4 text-primary">
                                         {area.locations?.map((location) => (

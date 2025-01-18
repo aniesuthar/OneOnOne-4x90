@@ -1,13 +1,14 @@
 "use client"
 import BoxLayout from '@/components/common/Box'
 import { locationsList } from '@/lib/locations-list'
+import { slugify } from '@/lib/utils'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import React from 'react'
 
 export default function page() {
     const { region } = useParams();
-    const regionalLocations = locationsList.find((r) => r.region.toLowerCase() == region);
+    const regionalLocations = locationsList.find((r) => slugify(r.region) == region);
     return (
         <div>
             <div className='bg-primary/20 text-primary pt-40 pb-10'>

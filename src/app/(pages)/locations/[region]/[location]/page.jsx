@@ -26,12 +26,13 @@ import icon7 from "@/assets/images/icons/7.png";
 import icon8 from "@/assets/images/icons/8.png";
 import HereMapWithCircle from '@/components/common/Map';
 import { locationsList } from '@/lib/locations-list';
+import { slugify } from '@/lib/utils';
 
 export default function page() {
     const { region, location } = useParams();
     const slidesToScroll = 1;
-    const regionItem = locationsList.find((r)=>r.region.toLowerCase()==region);
-    const locationItem = regionItem.locations.find((l)=>l.name.toLowerCase()==location);
+    const regionItem = locationsList.find((r)=>slugify(r.region)==region);
+    const locationItem = regionItem.locations.find((l)=>slugify(l.name)==location);
     const cordinates = { lat: locationItem.lat, lng: locationItem.lng};
 
     const services = [
@@ -126,8 +127,8 @@ export default function page() {
                         <p>It's about caring, not just health care. That's why we're here to help get you back to doing the things you love. Whether it's a little help around the house with meal preparation or medication reminders, let us do the caring.</p>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 gap-y-16 py-10'>
-                        {services.map((service) => (
-                            <div className='text-center text-primary space-y-2'>
+                        {services.map((service, i) => (
+                            <div className='text-center text-primary space-y-2' key={i}>
                                 <img src={service.icon.src} alt="" className='w-14 m-auto' />
                                 <h3>{service.title}</h3>
                                 <p className='text-base'>{service.description}</p>
@@ -157,8 +158,8 @@ export default function page() {
                                 author: "Andrea S",
                                 designation: "Client's Daughter"
                             },
-                            ].map((item) => (
-                                <CarouselItem style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
+                            ].map((item, i) => (
+                                <CarouselItem key={i} style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
                                     <div className='space-y-10 lg:mx-20'>
                                         <FormatQuoteIcon />
                                         <p className='font-fancy'>{item.quote}</p>

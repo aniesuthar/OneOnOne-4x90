@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const APIKEY = "dj_bpoNDunfVa_irOFSLaAOJ82i23Qjko1-TwTdT2EY"
+const APIKEY = process.env.NEXT_PUBLIC_MAP_APIKEY
 
 
 const HereMapWithCircle = ({ cordinate, radius = 1000 }) => {
