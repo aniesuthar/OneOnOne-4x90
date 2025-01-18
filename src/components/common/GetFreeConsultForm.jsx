@@ -151,9 +151,6 @@ export default function GetFreeConsultForm() {
                             <FormControl>
                                 <Input placeholder="How did you hear about us" {...field} />
                             </FormControl>
-                            <FormDescription>
-                                Accepted file types: pdf, doc, docx, Max. file size: 25 MB, Max. files: 1.
-                            </FormDescription>
                             <FormMessage />
                         </FormItem>
                     )}
