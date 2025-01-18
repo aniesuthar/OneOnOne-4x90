@@ -53,12 +53,12 @@ const videos = [
 
 export default function VideoSection() {
     return (
-        <div className='max-w-[90%] m-auto'>
+        <div className='m-auto'>
             <Carousel
                 opts={{
                     align: "start",
                 }}
-                className="w-full"
+                className="w-full mx-auto"
             >
                 <CarouselContent>
                     {videos.map((item, index) => (
@@ -70,8 +70,8 @@ export default function VideoSection() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="hidden lg:static"/>
+                <CarouselNext className="hidden lg:static"/>
             </Carousel>
         </div>
 
