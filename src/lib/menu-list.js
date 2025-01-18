@@ -28,15 +28,12 @@ export const menuList = [
         })),
     },
     {
-        title: "TextCare",
-        href: "/text-care",
-        hasChildren: true,
-        children: [
-            {
-                title: "Locations",
-                href: "/locations",
-            },
-        ]
+        title: "Locations",
+        href: "/locations",
+    },
+    {
+        title: "Careers",
+        href: "/careers",
     },
     {
         title: "Why One on One",
@@ -44,16 +41,8 @@ export const menuList = [
         hasChildren: true,
         children: [
             {
-                title: "Careers",
-                href: "/careers",
-            },
-            {
-                title: "Career in Nursing",
-                href: "/careers/nursing",
-            },
-            {
-                title: "Career in Caregiving",
-                href: "/careers/caregiving",
+                title: "Our Philosophy",
+                href: "/our-philosophy",
             },
         ]
     },
@@ -66,12 +55,27 @@ export const menuList = [
                 title: "Our Team",
                 href: "/our-team",
             },
-            {
-                title: "Our Philosophy",
-                href: "/our-philosophy",
-            },
         ]
     }
+]
+
+export const careerMenuList = [
+    {
+        title: "Why Us",
+        href: "/our-team",
+    },
+    {
+        title: "Caregiving",
+        href: "/careers/caregiving",
+    },
+    {
+        title: "Nursing",
+        href: "/careers/nursing",
+    },
+    {
+        title: "Other Careers",
+        href: "#",
+    },
 ]
 
 export const NonTransparentHeader = ["/career", "/services"]

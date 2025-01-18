@@ -1,7 +1,7 @@
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import LogoImg from "@/assets/images/logo.png";
-import { menuList, NonTransparentHeader } from '@/lib/menu-list';
+import { careerMenuList, menuList, NonTransparentHeader } from '@/lib/menu-list';
 import Link from 'next/link';
 import {
   HoverCard,
@@ -28,20 +28,32 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import Box from './Box';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { Button } from '../ui/button';
 
 export default function Header() {
   const [isSheetOpen, setIsSheetOpen] = React.useState(false);
+  const [menu, setMenu] = React.useState();
 
   const closeSheet = () => {
     setIsSheetOpen(false);
   };
 
   const path = usePathname();
+  const onCareer = path.startsWith("/careers") ? true : false;
+
+  React.useEffect(() => {
+    if (onCareer) {
+      setMenu(careerMenuList);
+    } else {
+      setMenu(menuList);
+    }
+  }, [onCareer])
+
   const haveBg = NonTransparentHeader.some((headerPath) => path.startsWith(headerPath));
 
   return (
     <nav className={cn('p-2 bg-transparent absolute top-0 left-0 right-0', haveBg && 'static')}>
-      <Box className="flex justify-between" >
+      <Box className="flex justify-between text-primary" >
         {/* Logo Section */}
         <div className='logo-cont'>
           <Link className='logo-cont mb-4 lg:mb-0' href="/">
@@ -49,10 +61,10 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className='flex items-center gap-8'>
+        <div className='flex items-center gap-12'>
           {/* Navigation Menu */}
           <div className='hidden lg:flex nav-cont flex-wrap justify-center gap-4 lg:gap-8 w-full lg:w-auto items-center font-bold text-sm lg:text-base'>
-            {menuList.map((menuItem, index) => (
+            {menu?.map((menuItem, index) => (
               menuItem.hasChildren ? (
                 <HoverCard key={index} openDelay={0} closeDelay={200}>
                   <HoverCardTrigger>
@@ -75,14 +87,20 @@ export default function Header() {
           </div>
 
           {/* Action Buttons */}
-          <div className='hidden action-btn-cont lg:flex flex-col lg:flex-row items-center gap-8 mt-4 lg:mt-0'>
-            {/* <div className='call-num text-center lg:text-left'>
-              <span className='block text-sm lg:text-base'>Call us <b>toll-free</b> any time 24/7</span>
-              <h2 className='block text-secondary text-lg lg:text-2xl font-bold'>1-877-588-8609</h2>
-            </div> */}
-            <div className='call-btn'>
-              <CallUsButton />
-            </div>
+          <div className='hidden action-btn-cont lg:flex flex-col lg:flex-row items-center gap-12 mt-4 lg:mt-0'>
+            {onCareer ?
+              <Link href="/"><Button variant="secondary" >Go to Main site</Button> </Link>
+              :
+              <>
+                <div className='call-num text-center lg:text-left'>
+                  <span className='block text-xs lg:text-sm'>Call us <b>toll-free</b> any time 24/7</span>
+                  <h2 className='block text-lg lg:text-2xl font-bold'>1-877-588-8609</h2>
+                </div>
+                <div className='call-btn'>
+                  <CallUsButton />
+                </div>
+              </>
+            }
           </div>
 
           {/* Mobile  */}
@@ -97,13 +115,13 @@ export default function Header() {
                 <SheetHeader>
                   <SheetTitle>
                     <Link className='logo-cont mb-4 lg:mb-0' href="/">
-                      <img src={LogoImg.src} className='w-16 lg:w-20' alt="Logo" />
+                      <img src={LogoImg.src} className='w-16 lg:w-20 mb-4' alt="Logo" />
                     </Link>
                   </SheetTitle>
                   <SheetDescription></SheetDescription>
                 </SheetHeader>
 
-                {menuList.map((menuItem, index) => (
+                {menu?.map((menuItem, index) => (
                   menuItem.hasChildren ? (
                     <Accordion type="single" collapsible key={index}>
                       <AccordionItem value={`item-${index}`} className="border-0">
@@ -125,6 +143,11 @@ export default function Header() {
                     </Link>
                   )
                 ))}
+
+                {onCareer &&
+                  <Link href="/" className='mt-10 inline-block'><Button variant="secondary" >Go to Main site</Button> </Link>
+                }
+
               </SheetContent>
             </Sheet>
           </div>
