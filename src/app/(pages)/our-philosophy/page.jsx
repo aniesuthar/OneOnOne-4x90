@@ -17,6 +17,12 @@ import PlayIcon from "@/assets/images/playicon.svg"
 import Link from 'next/link';
 import CaringJournal from '@/components/services/CaringJournal';
 
+import p1 from "@/assets/images/p1.jpg"
+import p2 from "@/assets/images/p2.jpg"
+import p3 from "@/assets/images/p3.jpg"
+import p4 from "@/assets/images/p4.jpg"
+import p5 from "@/assets/images/p5.jpg"
+
 
 export default function page() {
     const slidesToScroll = 1;
@@ -83,27 +89,27 @@ export default function page() {
                             {
                                 title: "Choice",
                                 desc: "Doing what you want to do when you want to do it. The freedom to choose allows you to shape your life. You are empowered when you have choice.",
-                                img: ""
+                                img: p1.src
                             },
                             {
                                 title: "Purpose",
                                 desc: "Having meaning in your life. Purpose comes when we have the opportunity to contribute meaningfully. It’s what motivates us to show up for ourselves and others",
-                                img: ""
+                                img: p2.src
                             },
                             {
                                 title: "Respect",
                                 desc: "Showing care, concern and consideration for others, even when they are different from you. Respect allows us to feel comfortable being who we are. Its how we admire people, including ourselves.",
-                                img: ""
+                                img: p3.src
                             },
                             {
                                 title: "Autonomy",
                                 desc: "Your right to make decisions for yourself free of outside influences. You may not control life’s circumstances but being the author of your life means deciding what you do with them.",
-                                img: ""
+                                img: p4.src
                             },
                             {
                                 title: "Belonging",
                                 desc: "Accepting ourselves and others for who we are. When we belong, we have a greater sense of fulfillment and well-being. Belonging connects us to something bigger than ourselves.",
-                                img: ""
+                                img: p5.src
                             },
                         ]
                         }

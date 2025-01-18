@@ -7,22 +7,28 @@ import React from 'react'
 import Img1 from "@/assets/images/service-hero.png";    
 import CaringJournal from '@/components/services/CaringJournal'
 
+import T1 from "@/assets/images/t1.png"
+import T2 from "@/assets/images/t2.png"
+import T3 from "@/assets/images/t2.png"
+import T4 from "@/assets/images/t4.png"
+import T5 from "@/assets/images/t5.jpg"
+
 
 export default function page() {
     const cardData = [
         {
             title: "Care Designers",
-            img: "",
+            img: T1.src,
             desc: "Our experienced Care Designers evaluate your loved one’s needs during the initial Caring Consult. By getting to know Mom or Dad, they can reassess services as health and care requirements change over time."
         },
         {
             title: "Caregivers",
-            img: "",
+            img: T2.src,
             desc: "We select caregivers or nurses based on their personality, languages, and hobbies shared with each senior for ongoing companionship that makes a difference."
         },
         {
             title: "24/7 Care Team",
-            img: "",
+            img: T3.src,
             desc: "From your first visit onwards, our Care Team is available 24/7 to provide monitoring services, respond to immediate change requests, and make sure caregivers are always available as scheduled."
         },
     ]
@@ -79,14 +85,14 @@ export default function page() {
                         </div>
                     </div>
                     <div>
-                        <img src={Img1.src} alt=""  className='max-h-[1240px] object-cover'/>
+                        <img src={T4.src} alt=""  className='max-h-[1240px] object-cover'/>
                     </div>
                 </BoxLayout>
             </div>
             <div>
                 <BoxLayout className="flex flex-col lg:flex-row gap-4 py-6 lg:py-0 lg:gap-16 items-center" >
                     <div className='order-2 lg:order-1 '>
-                        <img src={Img1.src} alt="" className='max-h-[1260px]' />
+                        <img src={T5.src} alt="" className='max-h-[1260px]' />
                     </div>
                     <div className='space-y-6 order-1 lg:order-2'>
                         {[{

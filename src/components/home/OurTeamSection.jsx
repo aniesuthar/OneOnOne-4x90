@@ -24,7 +24,7 @@ export default function OurTeamSection() {
                         <p className='font-semibold text-sm lg:text-base'>Licensed and Insured</p>
                     </span>
                     <div className='flex justify-center lg:justify-start'>
-                        <Link className="inline-block text-primary underline font-semibold text-lg lg:text-xl" href="#">
+                        <Link className="inline-block text-primary underline font-semibold text-lg lg:text-xl" href="/our-team">
                             OUR TEAM
                         </Link>
                     </div>
