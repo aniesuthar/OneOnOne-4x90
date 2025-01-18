@@ -85,8 +85,8 @@ export const MapWithMarkers = ({ locations }) => {
             mapRef.current,
             defaultLayers.vector.normal.map,
             {
-                zoom: 10,
-                center: { lat: 52.5200, lng: 13.4050 }, // Default center (Berlin)
+                zoom: 8.5,
+                center: { lat: locations[locations.length/2].lat, lng: locations[locations.length/2].lng },
             }
         );
 
@@ -96,22 +96,29 @@ export const MapWithMarkers = ({ locations }) => {
         // Create the UI (zoom controls, etc.)
         const ui = H.ui.UI.createDefault(map, defaultLayers);
 
+        const icon = new H.map.Icon(`
+            https://static.vecteezy.com/system/resources/thumbnails/021/613/496/small/realistic-location-icon-3d-render-transparent-background-free-png.png
+        `, {
+            size: { w: 56, h: 56 }, // Set the size of the marker
+            anchor: { x: 12, y: 24 } // Anchor the marker at the bottom center
+        });
+
         // Add multiple markers to the map
         locations.forEach((location) => {
             const { lat, lng, title } = location;
 
             // Create a marker at each location
-            const marker = new H.map.Marker({ lat, lng });
+            const marker = new H.map.Marker({ lat, lng }, {icon});
 
             // Add the marker to the map
             map.addObject(marker);
 
-            // Optionally, add a tooltip or info bubble
-            marker.setData(title);
-            marker.addEventListener("tap", function (evt) {
-                const data = marker.getData();
-                alert(data); // Show title of the location
-            });
+            // // Optionally, add a tooltip or info bubble
+            // marker.setData(title);
+            // marker.addEventListener("tap", function (evt) {
+            //     const data = marker.getData();
+            //     alert(data); // Show title of the location
+            // });
         });
 
         return () => {

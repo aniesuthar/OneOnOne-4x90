@@ -11,19 +11,21 @@ import HereMapWithCircle, { MapWithMarkers } from '@/components/common/Map'
 
 export default function page() {
 
-    const locations = [
-        { lat: 52.5200, lng: 13.4050, title: "Berlin" },
-        { lat: 48.8566, lng: 2.3522, title: "Paris" },
-        { lat: 40.7128, lng: -74.0060, title: "New York" },
-    ];
+    // const locations = [
+    //     { lat: 52.5200, lng: 13.4050, title: "Berlin" },
+    //     { lat: 48.8566, lng: 2.3522, title: "Paris" },
+    //     { lat: 40.7128, lng: -74.0060, title: "New York" },
+    // ];
+
+    const locations = locationsList[0].locations;
 
     return (
         <div>
-            <div className='bg-primary/40 h-[360px] min-h-[360px]'>
+            <div className='bg-primary/40 h-[460px] min-h-[360px]'>
                 <MapWithMarkers locations={locations} />
             </div>
             <div>
-                <BoxLayout className="space-y-8">
+                <BoxLayout className="space-y-8 z-10 relative">
                     <div className='flex flex-col lg:flex-row gap-4 -translate-y-7 lg:-translate-y-1/2 justify-center'>
                         <div className='bg-primary p-2 flex flex-col lg:flex-row gap-4 lg:gap-0'>
                             <Input placeholder="Where do you need care?" className="lg:min-w-72" />
