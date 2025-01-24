@@ -42,10 +42,10 @@ export default async function page({ params }) {
                     </div>
                 </BoxLayout>
             </div>
-            <div className='bg-primary py-20'>
+            <div className='bg-primary py-20' id="applicationForm">
                 <BoxLayout className="application-form space-y-10">
                     <h2 className='font-medium text-center text-primary-foreground'>Apply Now</h2>
-                    <JobApplicationForm />
+                    <JobApplicationForm destination={params} />
                 </BoxLayout>
             </div>
         </React.Fragment>

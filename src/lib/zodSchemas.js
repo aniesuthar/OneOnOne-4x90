@@ -1,6 +1,7 @@
 import { z } from "zod"
 
 export const applicationFormSchema = z.object({
+    jobId: z.string().optional(),
     firstName: z
         .string()
         .min(1, { message: "First name is required" })

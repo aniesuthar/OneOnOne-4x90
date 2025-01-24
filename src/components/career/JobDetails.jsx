@@ -6,6 +6,7 @@ import BoxLayout from '@/components/common/Box';
 import { Button } from '@/components/ui/button';
 import { careerList } from '@/lib/career-list';
 import RenderBodyContent from '../blog/RenderBodyContent';
+import Link from 'next/link';
 
 export default function JobDetails({ job }) {
 
@@ -27,7 +28,9 @@ export default function JobDetails({ job }) {
                             </div>
                             <div className='flex flex-col lg:flex-row gap-4  lg:gap-8 items-start lg:items-center pt-8'>
                                 <Button className='max-w-fit rounded-none size-full px-12 py-4' variant="secondary">Call 1-877-355-3660</Button>
-                                <Button className='max-w-fit rounded-none size-full px-12 py-4' variant="secondary">Apply Now</Button>
+                                <Link href="#applicationForm">
+                                    <Button className='max-w-fit rounded-none size-full px-12 py-4' variant="secondary">Apply Now</Button>
+                                </Link>
                             </div>
                         </BoxLayout>
                     </div>

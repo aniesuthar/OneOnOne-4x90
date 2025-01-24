@@ -19,9 +19,15 @@ body {
   font-family: "Poppins", serif;
   position: relative;
 }
-nav{
+
+* {
+  scroll-behavior: smooth;
+}
+
+nav {
   z-index: 39;
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -123,9 +129,10 @@ nav{
   position: relative;
 }
 
-.overlay > div {
+.overlay>div {
   position: inherit;
-  z-index: 10; /* Ensures content stays above the overlay */
+  z-index: 10;
+  /* Ensures content stays above the overlay */
 }
 
 .overlay::after {
@@ -135,8 +142,10 @@ nav{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, #ffffff, #ffffff40); /* Adjust gradient as needed */
-  z-index: 5; /* Ensures the overlay stays above the video but below the content */
+  background: linear-gradient(to right, #ffffff, #ffffff40);
+  /* Adjust gradient as needed */
+  z-index: 5;
+  /* Ensures the overlay stays above the video but below the content */
 }
 
 
@@ -152,29 +161,34 @@ body[data-scroll-locked] {
 .font-fancy {
   font-family: "Kaushan Script", serif;
 }
-.career-body > p, .career-body > ul{
+
+.career-body>p,
+.career-body>ul {
   margin-bottom: 32px;
 }
-.career-body > ul li{
+
+.career-body>ul li {
   list-style-type: circle;
   list-style-position: inside;
 }
 
-.application-form input{
+.application-form input {
   padding: 24px 16px;
   border-radius: 0;
 }
-.application-form input[type="file"]{
+
+.application-form input[type="file"] {
   padding: 8px;
   border-color: transparent;
   cursor: crosshair;
 }
-.application-form label{
+
+.application-form label {
   color: hsl(var(--primary-foreground));
 }
 
 @media only screen and (max-width: 768px) {
-  .application-form input{
+  .application-form input {
     padding: 20px;
   }
 }

@@ -15,10 +15,10 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import {applicationFormSchema} from "@/lib/zodSchemas"
+import { applicationFormSchema } from "@/lib/zodSchemas"
 
 
-export default function JobApplicationForm() {
+export default function JobApplicationForm({ destination }) {
 
     const form = useForm({
         resolver: zodResolver(applicationFormSchema),
@@ -26,7 +26,8 @@ export default function JobApplicationForm() {
     });
 
     function onSubmit(data) {
-        console.log(data);
+        const formData = { ...data, jobId: destination.jobId }
+        console.log(formData);
     }
 
 

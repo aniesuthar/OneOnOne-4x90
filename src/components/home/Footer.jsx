@@ -126,7 +126,7 @@ export function FooterMain({ onCareer }) {
                         </Link>
                     </div>
                 }
-                <div className=' mb-16'></div>
+                <div className='mb-28 lg:mb-16'></div>
             </BoxLayout>
         </div>
     )

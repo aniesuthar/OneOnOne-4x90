@@ -36,7 +36,7 @@ const departmentData = `{
     about,
     body
   }
-}`;
+}`; 
 
 export const postQuery = groq`*[_type == "post"] ${postData}`;
 
@@ -50,5 +50,10 @@ export const postQueryByCategory = groq`*[_type == "post" && category->slug.curr
 
 //Career --------------------
 export const careerQueryByID = groq`*[_type == "career" && id.current == $id][0] ${careerData}`;
+
+export const departmentQueryWithSearch = groq`*[_type == "department" && slug.current == $slug][0] ${departmentData} {
+    "careers": careers[title match $searchTerm || location match $searchTerm],
+    name, slug
+  }`;
 
 export const departmentQueryByDepartment = groq`*[_type == "department" && slug.current == $slug][0] ${departmentData}`;

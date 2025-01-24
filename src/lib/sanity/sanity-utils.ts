@@ -2,7 +2,7 @@ import ImageUrlBuilder from "@sanity/image-url";
 import { createClient, type QueryParams } from "next-sanity";
 import sanityConfig from "./sanityConfig";
 import { Blog } from "./sanity-types";
-import { careerQueryByID, departmentQueryByDepartment, postQuery, postQueryBySlug } from "./sanity-query";
+import { careerQueryByID, departmentQueryByDepartment, departmentQueryWithSearch, postQuery, postQueryBySlug } from "./sanity-query";
 
 export const sanityClient = createClient(sanityConfig);
 
@@ -64,6 +64,17 @@ export const getCareerPostById = async (id: string) => {
   const data = await sanityFetch({
     query: careerQueryByID,
     qParams: { id },
+    tags: ["career", "department"],
+  });
+
+  return data;
+};
+
+
+export const getDepartmentsCareerBySlugWithSearch = async (slug: string, searchTerm: string) => {
+  const data = await sanityFetch({
+    query: departmentQueryWithSearch,
+    qParams: { slug, searchTerm },
     tags: ["career", "department"],
   });
 
