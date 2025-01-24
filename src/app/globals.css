@@ -32,7 +32,7 @@ nav{
     --popover-foreground: 0 0% 3.9%;
     --primary: 197 100% 22%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 83 95% 38%;
+    --secondary: 84 80% 38%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
@@ -95,11 +95,11 @@ nav{
   }
 
   h2 {
-    @apply text-3xl lg:text-4xl font-bold leading-snug;
+    @apply text-3xl lg:text-4xl font-semibold leading-snug;
   }
 
   h3 {
-    @apply text-2xl font-bold leading-normal;
+    @apply text-2xl font-semibold leading-normal;
   }
 
   h4 {
@@ -161,7 +161,7 @@ body[data-scroll-locked] {
 }
 
 .application-form input{
-  padding: 32px;
+  padding: 24px 16px;
   border-radius: 0;
 }
 .application-form input[type="file"]{
@@ -177,4 +177,9 @@ body[data-scroll-locked] {
   .application-form input{
     padding: 20px;
   }
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
 }

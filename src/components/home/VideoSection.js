@@ -16,6 +16,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Link from 'next/link'
+import BoxLayout from '../common/Box'
 
 
 const videos = [
@@ -53,7 +54,7 @@ const videos = [
 
 export default function VideoSection() {
     return (
-        <div className='m-auto'>
+        <BoxLayout className='m-auto'>
             <Carousel
                 opts={{
                     align: "start",
@@ -73,7 +74,7 @@ export default function VideoSection() {
                 <CarouselPrevious className="hidden lg:static"/>
                 <CarouselNext className="hidden lg:static"/>
             </Carousel>
-        </div>
+        </BoxLayout>
 
     )
 }

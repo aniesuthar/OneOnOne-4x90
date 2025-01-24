@@ -1,12 +1,16 @@
 import JobDetails from '@/components/career/JobDetails'
 import BoxLayout from '@/components/common/Box'
 import JobApplicationForm from '@/components/common/JobApplicationForm'
+import { getCareerPostById } from '@/lib/sanity/sanity-utils';
 import React from 'react'
 
-export default function page() {
+export default async function page({ params }) {
+
+    const jobDetails = await getCareerPostById(params.jobId);
+
     return (
         <React.Fragment>
-            <JobDetails />
+            <JobDetails job={jobDetails} />
             <div className='bg-secondary/10'>
                 <BoxLayout className="text-primary py-10 space-y-8 lg:space-y-16">
                     <h2 className='lg:text-center font-medium'>Start Your Career Right</h2>
@@ -40,8 +44,8 @@ export default function page() {
             </div>
             <div className='bg-primary py-20'>
                 <BoxLayout className="application-form space-y-10">
-                        <h2 className='font-medium text-center text-primary-foreground'>Apply Now</h2>
-                        <JobApplicationForm/>
+                    <h2 className='font-medium text-center text-primary-foreground'>Apply Now</h2>
+                    <JobApplicationForm />
                 </BoxLayout>
             </div>
         </React.Fragment>

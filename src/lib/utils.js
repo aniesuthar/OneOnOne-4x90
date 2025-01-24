@@ -1,3 +1,4 @@
+import { createClient } from "@sanity/client";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge"
 
@@ -17,4 +18,11 @@ export function initPlatform(H) {
     apikey: APIKEY,
   });
   return platform;
-} 
+}
+
+
+const sanityClient = createClient({
+  projectId: "bas4ugja",
+  dataset: "production",
+  useCdn: true,
+});

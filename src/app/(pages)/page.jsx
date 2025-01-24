@@ -1,3 +1,5 @@
+"use client"
+import React from 'react'
 import HeroSection from '@/components/common/SectionComponents'
 import HomeOne from '@/components/home/HomeOne'
 import HomeOne2 from '@/components/home/HomeOne2'
@@ -6,10 +8,19 @@ import HomeTwo from '@/components/home/HomeTwo'
 import OurTeamSection from '@/components/home/OurTeamSection'
 import VideoSection from '@/components/home/VideoSection'
 import HomeHeroImg from '@/assets/images/home-hero.jpg'
-import React from 'react'
 import CaringJournal from '@/components/services/CaringJournal'
+import { usePopup } from '@/contexts/PopupProvider'
+import OfferPopup from '@/components/popups/Offer'
 
 export default function page() {
+  // const { showPopup } = usePopup();
+
+  // React.useEffect(() => {
+  //   showPopup(<OfferPopup />, 1000);
+  //   return () => {
+  //   };
+  // }, []);
+
   return (
     <>
       <HeroSection

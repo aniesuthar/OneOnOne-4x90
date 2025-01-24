@@ -18,7 +18,7 @@ export default function ContactUsButton({ className }) {
 
 export function CallUsButton({ className }) {
     return (
-        <Link href="tel:+123456789">
+        <Link href="tel:+123456789" className='inline-block'>
             <Button
                 className={cn(
                     "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-8 text-sm md:text-md lg:text-lg font-bold",

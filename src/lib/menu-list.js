@@ -78,4 +78,57 @@ export const careerMenuList = [
     },
 ]
 
-export const NonTransparentHeader = ["/career", "/services"]
+export const footerMenuList = [
+    {
+        title: "About Us",
+        href: "/about-us",
+    },
+    {
+        title: "Why One on One",
+        href: "/why-one-on-one",
+    },
+    {
+        title: "Careers",
+        href: "/careers",
+    },
+    {
+        title: "Blogs",
+        href: "/blog",
+    },
+]
+
+export const careerFooterMenuList = [
+    [
+
+        {
+            title: "Caregiving",
+            href: "/careers/caregiving",
+        },
+        {
+            title: "Nursing",
+            href: "/careers/nursing",
+        },
+        {
+            title: "Other Careers",
+            href: "#",
+        },
+    ],
+    [
+        {
+            title: "Why Us",
+            href: "/why-one-on-one",
+        },
+        {
+            title: "Blogs",
+            href: "/blog",
+        },
+        {
+            title: "Main Site",
+            href: "/",
+        },
+    ]
+]
+
+
+export const NonTransparentHeader = ["/career", "/services", "/locations", "/blog"]
+export const NoFooterWithSideText = ["/career", "/services"]

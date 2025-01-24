@@ -7,6 +7,7 @@ import CaringJournal from './CaringJournal';
 import { useParams, usePathname } from 'next/navigation';
 import { servicesDatas } from '@/lib/servicesData';
 import { cn, slugify } from '@/lib/utils';
+import BoxLayout from '../common/Box';
 
 export default function ServiceLayout() {
 
@@ -20,21 +21,23 @@ export default function ServiceLayout() {
                 style={{ backgroundImage: `url(${serviceData.section1.img})` }}
                 className='bg-cover bg-center min-h-fit lg:h-[80vh] overlay content-center flex items-center'
             >
-                <div className='w-full lg:w-1/2 p-8 lg:p-20 space-y-6 lg:ml-24'>
-                    <h1 className='text-primary text-4xl lg:text-6xl lg:mr-60'>{serviceData.section1.heading}</h1>
-                    <p>
-                        {serviceData.section1.desc.split("</br>").map((line, index) => (
-                            <span key={index} className="block my-4">
-                                {line}
-                            </span>
-                        ))}
-                    </p>
-                    <CallUsButton />
-                </div>
+                <BoxLayout>
+                    <div className='w-full md:w-full xl:w-3/5 py-8 lg:py-20 space-y-6'>
+                        <h1 className='text-primary text-4xl lg:text-6xl lg:mr-60'>{serviceData.section1.heading}</h1>
+                        <p>
+                            {serviceData.section1.desc.split("</br>").map((line, index) => (
+                                <span key={index} className="block my-4">
+                                    {line}
+                                </span>
+                            ))}
+                        </p>
+                        <CallUsButton />
+                    </div>
+                </BoxLayout>
             </div>
 
             {/* SEC 2  */}
-            <div className='bg-secondary text-center p-8 lg:p-20 text-white'>
+            <div className='bg-primary text-center p-8 lg:p-20 text-primary-foreground'>
                 <div className='max-w-[1440px] m-auto space-y-4'>
                     {!!serviceData.section2.heading.length &&
                         <h2 className='text-xl lg:text-3xl'>{serviceData.section2.heading}</h2>

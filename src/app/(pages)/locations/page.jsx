@@ -38,34 +38,37 @@ export default function page() {
             </div>
             <div>
                 <BoxLayout className="py-20">
-                    <Tabs defaultValue="canada" className=" max-w-[840px] m-auto">
+                    <div className='max-w-[840px] m-auto'>
+
+                        {/* <Tabs defaultValue="canada" className=" max-w-[840px] m-auto">
                         <TabsList className="block m-auto w-fit mb-12">
                             <TabsTrigger value="canada">Canada Locations</TabsTrigger>
                             <TabsTrigger value="us">US Locations</TabsTrigger>
-                        </TabsList>
-                        <TabsContent value="canada" className="m-auto space-y-4">
-                            {locationsList.map((area, i) => (
-                                <React.Fragment key={i}>
-                                    <h3>{area.region}</h3>
-                                    <div className="columns-2 lg:columns-4 text-primary">
-                                        {area.locations?.map((location) => (
-                                            <Link
-                                                href={`/locations${location.link}`}
-                                                key={location.link}
-                                                className="block m-2 hover:underline"
-                                            >
-                                                {location.name}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </React.Fragment>
-                            ))
-                            }
-                        </TabsContent>
-                        <TabsContent value="us">
-                            Make changes to your account here.
-                        </TabsContent>
-                    </Tabs>
+                        </TabsList> */}
+                        {/* <TabsContent value="canada" className="m-auto space-y-4"> */}
+                        {locationsList.map((area, i) => (
+                            <React.Fragment key={i}>
+                                <h3 className='mb-4'>{area.region}</h3>
+                                <div className="columns-2 lg:columns-4 text-primary">
+                                    {area.locations?.map((location) => (
+                                        <Link
+                                            href={`/locations${location.link}`}
+                                            key={location.link}
+                                            className="block mb-2 hover:underline bg-primary/5 hover:bg-primary/10 px-2 py-1 border-l border-primary"
+                                        >
+                                            {location.name}
+                                        </Link>
+                                    ))}
+                                </div>
+                            </React.Fragment>
+                        ))
+                        }
+                        {/* </TabsContent> */}
+                        {/* <TabsContent value="us">
+                        Make changes to your account here.
+                    </TabsContent> */}
+                        {/* </Tabs> */}
+                    </div>
                 </BoxLayout>
             </div>
         </div>

@@ -19,9 +19,11 @@ import { careerList } from '@/lib/career-list';
 import { Button } from '@/components/ui/button';
 
 
-export default function DepratmentsJobList() {
-    const { department } = useParams();
-    const careerDepartment = careerList.find((dept) => dept.department == department);
+export default function DepratmentsJobList({departmentData}) {
+    const {name: department, slug, careers} = departmentData;
+    const departmentSlug = slug.current;
+    // const { department } = useParams();
+    // const careerDepartment = careerList.find((dept) => dept.department == department);
     return (
         <div>
             <div className='bg-primary py-12 lg:py-24'>
@@ -52,16 +54,16 @@ export default function DepratmentsJobList() {
             </div>
             <div>
                 <BoxLayout className="py-6 space-y-4">
-                    {careerDepartment.careerList.map((career, i) => (
-                        <Link className='block text-primary border-b border-primary py-8 space-y-4' key={i} href={`/careers/${department}/${career.id}`}>
+                    {careers.map((career, i) => (
+                        <Link className='block text-primary border-b border-primary py-8 space-y-4' key={i} href={`/careers/${departmentSlug}/${career.id.current}`}>
                             <div className='flex justify-between flex-col lg:flex-row '>
                                 <h3 className='font-medium'>
                                     {career.title}
                                     <span className='text-sm capitalize p-1 bg-primary text-primary-foreground'>
-                                        {careerDepartment.department}
+                                        {department}
                                     </span>
                                 </h3>
-                                <span className='text-sm'> ID #{career.id}</span>
+                                <span className='text-sm'> ID #{career.id.current}</span>
                             </div>
                             <p className='text-base font-semibold'><LocationOnIcon /> {career.location}</p>
                             <p className='text-base flex flex-col lg:flex-row gap-4 justify-between'>{career.about}  <EastIcon className='ml-auto' /></p>

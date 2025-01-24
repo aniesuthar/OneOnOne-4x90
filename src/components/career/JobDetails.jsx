@@ -5,11 +5,14 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import BoxLayout from '@/components/common/Box';
 import { Button } from '@/components/ui/button';
 import { careerList } from '@/lib/career-list';
+import RenderBodyContent from '../blog/RenderBodyContent';
 
-export default function JobDetails() {
-    const { department, jobId } = useParams();
-    const depratmentsCarrerList = careerList.find((dept) => dept.department == department)
-    const job = depratmentsCarrerList.careerList.find((career) => career.id == jobId)
+export default function JobDetails({ job }) {
+
+    // const { department, jobId } = useParams();
+    // const depratmentsCarrerList = careerList.find((dept) => dept.department == department);
+    // const job = depratmentsCarrerList?.careerList?.find((career) => career.id == jobId);
+
     return (
         <div>
             {job ?
@@ -31,10 +34,7 @@ export default function JobDetails() {
                     <BoxLayout className="py-12">
                         {
                             !!job.body?.length ?
-                                <div
-                                    className="prose max-w-none text-primary career-body"
-                                    dangerouslySetInnerHTML={{ __html: job.body }}
-                                />
+                                <RenderBodyContent post={job} />
                                 :
                                 <p>No Details to show!</p>
                         }

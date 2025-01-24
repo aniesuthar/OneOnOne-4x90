@@ -1,7 +1,11 @@
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/home/Footer";
+import { PopupProvider } from "@/contexts/PopupProvider";
 import WheelEventListner from "@/lib/WheelEventforMap"
+import FixedSideContact from "@/components/popups/FixedSideContact"
+import BottomBarCTA from "@/components/popups/BottomBarCTA"
+
 
 export const metadata = {
   title: "One to One",
@@ -30,10 +34,16 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className="antialiased">
-        <Header />
-        {children}
-        <Footer />
-        <WheelEventListner/>
+        <PopupProvider>
+          <Header />
+
+          <FixedSideContact />
+          <BottomBarCTA/>
+
+          {children}
+          <Footer />
+          <WheelEventListner />
+        </PopupProvider>
       </body>
     </html>
   );

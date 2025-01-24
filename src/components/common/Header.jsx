@@ -63,7 +63,7 @@ export default function Header() {
 
         <div className='flex items-center gap-12'>
           {/* Navigation Menu */}
-          <div className='hidden lg:flex nav-cont flex-wrap justify-center gap-4 lg:gap-8 w-full lg:w-auto items-center font-bold text-sm lg:text-base'>
+          <div className='hidden md:flex nav-cont flex-wrap justify-center gap-8 w-full lg:w-auto items-center font-bold text-sm lg:text-base'>
             {menu?.map((menuItem, index) => (
               menuItem.hasChildren ? (
                 <HoverCard key={index} openDelay={0} closeDelay={200}>
@@ -87,16 +87,16 @@ export default function Header() {
           </div>
 
           {/* Action Buttons */}
-          <div className='hidden action-btn-cont lg:flex flex-col lg:flex-row items-center gap-12 mt-4 lg:mt-0'>
+          <div className='hidden action-btn-cont md:flex flex-col lg:flex-row items-center gap-12 mt-4 lg:mt-0'>
             {onCareer ?
               <Link href="/"><Button variant="secondary" >Go to Main site</Button> </Link>
               :
               <>
-                <div className='call-num text-center lg:text-left'>
+                <div className='call-num text-center hidden xl:block lg:text-left'>
                   <span className='block text-xs lg:text-sm'>Call us <b>toll-free</b> any time 24/7</span>
                   <h2 className='block text-lg lg:text-2xl font-bold'>1-877-588-8609</h2>
                 </div>
-                <div className='call-btn'>
+                <div className='call-btn hidden lg:block'>
                   <CallUsButton />
                 </div>
               </>
@@ -105,7 +105,7 @@ export default function Header() {
 
           {/* Mobile  */}
 
-          <div className='flex sm:hidden'>
+          <div className='flex md:hidden'>
             <Link href="tel:1-877-588-8609" className='mr-4 p-2 flex items-center justify-center rounded-xl bg-primary text-primary-foreground'>
               <PhoneIcon />
             </Link>
