@@ -38,7 +38,7 @@ export default function ServiceLayout() {
 
             {/* SEC 2  */}
             <div className='bg-primary text-center p-8 lg:p-20 text-primary-foreground'>
-                <div className='max-w-[1440px] m-auto space-y-4'>
+                <BoxLayout className='space-y-4'>
                     {!!serviceData.section2.heading.length &&
                         <h2 className='text-xl lg:text-3xl'>{serviceData.section2.heading}</h2>
                     }
@@ -52,11 +52,11 @@ export default function ServiceLayout() {
                             ))}
                         </p>
                     }
-                </div>
+                </BoxLayout>
             </div>
 
             {/* SEC 3  */}
-            <div className='flex flex-col lg:flex-row max-w-[1420px] m-auto'>
+            <BoxLayout className='flex flex-col lg:flex-row'>
                 <div className={cn('order-2 lg:order-1 w-full p-8 lg:p-16 lg:pl-0', !!serviceData.section3.img && "lg:w-3/5")}>
                     {!!serviceData.section3.quote &&
                         <p className='pt-8 text-lg mb-12 font-fancy'>
@@ -112,41 +112,47 @@ export default function ServiceLayout() {
                     >
                     </div>
                 }
-            </div>
+            </BoxLayout>
 
             {/* SEC CARDS  */}
             {serviceData.sectionCards &&
                 <div className='flex flex-col lg:flex-row my-8'>
-                    <div className='w-full p-8 lg:p-16'>
+                    {/* <div className='w-full p-8 lg:p-16'> */}
+                    <BoxLayout className={cn('flex overflow-x-scroll [&::-webkit-scrollbar]:hidden', !serviceData.sectionCards?.img && "text-center")}>
                         {serviceData.sectionCards?.cards?.length &&
-                            <div className={cn('flex flex-wrap max-w-[1420px] m-auto', !serviceData.sectionCards?.img && "text-center")}>
-                                {serviceData.sectionCards?.cards?.map((card, idx) => (
-                                    <div className={cn('basis-1 text-primary-foreground', `lg:basis-1/${serviceData.sectionCards?.cards.length}`)} key={idx}>
-                                        <div key={idx} className={cn('p-6 bg-primary h-full', !!card.img?.length && "rounded-2xl")} style={{ marginRight: idx === serviceData.sectionCards?.cards.length - 1 ? 0 : '1.5rem' }}>
-                                            {!!card.img?.length &&
-                                                <img src={card.img} alt={card.img} className='mb-6 rounded-lg max-h-60 object-cover w-full' />
-                                            }
-                                            <h3 className='text-lg font-bold'>{card.title}</h3>
+                            serviceData.sectionCards?.cards?.map((card, idx) => (
+                                <div className={cn('basis-1 text-primary min-w-[320px]',
+                                    serviceData.sectionCards?.cards.length == 5 && `lg:basis-1/5`,
+                                    serviceData.sectionCards?.cards.length == 4 && `lg:basis-1/4`,
+                                    serviceData.sectionCards?.cards.length == 3 && `lg:basis-1/3`,
+                                    serviceData.sectionCards?.cards.length == 2 && `lg:basis-1/2`,
+                                )}
+                                    key={idx}>
+                                    <div key={idx} className={cn('p-2 bg-primary-foreground border-2 border-primary/50 h-full', !!card.img?.length && "rounded-lg")} style={{ marginRight: idx === serviceData.sectionCards?.cards.length - 1 ? 0 : '1.5rem' }}>
+                                        {!!card.img?.length &&
+                                            <img src={card.img} alt={card.img} className='mb-4 rounded-sm max-h-60 object-cover w-full' />
+                                        }
+                                        <h3 className='text-lg font-bold'>{card.title}</h3>
 
-                                            <p className='text-sm'>{card.desc.split("</br>").map((line, index) => (
-                                                <span key={index} className="block my-4">
-                                                    {line}
-                                                </span>
-                                            ))}
-                                            </p>
-                                        </div>
+                                        <p className='text-sm'>{card.desc.split("</br>").map((line, index) => (
+                                            <span key={index} className="block my-4">
+                                                {line}
+                                            </span>
+                                        ))}
+                                        </p>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))
                         }
-                    </div>
+                    </BoxLayout>
+                    {/* </div> */}
                 </div>
             }
 
             {/* SEC 4  */}
             {serviceData.section4 &&
                 <div className='bg-secondary/10'>
-                    <div className={cn('mx-4 max-w-[1420px] m-auto flex flex-col lg:flex-row h-fit text-center', serviceData.section4?.twoCol && "p-16 gap-8")}>
+                    <BoxLayout className={cn('flex flex-col lg:flex-row h-fit text-center', serviceData.section4?.twoCol && "p-16 gap-8")}>
                         {serviceData.section4?.twoCol ?
                             serviceData.section4.cols?.map((col, i) => (
                                 <React.Fragment key={i}>
@@ -184,7 +190,7 @@ export default function ServiceLayout() {
                                 </div>
                             </>
                         }
-                    </div>
+                    </BoxLayout>
                 </div>
             }
             <CaringJournal />

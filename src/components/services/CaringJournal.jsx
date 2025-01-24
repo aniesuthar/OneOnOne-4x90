@@ -21,7 +21,7 @@ const caringJournalData = [
     },
 ];
 
-export default function CaringJournal({className}) {
+export default function CaringJournal({ className }) {
     return (
         <div className={cn("text-center px-6 py-12 space-y-12", className)}>
             <div className="max-w-4xl mx-auto">
@@ -31,19 +31,22 @@ export default function CaringJournal({className}) {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                {caringJournalData.map((item, index) => (
-                    <div key={index} className="bg-primary/10 p-4 text-center rounded-3xl">
-                        <div
-                            className="w-full h-48 md:h-60 bg-cover bg-center rounded-xl"
-                            style={{ backgroundImage: `url(${item.img})` }}
-                        ></div>
-                        <div className="mt-6">
-                            <h4 className="text-primary text-lg md:text-xl">{item.title}</h4>
-                            <p className="text-sm md:text-base mt-2">{item.desc}</p>
+            <div className='overflow-x-scroll [&::-webkit-scrollbar]:hidden'>
+                <div className="flex gap-6 max-w-6xl mx-auto">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"> */}
+                    {caringJournalData.map((item, index) => (
+                        <div key={index} className="min-w-[320px] basis-1/3 bg-primary/10 p-4 text-center rounded-3xl">
+                            <div
+                                className="w-full h-48 md:h-60 bg-cover bg-center rounded-xl"
+                                style={{ backgroundImage: `url(${item.img})` }}
+                            ></div>
+                            <div className="mt-6">
+                                <h4 className="text-primary text-lg md:text-xl">{item.title}</h4>
+                                <p className="text-sm md:text-base mt-2">{item.desc}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
