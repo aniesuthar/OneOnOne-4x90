@@ -77,7 +77,7 @@ export const careerMenuList = [
 export const footerMenuList = [
     {
         title: "About Us",
-        href: "/about-us",
+        href: "/our-team",
     },
     {
         title: "Why One on One",

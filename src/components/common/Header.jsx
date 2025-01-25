@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import LogoImg from "@/assets/images/logo.png";
 import { careerMenuList, menuList, NonTransparentHeader } from '@/lib/menu-list';
 import Link from 'next/link';
@@ -33,6 +33,7 @@ import { Button } from '../ui/button';
 export default function Header() {
   const [isSheetOpen, setIsSheetOpen] = React.useState(false);
   const [menu, setMenu] = React.useState();
+  const [openDropdown, setDropdown] = React.useState();
 
   const closeSheet = () => {
     setIsSheetOpen(false);
@@ -51,8 +52,33 @@ export default function Header() {
 
   const haveBg = NonTransparentHeader.some((headerPath) => path.startsWith(headerPath));
 
+  const [scrolledEnough, setScrolledEnough] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 160) {
+        setScrolledEnough(true);
+      } else {
+        setScrolledEnough(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <nav className={cn('p-2 bg-transparent absolute top-0 left-0 right-0', haveBg && 'static')}>
+    <nav
+    className={cn(
+      'p-2 bg-transparent top-0 left-0 right-0 transition-all duration-300', // Smooth transition for all properties
+      scrolledEnough ? 'fixed animate-slideDown bg-primary-foreground p-0 shadow-md' : 'absolute top-0 h-20', // Adjust height and positioning for sticky and absolute
+      haveBg && 'static'
+    )}
+    >
       <Box className="flex justify-between text-primary" >
         {/* Logo Section */}
         <div className='logo-cont'>
@@ -68,9 +94,9 @@ export default function Header() {
               menuItem.hasChildren ? (
                 <HoverCard key={index} openDelay={0} closeDelay={200}>
                   <HoverCardTrigger>
-                    <span className='menu-item cursor-pointer'>{menuItem.title}</span>
+                    <span className='menu-item cursor-pointer py-2'>{menuItem.title}</span>
                   </HoverCardTrigger>
-                  <HoverCardContent className="w-fit font-medium space-y-2 text-sm">
+                  <HoverCardContent className="w-fit font-medium space-y-2 text-sm hoverCard hoverCard[&::after]:shadow-md">
                     {menuItem.children.map((item, idx) => (
                       <Link key={idx} className='block hover:underline' href={item.href}>
                         {item.title}

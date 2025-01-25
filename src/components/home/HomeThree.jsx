@@ -5,14 +5,14 @@ import BoxLayout from '../common/Box';
 
 
 //ICONS
-import icon1 from "@/assets/images/icons/1.png";
-import icon2 from "@/assets/images/icons/2.png";
-import icon3 from "@/assets/images/icons/3.png";
-import icon4 from "@/assets/images/icons/4.png";
-import icon5 from "@/assets/images/icons/5.png";
-import icon6 from "@/assets/images/icons/6.png";
-import icon7 from "@/assets/images/icons/7.png";
-import icon8 from "@/assets/images/icons/8.png";
+import icon1 from "@/assets/images/icons/servicesIcons/1.png";
+import icon2 from "@/assets/images/icons/servicesIcons/2.png";
+import icon3 from "@/assets/images/icons/servicesIcons/3.png";
+import icon4 from "@/assets/images/icons/servicesIcons/4.png";
+import icon5 from "@/assets/images/icons/servicesIcons/5.png";
+import icon6 from "@/assets/images/icons/servicesIcons/6.png";
+import icon7 from "@/assets/images/icons/servicesIcons/7.png";
+import icon8 from "@/assets/images/icons/servicesIcons/8.png";
 
 
 export default function HomeThree() {
@@ -20,51 +20,51 @@ export default function HomeThree() {
     const servicesData = [
         {
             IconComponent: icon1.src,
-            title: "Companionship",
+            title: "Live 24/7 Scheduling Support",
             description:
-                "Isolation is a leading cause of depression in seniors. Our trusted caregivers offer social interaction for physical and mental well-being.",
+                "With fast, easy access, we’re always just a phone call away.",
         },
         {
             IconComponent: icon2.src,
-            title: "Meal Preparation",
+            title: "Licensed & Insured Caregivers",
             description:
-                "A nutritious diet comes with many health benefits. Our caregivers love to prepare delicious meals, including specific ethnic dishes if requested.",
+                "Find the perfect match. All in home caregivers are kind, trained and insured.",
         },
         {
             IconComponent: icon3.src,
-            title: "Homemaking",
+            title: "No Long-term Contracts",
             description:
-                "We offer light housekeeping services to help with daily activities. Seniors can stay at home in a safe and clean environment.",
+                "Find the perfect match. All in home caregivers are kind, trained and insured.",
         },
         {
             IconComponent: icon4.src,
-            title: "Home Nursing Care",
+            title: "Alzheimer's & Dementia Care",
             description:
-                "For optimal health, our RNs and Licensed Practical Nurses help prevent illness and increase comfort at home.",
+                "Get total peace of mind with caregivers experienced in accommodating age-related challenges.",
         },
         {
             IconComponent: icon5.src,
-            title: "Caregiver Relief / Respite Care",
+            title: "Full-Spectrum Home Care",
             description:
-                "It takes time and energy to care for a loved one. Respite care offers temporary relief to recharge and enjoy time with Mom or Dad.",
+                "You should never feel ‘stuck’. Short-term or long-term, all home care assistance is flexible.",
         },
         {
             IconComponent: icon6.src,
-            title: "Personal Care",
+            title: "Companionship",
             description:
-                "From bathing to shaving, we design personal in-home senior care to support day-to-day independence.",
+                "Isolation is a leading cause of depression in seniors. Our carefully matched, trusted caregivers offer social interaction for physical and mental well-being.",
         },
         {
             IconComponent: icon7.src,
-            title: "End-of-Life Care",
+            title: "Caregiver Relief/Respite Care",
             description:
-                "Everyone deserves comfort, quality of life, and respect for personal choices. We support you at home or in a care facility.",
+                "It takes time and energy to care for a loved one. Respite care offers temporary relief so you can recharge and enjoy time with Mom or Dad.",
         },
         {
             IconComponent: icon8.src,
-            title: "Transportation / Accompaniment",
+            title: "End-of-Life Care",
             description:
-                "Let us arrange for transportation and accompaniment with a friendly caregiver to appointments and activities.",
+                "Everyone deserves comfort, quality of life, and respect for personal treatment decisions and cultural or spiritual concerns. We provide support and family support at home or in a care facility.",
         },
     ];
 
@@ -72,7 +72,7 @@ export default function HomeThree() {
         // <div className='flex flex-col lg:flex-row gap-24 px-4 lg:px-20 py-16'>
         <div>
 
-            <BoxLayout className="py-16 space-y-6">
+            <BoxLayout className="py-16 space-y-12">
                 {/* Left Section */}
                 {/* <div className='lg:w-1/5 w-full space-y-8'>
                     <div className='flex gap-4 justify-start'>
@@ -84,16 +84,16 @@ export default function HomeThree() {
                 <h2 className='text-primary' >Service We Provide-</h2>
 
                 {/* Right Section */}
-                <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 w-full'>
+                <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 lg:gap-y-16 w-full'>
                     {servicesData.map((service, index) => {
                         const { IconComponent, title, description } = service;
                         return (
-                            <div key={index} className='flex gap-6 space-y-6'>
+                            <div key={index} className='flex gap-6 justify-start space-y-6'>
                                 <span className='m-auto bg-primary size-16 aspect-square rounded-full flex items-center justify-center'>
                                     <img src={IconComponent} className='text-primary-foreground text-xl lg:text-2xl' />
                                 </span>
-                                <div>
-                                    <p className='text-secondary font-bold text-lg lg:text-2xl'>{title}</p>
+                                <div className='!m-0'>
+                                    <p className='font-semibold text-lg lg:text-xl'>{title}</p>
                                     <p className='text-sm'>{description}</p>
                                 </div>
                             </div>

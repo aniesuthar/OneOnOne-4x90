@@ -9,6 +9,7 @@ import OurTeamSection from '@/components/home/OurTeamSection'
 import VideoSection from '@/components/home/VideoSection'
 import HomeHeroImg from '@/assets/images/home-hero.jpg'
 import CaringJournal from '@/components/services/CaringJournal'
+import TestimonialSection from '@/components/home/Testimonial'
 import { usePopup } from '@/contexts/PopupProvider'
 import OfferPopup from '@/components/popups/Offer'
 
@@ -36,6 +37,7 @@ export default function page() {
       <HomeThree />
       <VideoSection />
       <OurTeamSection />
+      <TestimonialSection/>
       <CaringJournal />
     </>
   )

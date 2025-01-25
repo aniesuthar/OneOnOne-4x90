@@ -4,7 +4,7 @@ import Link from 'next/link';
 import GetFreeConsultForm from "@/components/common/GetFreeConsultForm"
 import FooterImgCta from "@/assets/images/cta-footer.jpg";
 import LogoFooter from "@/assets/images/logo-final.png"
-import BoxLayout from '../common/Box';
+import BoxLayout from './Box';
 import { careerFooterMenuList, footerMenuList, menuList, NoFooterWithSideText } from '@/lib/menu-list';
 import { Button } from '../ui/button';
 import { usePathname } from 'next/navigation';
@@ -18,28 +18,36 @@ export default function Footer() {
     const noSideText = NoFooterWithSideText.some((headerPath) => path.startsWith(headerPath));
 
     const onCareer = path.startsWith("/careers") ? true : false;
+    const onHome = path == "/" ? true : false;
 
     if (!onCareer) {
         return (
             <footer>
-                <div className='bg-primary space-y-4 py-20 application-form'>
-                    <BoxLayout className="space-y-10">
-                        {noSideText &&
-                            <h2 className='text-center text-primary-foreground font-medium'>Get Started with a Free Consult</h2>
-                        }
-                        <div className="flex flex-col lg:flex-row gap-14">
-                            {!noSideText &&
-                                <h1 className="w-full xl:w-1/3 text-5xl lg:text-8xl lg:leading-tight text-primary-foreground/60">Get Started with a Free Consult</h1>
+                {!onHome &&
+                    <div className='bg-primary space-y-4 py-20 application-form'>
+                        <BoxLayout className="space-y-10">
+                            {noSideText &&
+                                <h2 className='text-center text-primary-foreground font-medium'>Get Started with a Free Consult</h2>
                             }
-                            <GetFreeConsultForm />
-                        </div>
-                    </BoxLayout>
-                </div>
+                            <div className="flex flex-col lg:flex-row gap-14">
+                                {!noSideText &&
+                                    <h1 className="w-full xl:w-1/3 text-5xl lg:text-8xl lg:leading-tight text-primary-foreground/60">Get Started with a Free Consult</h1>
+                                }
+                                <GetFreeConsultForm />
+                            </div>
+                        </BoxLayout>
+                    </div>
+                }
                 <div>
-                    <BoxLayout className="p-10">
+                    <BoxLayout className={cn("p-10 flex flex-col lg:flex-row justify-center gap-4 lg:gap-48 items-center", onHome && "p-0 pt-6")}>
                         <p className='text-base text-center'>
-                            Looking for a career with One-On-One? <Link href="#">Apply here</Link>
+                            Looking for a career with One-On-One? <Link href="#" className='underline text-primary'>Apply here</Link>
                         </p>
+                        {onHome &&
+                            <Button variant="secondary" className="rounded-none font-semibold px-16 py-8" size="lg">
+                                SPEAK TO A LIVE PERSON NOW
+                            </Button>
+                        }
                     </BoxLayout>
                 </div>
                 <FooterMain onCareer={onCareer} />
@@ -120,13 +128,13 @@ export function FooterMain({ onCareer }) {
                 </div>
                 {!onCareer &&
                     <div className='flex flex-col lg:flex-row lg:justify-between items-start lg:items-center py-4'>
-                        <p className='text-base'>© {new Date().getFullYear()} {defaults.SITE_NAME}</p>
+                        <p className='text-base'>© {new Date().getFullYear()} {defaults.SITE_NAME} Inc. All Rights Reserved.</p>
                         <Link href="/privacy-policy">
                             Privacy Policy
                         </Link>
                     </div>
                 }
-                <div className='mb-28 lg:mb-16'></div>
+                <div className='mb-24 lg:mb-14'></div>
             </BoxLayout>
         </div>
     )
