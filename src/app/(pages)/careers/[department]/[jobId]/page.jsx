@@ -30,7 +30,7 @@ export default async function page({ params }) {
                             },
                             {
                                 title: "A Culture of Bold Kindness",
-                                desc: "At Nurse Next Door, we are kind and care about each other. We give 110% to everything we do. We’re not afraid to speak our mind or make mistakes. We believe everyone’s contribution matters."
+                                desc: "At One-On-One, we are kind and care about each other. We give 110% to everything we do. We’re not afraid to speak our mind or make mistakes. We believe everyone’s contribution matters."
                             },
                         ].map((item) => (
                             <div className='text-primary space-y-2'>

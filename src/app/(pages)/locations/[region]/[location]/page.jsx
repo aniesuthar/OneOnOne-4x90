@@ -102,13 +102,13 @@ export default function page() {
                 className={`bg-cover bg-center min-h-[60vh] lg:h-[80vh] overlay lg:content-center content-end`}
             >
                 <BoxLayout className="flex items-center" >
-                    <div className="w-full lg:w-1/2 py-8 px-4 lg:pt-28 lg:py-20 lg:px-0 space-y-6">
+                    <div className="w-full lg:w-1/2 py-8 px-4 lg:pt-28 lg:py-20 lg:px-0 space-y-4 lg:space-y-6">
                         <h1 className="text-primary text-4xl lg:text-6xl lg:mr-60">
                             Home Care Services in <span className='capitalize'>{location}</span>, ON
                         </h1>
 
                         <p>
-                            At Nurse Next Door, we go beyond home care. We believe seniors should have choice in everything they do. We match you or your loved one with the perfect caregiver, with care tailored to fit individual needs. We also provide 24/7 live support, providing you with peace of mind.
+                            At One-On-One, we go beyond home care. We believe seniors should have choice in everything they do. We match you or your loved one with the perfect caregiver, with care tailored to fit individual needs. We also provide 24/7 live support, providing you with peace of mind.
                         </p>
 
                         <div className='flex gap-4'>
@@ -123,7 +123,7 @@ export default function page() {
             <div>
                 <BoxLayout>
                     <div className='space-y-6 text-primary text-center py-10'>
-                        <h2>Nurse Next Door Services</h2>
+                        <h2>One-On-One Services</h2>
                         <p>It's about caring, not just health care. That's why we're here to help get you back to doing the things you love. Whether it's a little help around the house with meal preparation or medication reminders, let us do the caring.</p>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 gap-y-16 py-10'>
@@ -191,7 +191,7 @@ export default function page() {
                             <h2 className='text-2xl lg:text-4xl font-normal md:font-medium'>
                                 We're Local!
                             </h2>
-                            <p className='text-lg lg:text-xl'>Our Nurse Next Door office in <span className='capitalize'>{location}</span> is available to help 24/7.</p>
+                            <p className='text-lg lg:text-xl'>Our One-On-One office in <span className='capitalize'>{location}</span> is available to help 24/7.</p>
                         </div>
                         <div>
                             <p>Some of the communities we serve</p>

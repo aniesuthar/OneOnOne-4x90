@@ -40,7 +40,7 @@ export default function page() {
                 description="Our Talent Is Caring™. Having a caregiver come to your home should be reassuring, not overwhelming. We manage everything, every step of the way."
                 ctaDesc="Get connected immediately to our Care Team."
             />
-            <div className='bg-secondary text-secondary-foreground pt-12 pb-36'>
+            <div className='bg-primary text-secondary-foreground pt-12 pb-36'>
                 <BoxLayout>
                     <div className='lg:text-center mb-8 lg:mb-16'>
                         <h6 className='font-fancy'>Introducing</h6>
@@ -49,7 +49,7 @@ export default function page() {
                     <div className='flex flex-col lg:flex-row gap-4 lg:gap-24'>
                         <div className='space-y-8'>
                             <p>
-                                Mom and Dad deserve the best. To find a perfect match, each Nurse Next Door caregiver is carefully screened, interviewed, and selected not only for experience, but their passion for making a difference.
+                                Mom and Dad deserve the best. To find a perfect match, each One-On-One caregiver is carefully screened, interviewed, and selected not only for experience, but their passion for making a difference.
                             </p>
                             <p>
                                 From daily grocery shopping, meal preparation, and walks in the park to medication reminders and companionship, our caregivers make it possible for seniors to live in their own home. It’s about caring, not just healthcare™.
@@ -69,9 +69,9 @@ export default function page() {
             <div className='bg-secondary/10'>
                 <BoxLayout className="flex flex-col lg:flex-row gap-4 lg:gap-16 items-center space-y-4 py-8 lg:py-16" >
                     <div className='space-y-8'>
-                        <div>
+                        <div className='space-y-4'>
                             <h2 className='text-primary'>Rigorous Hiring and Screening</h2>
-                            <p>All of our caregivers and nurses are qualified, attentive, and willing to go above and beyond. Here’s how we train the team at Nurse Next Door.</p>
+                            <p>All of our caregivers and nurses are qualified, attentive, and willing to go above and beyond. Here’s how we train the team at One-On-One.</p>
                         </div>
                         <div className='space-y-4'>
                             <div>

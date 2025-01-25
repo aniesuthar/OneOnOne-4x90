@@ -72,10 +72,6 @@ export const careerMenuList = [
         title: "Nursing",
         href: "/careers/nursing",
     },
-    {
-        title: "Other Careers",
-        href: "#",
-    },
 ]
 
 export const footerMenuList = [
@@ -107,10 +103,6 @@ export const careerFooterMenuList = [
         {
             title: "Nursing",
             href: "/careers/nursing",
-        },
-        {
-            title: "Other Careers",
-            href: "#",
         },
     ],
     [

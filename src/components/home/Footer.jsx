@@ -38,7 +38,7 @@ export default function Footer() {
                 <div>
                     <BoxLayout className="p-10">
                         <p className='text-base text-center'>
-                            Looking for a career with Nurse Next Door? <Link href="#">Apply here</Link>
+                            Looking for a career with One-On-One? <Link href="#">Apply here</Link>
                         </p>
                     </BoxLayout>
                 </div>
@@ -113,7 +113,7 @@ export function FooterMain({ onCareer }) {
                                 "We are here for you 24/7"
                             }
                         </p>
-                        <Link className='text-sm sm:text-base font-bold inline-block text-secondary' href={`tel:${defaults.CONTACT_NO}`}>
+                        <Link className='text-lg sm:text-base font-bold inline-block text-secondary' href={`tel:${defaults.CONTACT_NO}`}>
                             <Phone /> {defaults.CONTACT_NO}
                         </Link>
                     </div>
@@ -144,7 +144,7 @@ export function FooterMain({ onCareer }) {
 //             </p>
 //         </div>
 //         <p className='text-base sm:text-lg -mt-6'>
-//             Looking for a career with Nurse Next Door? <Link href="#" className='text-primary underline'>Apply here</Link>
+//             Looking for a career with One-On-One? <Link href="#" className='text-primary underline'>Apply here</Link>
 //         </p>
 //     </div>
 // </div>
@@ -192,7 +192,7 @@ export function FooterMain({ onCareer }) {
 // {/* Footer Bottom */ }
 // <div className='p-8 bg-primary border-t'>
 //     <div className='max-w-[1360px] m-auto text-primary-foreground flex flex-col sm:flex-row items-center justify-between'>
-//         <p className='text-sm sm:text-base'>© 2025 Nurse Next Door Professional Home Care Services Inc. All Rights Reserved.</p>
+//         <p className='text-sm sm:text-base'>© 2025 One-On-One Professional Home Care Services Inc. All Rights Reserved.</p>
 //         <div className='space-x-4 sm:space-x-8 mt-4 sm:mt-0'>
 //             <Link href="#">PRIVACY POLICY</Link>
 //             <Link href="#">NEWS AND PRESS</Link>

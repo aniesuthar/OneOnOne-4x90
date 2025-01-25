@@ -22,7 +22,7 @@ export default function HomeOne() {
                         Home Care Services that Make Lives Better
                     </h1>
                     <p className='text-lg lg:text-xl text-center lg:text-left'>
-                        At Nurse Next Door, we go beyond home care. We believe seniors should have choice in everything they do. We match you or your loved one with the perfect caregiver, with care tailored to fit individual needs. We also provide 24/7 live support, providing you with peace of mind.
+                        At One-On-One, we go beyond home care. We believe seniors should have choice in everything they do. We match you or your loved one with the perfect caregiver, with care tailored to fit individual needs. We also provide 24/7 live support, providing you with peace of mind.
                     </p>
                     <div>
                         <CheckPoint text="Live 24/7 Support" />
@@ -38,7 +38,7 @@ export default function HomeOne() {
 
                     {/* Location Input Section */}
                     <div className='w-full lg:w-1/2 p-6 lg:p-12 space-y-4 z-10'>
-                        <h5 className='text-center lg:text-left'>Find your local Nurse Next Door</h5>
+                        <h5 className='text-center lg:text-left'>Find your local One-On-One</h5>
                         <h2 className='text-2xl lg:text-4xl text-center lg:text-left'>Where do you need care?</h2>
                         <Input 
                             className="border-primary border-2 lg:border-8 rounded-md lg:rounded-none p-4 lg:p-8" 

@@ -7,8 +7,8 @@ export default function ImageCards({ cardData, className }) {
         <div className={cn('flex flex-wrap flex-col lg:flex-row gap-4 w-full', !cardData.img && "text-center", className)}>
             {!!cardData.length &&
                 cardData.map((card, idx) => (
-                    <div className={cn('text-primary-foreground flex-1',)} key={idx}>
-                        <div key={idx} className={cn('p-6 bg-primary h-full', !!card.img?.length && "rounded-2xl")} >
+                    <div className={cn('text-primary flex-1',)} key={idx}>
+                        <div key={idx} className={cn('p-6 bg-primary-foreground border-4 border-primary/40 h-full', !!card.img?.length && "rounded-2xl")} >
                             <img src={!card.img.length ? Img1.src : card.img} alt={card.img} className='mb-6 rounded-lg max-h-60 object-cover w-full' />
                             <h3 className='text-lg font-bold'>{card.title}</h3>
 

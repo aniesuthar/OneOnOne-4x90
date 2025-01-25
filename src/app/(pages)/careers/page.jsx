@@ -124,7 +124,7 @@ export default function page() {
           <h2 className='text-primary mx-6'>Here’s what our team has to say</h2>
           <div className='space-y-6 mx-6 lg:mx-60'>
             <img src={UserImg.src} alt="" className='m-auto rounded-full size-24 object-cover' />
-            <p className='text-base'>“I feel supported and understood as a new caregiver to Nurse Next Door. I feel that Nurse Next Door is helpful, efficient and organized as well.”
+            <p className='text-base'>“I feel supported and understood as a new caregiver to One-On-One. I feel that One-On-One is helpful, efficient and organized as well.”
               Amber”</p>
           </div>
         </BoxLayout>
@@ -141,12 +141,12 @@ export default function page() {
       </div>
       <div>
         <BoxLayout className="text-primary text-center space-y-6 py-12">
-          <h2>Why Nurse Next Door?</h2>
+          <h2>Why One-On-One?</h2>
           <div className='text-center space-y-2 flex flex-col lg:flex-row gap-6 lg:gap-16'>
             {[
               {
                 title: "Who We Are",
-                desc: "Founded in 2001 in Vancouver, BC, Canada, Nurse Next Door Home Care Services is a global home care brand that helps seniors stay at home. We operate internationally with 400+ locations."
+                desc: "Founded in 2001 in Vancouver, BC, Canada, One-On-One Home Care Services is a global home care brand that helps seniors stay at home. We operate internationally with 400+ locations."
               },
               {
                 title: "What Sets Us Apart",

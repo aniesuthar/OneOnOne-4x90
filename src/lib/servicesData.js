@@ -21,7 +21,7 @@ export const servicesDatas = [
                 img: Img1.src
             },
             section2: {
-                heading: "From personal care to nursing care, find perfect caregivers with Nurse Next Door",
+                heading: "From personal care to nursing care, find perfect caregivers with One-On-One",
                 desc: `Whether your loved one requires light help around the home or more specialized care for chronic conditions—our amazing senior care team is here to support you every step of the way. We’ll guide you through the entire home health care process and work closely with you and other family members to help you find a person who deeply understands your loved one’s needs, matches their personality, and brings joy to their day.`,
             },
             section3: {
@@ -81,7 +81,7 @@ export const servicesDatas = [
                     quote: `Three out of five people with dementia will go missing as some individuals with Alzheimer’s disease may become disoriented when they are outside their home or in unfamiliar surroundings.`,
                     author: `Alzheimer’s Association`
                 },
-                desc: `Along with preliminary symptoms, there are also substantial risks with Alzheimer’s and related dementias like wandering. To prevent wandering, Nurse Next Door’s priority through its dementia care is clients’ safety and allowing them to receive care in a familiar setting – their own home.`,
+                desc: `Along with preliminary symptoms, there are also substantial risks with Alzheimer’s and related dementias like wandering. To prevent wandering, One-On-One’s priority through its dementia care is clients’ safety and allowing them to receive care in a familiar setting – their own home.`,
                 img: Sr2.src,
             },
             sectionCards: {
@@ -94,7 +94,7 @@ export const servicesDatas = [
                     {
                         title: "Caregivers trained in Dementia care & Alzheimer’s care",
                         img: Img1.src,
-                        desc: "Our caregivers are trained in dementia care & Alzheimer’s care so that they can competently deal with Alzheimer’s and related dementia. We recognize that each situation is unique. We understand how Alzheimer’s & dementia can affect clients and their families as it is a difficult process for both. Nurse Next Door provides support and guidance to clients and their families in dealing with ongoing challenges and responsibilities of providing care."
+                        desc: "Our caregivers are trained in dementia care & Alzheimer’s care so that they can competently deal with Alzheimer’s and related dementia. We recognize that each situation is unique. We understand how Alzheimer’s & dementia can affect clients and their families as it is a difficult process for both. One-On-One provides support and guidance to clients and their families in dealing with ongoing challenges and responsibilities of providing care."
                     },
                     {
                         title: "Relieve Family Members",
@@ -104,7 +104,7 @@ export const servicesDatas = [
                     {
                         title: "Activities of Daily Living & Independence",
                         img: Img1.src,
-                        desc: "Alzheimer’s and related dementia can greatly impact a senior’s daily routine so Nurse Next Door’s goal is to help clients get back to doing what they love. Our caregivers will not only help clients with instrumental activities of daily living (IADLs) and personal activities of daily living (ADLs), but they will also ensure that clients are able to maintain their independence under our caregivers’ supervision."
+                        desc: "Alzheimer’s and related dementia can greatly impact a senior’s daily routine so One-On-One’s goal is to help clients get back to doing what they love. Our caregivers will not only help clients with instrumental activities of daily living (IADLs) and personal activities of daily living (ADLs), but they will also ensure that clients are able to maintain their independence under our caregivers’ supervision."
                     },
                 ]
             },
@@ -134,22 +134,22 @@ export const servicesDatas = [
             },
             section2: {
                 heading: `In-Home Nursing Care That Brings Balance to Your Life`,
-                desc: `As part of our in-home nursing care services program, you have the freedom to maintain your optimal health around familiar sights, sounds, family and friends. All of Nurse Next Door’s Registered Nurses and Licensed/Registered Practical Nurses are carefully selected to match your personality and variety of special interests. Your nurse will support you through around-the-clock care proving you with wonderful company, assisting you in staying in great health and making sure you are as comfortable as possible in your surroundings.`,
+                desc: `As part of our in-home nursing care services program, you have the freedom to maintain your optimal health around familiar sights, sounds, family and friends. All of One-On-One’s Registered Nurses and Licensed/Registered Practical Nurses are carefully selected to match your personality and variety of special interests. Your nurse will support you through around-the-clock care proving you with wonderful company, assisting you in staying in great health and making sure you are as comfortable as possible in your surroundings.`,
             },
             section3: {
                 heading: `Qualified, 24 Hour Nursing Care in Your Home`,
-                desc: `Ensuring you can continue your personal relationships with your family and circle of friends is one of Nurse Next Door’s top priorities. That’s why our around-the-clock home care program is designed to include open visiting hours for anyone coming to and from your home. Your relations can come and go as they please, join you for a spot of tea or stop-in for mealtime just as they always have.</br>
+                desc: `Ensuring you can continue your personal relationships with your family and circle of friends is one of One-On-One’s top priorities. That’s why our around-the-clock home care program is designed to include open visiting hours for anyone coming to and from your home. Your relations can come and go as they please, join you for a spot of tea or stop-in for mealtime just as they always have.</br>
 
                     Our licensed care team will be available whenever you need them. From scheduled nursing visits to hourly care, someone will always be there to help you 24 hours a day, seven days a week. We work with your medical team to ensure you’re receiving the highest level of professional support care that you require. It’s our mission to make sure you can continue to live in the comfort of your own home while still receiving the love and support you need.`,
                 img: Img1.src,
             },
             section4: {
                 heading: `Medical & Non Medical Private Nursing Care Available`,
-                desc: `According to a recent study by AARP (American Association of Retired Persons), 90% of seniors prefer at home nursing because they’re able to stay in their own homes for as long as possible. It’s our goal to make this happen for you. That’s why our home care nursing program is an integral part of Nurse Next Door’s services, thoughtfully designed to meet your specific medical and personal needs every step of the way.</br>
+                desc: `According to a recent study by AARP (American Association of Retired Persons), 90% of seniors prefer at home nursing because they’re able to stay in their own homes for as long as possible. It’s our goal to make this happen for you. That’s why our home care nursing program is an integral part of One-On-One’s services, thoughtfully designed to meet your specific medical and personal needs every step of the way.</br>
 
                     We understand how important it is for you to maintain your own sense of independence and feel comfortable with the care being provided to you every day. Our senior personal care services team will select an LPN or RN that suits your personal needs best so that your one-on-one care will be as pleasant and as enjoyable as possible.</br>
 
-                    Your safety is also of utmost importance to us. All of Nurse Next Door’s medical caregivers are screened rigorously for you and are highly qualified to provide direct care to you and your loved ones. We recognize self-care tasks such as medical administration and personal hygiene can be a private and sensitive matter, so we ensure you feel at ease and as relaxed as possible with your chosen nurse.`,
+                    Your safety is also of utmost importance to us. All of One-On-One’s medical caregivers are screened rigorously for you and are highly qualified to provide direct care to you and your loved ones. We recognize self-care tasks such as medical administration and personal hygiene can be a private and sensitive matter, so we ensure you feel at ease and as relaxed as possible with your chosen nurse.`,
             },
         }
     },
@@ -166,7 +166,7 @@ export const servicesDatas = [
             section2: {
                 heading: ``,
                 desc: `Recovering from surgery can be a stressful time, but it doesn’t have to be. Our in-home nursing care services allow you to focus on recovering in the comfort of your own home, while we take care of a number of your post-operative care needs.</br>
-                        Nurse Next Door’s respite programs give you and other family members space away from your caregiving duties to relax, recharge, and come back to the person you care for with more energy and renewed focus. Our respite services are designed to support your wellbeing and strengthen the bond with your loved one when you get back.</br>
+                        One-On-One’s respite programs give you and other family members space away from your caregiving duties to relax, recharge, and come back to the person you care for with more energy and renewed focus. Our respite services are designed to support your wellbeing and strengthen the bond with your loved one when you get back.</br>
                         Whether you need a few hours or a few weeks away, we’re here to provide the in home respite care your loved one needs. Talk to us about respite care services today.`,
             },
             section3: {
@@ -193,7 +193,7 @@ export const servicesDatas = [
         data: {
             section1: {
                 heading: "Senior Companionship Care",
-                desc: `Nurse Next Door understands you may need help with certain activities and a friend along the way. We recognize that feeling lonely is one of the leading causes of depression in seniors and our goal is to reverse the effects of isolation with senior companionship.`,
+                desc: `One-On-One understands you may need help with certain activities and a friend along the way. We recognize that feeling lonely is one of the leading causes of depression in seniors and our goal is to reverse the effects of isolation with senior companionship.`,
                 img: Img1.src
             },
             section2: {
@@ -220,7 +220,7 @@ export const servicesDatas = [
                     {
                         title: "Hobbies and Interests",
                         img: Img1.src,
-                        desc: "Nurse Next Door knows that communication and socialization with friends and family is also important in keeping your spirits up. Time spent in solitude can increase the risk of depression and anxiety but getting involved with the community, organizing events and reading books with your companion can create a positive and lasting sense of well-being.</br>                   Our senior companion program is tailor-made to suit your lifestyle and your current needs. Have a new activity you’d like to try? We will be sure to match you with someone experienced in this area. Have a special interest you want to keep pursuing? We’ll pair you with a companion who understands your likes and dislikes guaranteeing you have the most delightful experience possible."
+                        desc: "One-On-One knows that communication and socialization with friends and family is also important in keeping your spirits up. Time spent in solitude can increase the risk of depression and anxiety but getting involved with the community, organizing events and reading books with your companion can create a positive and lasting sense of well-being.</br>                   Our senior companion program is tailor-made to suit your lifestyle and your current needs. Have a new activity you’d like to try? We will be sure to match you with someone experienced in this area. Have a special interest you want to keep pursuing? We’ll pair you with a companion who understands your likes and dislikes guaranteeing you have the most delightful experience possible."
                     },
                 ]
             },
@@ -238,20 +238,20 @@ export const servicesDatas = [
             },
             section2: {
                 heading: "Devoted & Experienced End of Life Care",
-                desc: `You deserve comfort, quality of life, and respect for your personal treatment decisions and cultural or spiritual concerns at every stage. Nurse Next Door promises to provide you the necessary family support at home or in a care facility through our end-of-life care program.</br>
+                desc: `You deserve comfort, quality of life, and respect for your personal treatment decisions and cultural or spiritual concerns at every stage. One-On-One promises to provide you the necessary family support at home or in a care facility through our end-of-life care program.</br>
                     It’s our mission to ensure this passage of your life is as burden-free as possible. That is why our comprehensive health services team will communicate closely with you and your family to ensure your continuity of care is seamless and stress-free. We want you to maintain as much dignity as possible throughout the entire process and will provide you with around-the-clock emotional and physical support with each day.`,
             },
             section3: {
                 heading: "",
-                desc: `Your caregiver and Nurse Next Door’s comprehensive health care program team will discuss your wishes and preferences with you and take these into account as they work closely with you to plan your care program. We will also take your family and loved ones’ wishes into careful consideration so that everyone is on the same page going forward.</br>
-                        Nurse Next Door will put your needs first. We want to know where you would like to receive your care and where you want to spend your remaining days. You can receive end-of-life care at home or receive hospice services in a care facility, depending on your needs and desires.</br>
-                        We recognize that the best end-of-life care is based on the understanding that this phase of life is natural and inevitable but can also put a tremendous emotional toll on you and your loved ones. Nurse Next Door’s main goals are to maintain your ultimate comfort, carefully explain the choices available to you and support your individuality to the best of our abilities.</br>
-                        We respect the psychosocial and spiritual needs of you and your family and aim to reduce any inappropriate and stressful decisions regarding the setting of your care, providing you with the option of home care whenever possible. Nurse Next Door’s comprehensive health care team will look after your preparation for the end-of-life, your relationships with your family members and healthcare providers, supporting you in achieving a sense of completion to the best of our ability.`,
+                desc: `Your caregiver and One-On-One’s comprehensive health care program team will discuss your wishes and preferences with you and take these into account as they work closely with you to plan your care program. We will also take your family and loved ones’ wishes into careful consideration so that everyone is on the same page going forward.</br>
+                        One-On-One will put your needs first. We want to know where you would like to receive your care and where you want to spend your remaining days. You can receive end-of-life care at home or receive hospice services in a care facility, depending on your needs and desires.</br>
+                        We recognize that the best end-of-life care is based on the understanding that this phase of life is natural and inevitable but can also put a tremendous emotional toll on you and your loved ones. One-On-One’s main goals are to maintain your ultimate comfort, carefully explain the choices available to you and support your individuality to the best of our abilities.</br>
+                        We respect the psychosocial and spiritual needs of you and your family and aim to reduce any inappropriate and stressful decisions regarding the setting of your care, providing you with the option of home care whenever possible. One-On-One’s comprehensive health care team will look after your preparation for the end-of-life, your relationships with your family members and healthcare providers, supporting you in achieving a sense of completion to the best of our ability.`,
                 img: sectionImg2.src,
             },
             section4: {
                 heading: "End of Life Care Where & When You Need It",
-                desc: `Our greatest goal is to support you and your family’s acceptance of your end-of-life care phase and to discuss any changing aspects of your care process openly and honestly. Most importantly, we guarantee you will never be alone. Your caregiver, Nurse Next Door care team and other health care providers will remain in close communication and contact with you and your family at every stage to ensure this chapter is as comfortable and peaceful as possible.`,
+                desc: `Our greatest goal is to support you and your family’s acceptance of your end-of-life care phase and to discuss any changing aspects of your care process openly and honestly. Most importantly, we guarantee you will never be alone. Your caregiver, One-On-One care team and other health care providers will remain in close communication and contact with you and your family at every stage to ensure this chapter is as comfortable and peaceful as possible.`,
             },
         }
     },
@@ -269,7 +269,7 @@ export const servicesDatas = [
             section2: {
                 heading: "",
                 desc: `Thats why our homemaking services for the elderly are available to you every day of the week to make sure you have an orderly and dust-free home to live in free of any hassle.</br>
-                        Nurse Next Door senior personal care services provides daily cleaning and straightening up for your at-home tasks so you dont have to worry about a thing.`,
+                        One-On-One senior personal care services provides daily cleaning and straightening up for your at-home tasks so you dont have to worry about a thing.`,
             },
             section3: {
                 heading: "Home Making & House Cleaning Services for the Elderly",
@@ -294,7 +294,7 @@ export const servicesDatas = [
         data: {
             section1: {
                 heading: "In-Home Cooking for the Elderly",
-                desc: `Nurse Next Door knows how important mealtime is throughout your morning, afternoon and evening. Our care team provides thoughtful in-home cooking services for seniors to ensure you have the most enjoyable culinary experience at every meal.`,
+                desc: `One-On-One knows how important mealtime is throughout your morning, afternoon and evening. Our care team provides thoughtful in-home cooking services for seniors to ensure you have the most enjoyable culinary experience at every meal.`,
                 img: Img1.src
             },
             section2: {
@@ -304,13 +304,13 @@ export const servicesDatas = [
             section3: {
                 heading: "Let Us Do the Cooking for You",
                 desc: `We know that you may be an amazing chef yourself with a knack and love for meal preparation and cooking for family and friends. We understand you might not have a driver’s license, so it can be difficult to go to grocery stores on your own, and walking around a store with a shopping cart or a full basket might be tricky.</br>
-                        As part of Nurse Next Door’s meals for seniors services, your caregiver will handle all of your grocery shopping for you each week or accompany you on your daily errands if you prefer selecting your own ingredients from your favorite food shops. Have fun preparing a meal together with your Nurse Next Door home caregiver whenever you feel inspired. Share your menu wish list with your Care Manager and we will help to make your culinary dreams come true!`,
+                        As part of One-On-One’s meals for seniors services, your caregiver will handle all of your grocery shopping for you each week or accompany you on your daily errands if you prefer selecting your own ingredients from your favorite food shops. Have fun preparing a meal together with your One-On-One home caregiver whenever you feel inspired. Share your menu wish list with your Care Manager and we will help to make your culinary dreams come true!`,
                 img: sectionImg2.src,
             },
             section4: {
                 heading: "Friendly, Flexible and Personal Meals",
                 desc: `Your caregiver will lovingly prepare meals for you at breakfast, lunch and dinner based on your culinary favorites and your most coveted snacks too. Tea-time with cookies after lunch? A relaxing nightcap of warm milk and honey just before bedtime? She will go the extra mile to prepare all of your comfort foods and more.</br>
-                        Your nutrition and health is as important to us as your meal satisfaction. That’s why Nurse Next Door provides healthy meals for seniors, giving you the option to enjoy foods that match your specific dietary needs, food preferences and nutritional requirements while still tasting delicious. Are you on a gluten free diet? Cutting back on sugar and salt? No problem! Your caregiver is well-educated with a deep knowledge about how to prepare yummy meals for the elderly that still meet your nutritional needs. She will create a special shopping list for all of your dining needs as well, taking your special dietary information into consideration.</br>
+                        Your nutrition and health is as important to us as your meal satisfaction. That’s why One-On-One provides healthy meals for seniors, giving you the option to enjoy foods that match your specific dietary needs, food preferences and nutritional requirements while still tasting delicious. Are you on a gluten free diet? Cutting back on sugar and salt? No problem! Your caregiver is well-educated with a deep knowledge about how to prepare yummy meals for the elderly that still meet your nutritional needs. She will create a special shopping list for all of your dining needs as well, taking your special dietary information into consideration.</br>
                         Rest easy knowing you can enjoy your breakfast, lunch and dinner every day in the comfort of your own home with a heaping spoonful of care and an extra dash of goodness `,
             },
         }
@@ -322,18 +322,18 @@ export const servicesDatas = [
         data: {
             section1: {
                 heading: "Personal Care",
-                desc: `We understand how important it is to maintain your sense of independence. Some days, handling day-to-day tasks on your own, such as bathing and doing your own hair, can feel like quite a challenge. That’s why Nurse Next Door is ready to alleviate any extra stress in your life with our senior personal care services.`,
+                desc: `We understand how important it is to maintain your sense of independence. Some days, handling day-to-day tasks on your own, such as bathing and doing your own hair, can feel like quite a challenge. That’s why One-On-One is ready to alleviate any extra stress in your life with our senior personal care services.`,
                 img: Img1.src
             },
             section2: {
                 heading: "Personal Care Services That Go Above and Beyond",
                 desc: `We know it’s much easier to tackle your responsibilities when helped by a caring friend, confidante and personal assistant. Your caregiver is ready to support you with any personal hygiene and task that needs attending to, always with a smile and respect for your way of doing things.</br>
-                        Nurse Next Door’s personal care services are specifically designed to preserve and maintain your dignity as you continue to perform your daily activities in your own home. Your caregiver will be at the ready when necessary to give you the extra support and care you require with all of your routine activities. From oral care and shaving to receiving daily medication reminders, Nurse Next Door’s comprehensive health services program takes all of your special needs into consideration in order to provide you with the most personalized care possible. We want you to be able to continue to lead the same lifestyle you’ve always led with ease and peace of mind.</br>
+                        One-On-One’s personal care services are specifically designed to preserve and maintain your dignity as you continue to perform your daily activities in your own home. Your caregiver will be at the ready when necessary to give you the extra support and care you require with all of your routine activities. From oral care and shaving to receiving daily medication reminders, One-On-One’s comprehensive health services program takes all of your special needs into consideration in order to provide you with the most personalized care possible. We want you to be able to continue to lead the same lifestyle you’ve always led with ease and peace of mind.</br>
                         We recognize having someone in your home to assist with private and personal matters can be a sensitive situation and we want to be sure you feel as comfortable and relaxed as possible. That’s why we go the extra mile to match you with a caregiver who has compassion for your particular living situation as well as a connection to you and your personal interests. Our comprehensive health care team strives to pair you with the perfect caregiver for you and your family so that your personal care experience is not only helpful but pleasant and enjoyable too.`,
             },
             section3: {
                 heading: " Qualified Personal Care Assistant",
-                desc: `Nurse Next Door is committed to giving you the highest quality of personal care possible. Your caregiver has been fully screened, assessed and prepped, ready to happily assist you with your everyday tasks and more monumental ones too. If you have mobility challenges such as getting out of bed and into a wheelchair, your caregiver and our Nurse Next Door care team will be ready with the proper equipment and a helping hand to assist you.</br>
+                desc: `One-On-One is committed to giving you the highest quality of personal care possible. Your caregiver has been fully screened, assessed and prepped, ready to happily assist you with your everyday tasks and more monumental ones too. If you have mobility challenges such as getting out of bed and into a wheelchair, your caregiver and our One-On-One care team will be ready with the proper equipment and a helping hand to assist you.</br>
                 We know that last-minute situations may occur from time to time as well. Your caregiver will be prepared to step-in at a moment’s notice when you need some extra help during the day or evening. Rest assured knowing you will always have support around the clock with the activities happening in your life.`,
                 img: sectionImg2.src,
             },
@@ -347,7 +347,7 @@ export const servicesDatas = [
             section1: {
                 heading: "Caregiver Relief/Respite Care",
                 desc: `Looking after a sick loved one is a full-time role for family caregivers. And it's okay to ask for help or take a welcome break now and again. In fact, it may be essential to your own health.</br>
-                Nurse Next Door’s respite programs give you and other family members space away from your caregiving duties to relax, recharge, and come back to the person you care for with more energy and renewed focus. Our respite services are designed to support your wellbeing and strengthen the bond with your loved one when you get back.</br>
+                One-On-One’s respite programs give you and other family members space away from your caregiving duties to relax, recharge, and come back to the person you care for with more energy and renewed focus. Our respite services are designed to support your wellbeing and strengthen the bond with your loved one when you get back.</br>
                 Whether you need a few hours or a few weeks away, we're here to provide the in home respite care your loved one needs. Talk to us about respite care services today.`,
                 img: Img1.src
             },
@@ -363,14 +363,14 @@ export const servicesDatas = [
                 Types of respite care can vary. Your respite care provider can assist your loved one with many forms of care from household chores, medical support, companionship care, transportation needs, and more.</br>
 
 
-                Nurse Next Door respite care philosophy</br>
+                One-On-One respite care philosophy</br>
                 We believe Happier Aging should include more than basic respite care. Our caregivers can bring your loved one or family member back into the community, allow them to meet up with friends, and provide assistance with their favourite hobbies, faith based services, and planned activities.`,
                 img: sectionImg2.src,
             },
             section4: {
                 heading: "Respite services that fit your schedule",
                 desc: `A short break can help you make it through the long haul ahead of you. This is why our caregiver respite care services are tailored to each individual and family situation to ensure you get the necessary relief and support you need at exactly the right time.</br>
-                Before deciding on the respite services you and your family might need, our care manager will sit down and speak with you to discuss care service options. Do you need a few hours off twice a week? 24 hours away from the house? Or perhaps a regular weekly night out with your partner or friends? Nurse Next Door provides short-term hourly care and can offer overnight stays whenever your loved one needs it.</br>
+                Before deciding on the respite services you and your family might need, our care manager will sit down and speak with you to discuss care service options. Do you need a few hours off twice a week? 24 hours away from the house? Or perhaps a regular weekly night out with your partner or friends? One-On-One provides short-term hourly care and can offer overnight stays whenever your loved one needs it.</br>
                 Once you’ve decided when your loved one will receive care, we can work with you to design a respite care program that supports their lifestyle. What do they need most at this moment? Companionship and meal preparation? Or maybe some light housekeeping and personal care? We’ll discuss every detail with you and create a plan that meets the needs of your loved one and gives you a welcome break.`,
             },
         }
@@ -388,7 +388,7 @@ export const servicesDatas = [
             section2: {
                 heading: "Senior Transportation Services",
                 desc: `Ride services for seniors are not always readily available and we want to ensure your life is as stress-free as possible. We appreciate that traveling is often more enjoyable with a friend or family member which is why our senior transportation team and your caregiver are readily available to you at all hours of the day, all seasons and every holiday so you never have to go anywhere alone.</br>
-                Senior transportation services is just one part of Nurse Next Door’s comprehensive health services — making sure you never have to worry about how to travel to and from your day-to-day destinations and favorite locales. Rest easy knowing you will always have a ride and a caregiver to accompany you wherever you’d like to go.</br>
+                Senior transportation services is just one part of One-On-One’s comprehensive health services — making sure you never have to worry about how to travel to and from your day-to-day destinations and favorite locales. Rest easy knowing you will always have a ride and a caregiver to accompany you wherever you’d like to go.</br>
                 It’s our goal to make sure you have comfort knowing you can go anywhere and do anything at any time, always with your caregiver providing you comforting conversation and friendly assistance. You can maintain your sense of freedom and have the peace of mind knowing you will always have company on your travels.`,
             },
             section3: {
@@ -399,7 +399,7 @@ export const servicesDatas = [
                     {
                         title: "Events",
                         img: Img1.src,
-                        desc: `Have a weekly sports group or regular coffee meet-up with your friends? Feel like taking a leisurely drive to check out a new store or some beautiful scenery? Nurse Next Door provides special rides for seniors, ensuring that a driver is ready to pick you up and drop you off at your desired location at your designated time.</br>
+                        desc: `Have a weekly sports group or regular coffee meet-up with your friends? Feel like taking a leisurely drive to check out a new store or some beautiful scenery? One-On-One provides special rides for seniors, ensuring that a driver is ready to pick you up and drop you off at your desired location at your designated time.</br>
                         Your caregiver will assist you with scheduling your transportation reservation and can assist you while grocery shopping, running your personal errands or getting to and from your daily outings.`
                     },
                     {
@@ -411,7 +411,7 @@ export const servicesDatas = [
                     {
                         title: "Destinations",
                         img: Img1.src,
-                        desc: `Do you love to fly but would like a companion to navigate the cumbersome aspects of airport and travel with you? Nurse Next Door will arrange for your caregiver to accompany you on your next vacation so you don’t have to worry about the physical challenges and organizational details.</br>
+                        desc: `Do you love to fly but would like a companion to navigate the cumbersome aspects of airport and travel with you? One-On-One will arrange for your caregiver to accompany you on your next vacation so you don’t have to worry about the physical challenges and organizational details.</br>
                         Our caregiver will minimize any travel stress and hassle by driving with you to the airport and accompanying you through the check-in process. Our caregivers can even make international trips if you have plans to visit family, attend a wedding, or visit Paris for the first time.`
                     },
                 ]
@@ -430,20 +430,20 @@ export const servicesDatas = [
             },
             section2: {
                 heading: "24 Hour Alzheimer’s & Dementia Care",
-                desc: `Nurse Next Door will do everything we can to ensure you and your loved ones can maintain your normal life while still enjoying all of your favorite hobbies with the care and support you need.</br>
+                desc: `One-On-One will do everything we can to ensure you and your loved ones can maintain your normal life while still enjoying all of your favorite hobbies with the care and support you need.</br>
                 Perhaps your loved one is starting to experience symptoms of Alzheimer’s & dementia and is prone to wandering and confusion. Our mission is to eliminate your worry by providing constant care and ensuring the security of your family member every hour of the day.`,
             },
             section3: {
                 heading: "Continuous Daily Care Team",
                 desc: `Do you need someone to help you with meal preparation and house cleaning day to day? Your around-the-clock care team and caregiver will take over any tasks that need handling and accompany you on your favorite daily outings such as walking your dog or going grocery shopping. No matter the situation or occasion, you will always have someone readily available to provide assistance and companionship to you all day, every day.</br>
-                Often times a physical disability limits your ability to carry out your daily lifestyle as you used to. Nurse Next Door will be sure you and your family can always count on your caregiver to be at your home 24/7 to provide moral support, company and friendly assistance.`,
+                Often times a physical disability limits your ability to carry out your daily lifestyle as you used to. One-On-One will be sure you and your family can always count on your caregiver to be at your home 24/7 to provide moral support, company and friendly assistance.`,
                 img: sectionImg2.src,
             },
             section4: {
                 heading: "Your Around the Clock Home Care Team",
-                desc: `Your loved ones also benefit from around-the-clock care services. If they’ve been staying with you at your home but have an upcoming vacation planned, Nurse Next Door’s comprehensive health care program will schedule an immediate around-the-clock home care caregiver to maintain your continuity of care and ensure there are no gaps in your daily assistance while your family is away. No matter what situation occurs, you will have someone in your home to look after you and take care of your household tasks every day.</br>
+                desc: `Your loved ones also benefit from around-the-clock care services. If they’ve been staying with you at your home but have an upcoming vacation planned, One-On-One’s comprehensive health care program will schedule an immediate around-the-clock home care caregiver to maintain your continuity of care and ensure there are no gaps in your daily assistance while your family is away. No matter what situation occurs, you will have someone in your home to look after you and take care of your household tasks every day.</br>
                 Perhaps you’re recovering from a major surgery and require a live-in caregiver to assist you with your personal care routine such as bathing and getting in and out of bed. Our around-the-clock care will provide you with physical and emotional support throughout your recovery process.</br>
-                Nurse Next Door’s around-the-clock care gives you on-going companionship and support every day and every evening. Whether it’s 3 in the afternoon, or 3 in the middle of the night, our comprehensive health services program will support you with compassionate and attentive assistance any time you need it. From providing medication in the evening, to assisting you with getting dressed in the morning, we will ensure you have around-the-clock home care for situations that may require close monitoring. Rest easy knowing you will always have someone by your side to attend to your needs if and when necessary.
+                One-On-One’s around-the-clock care gives you on-going companionship and support every day and every evening. Whether it’s 3 in the afternoon, or 3 in the middle of the night, our comprehensive health services program will support you with compassionate and attentive assistance any time you need it. From providing medication in the evening, to assisting you with getting dressed in the morning, we will ensure you have around-the-clock home care for situations that may require close monitoring. Rest easy knowing you will always have someone by your side to attend to your needs if and when necessary.
                 It’s very important to us that you continue to preserve your sense of independence while having reassurance you will always have access to support and in-home care, overnight and throughout each day.`,
             },
         }

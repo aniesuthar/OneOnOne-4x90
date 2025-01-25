@@ -33,7 +33,7 @@ export default function page() {
                         </div>
                         <Button variant="secondary" className="py-7"><West /> See Locations List </Button>
                     </div>
-                    <p className='text-center text-base'>Senior home health care is available in the communities surrounding each of these Nurse Next Door locations.</p>
+                    <p className='text-center text-base'>Senior home health care is available in the communities surrounding each of these One-On-One locations.</p>
                 </BoxLayout>
             </div>
             <div>

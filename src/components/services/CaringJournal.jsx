@@ -42,7 +42,7 @@ export default function CaringJournal({ className }) {
                             ></div>
                             <div className="mt-6">
                                 <h4 className="text-primary text-lg md:text-xl">{item.title}</h4>
-                                <p className="text-sm md:text-base mt-2">{item.desc}</p>
+                                <p className="text-xs md:text-base mt-2">{item.desc}</p>
                             </div>
                         </div>
                     ))}

@@ -13,7 +13,7 @@ export const careerList = [
             
             <h3>Happier Aging Philosophy</h3>
             <p>
-                At Nurse Next Door, we believe that getting older doesn’t have to feel sad or helpless. Instead, aging should be celebrated. 
+                At One-On-One, we believe that getting older doesn’t have to feel sad or helpless. Instead, aging should be celebrated. 
                 That’s what we call Happier Aging. We bring Happier Aging to everyone: ourselves, our team, our community, and the world. 
                 Happier Aging starts with you.
             </p>
@@ -33,7 +33,7 @@ export const careerList = [
             
             <h3>What We Offer:</h3>
             <ul>
-                <li>Nurse Next Door People Promise, you love coming to work</li>
+                <li>One-On-One People Promise, you love coming to work</li>
                 <li>$40 per hour</li>
                 <li>Clinical trial job every 2 weeks</li>
                 <li>24/7 support center to assist with scheduling related questions</li>
@@ -67,7 +67,7 @@ export const careerList = [
             
             <p>
                 <em>
-                Nurse Next Door is an Equal Employment Opportunity employer. Our goal is to be inclusive, diverse, and representative of the communities 
+                One-On-One is an Equal Employment Opportunity employer. Our goal is to be inclusive, diverse, and representative of the communities 
                 where we work while creating an environment where every person can enjoy a successful career. This commitment applies to all candidates 
                 and employees.
                 </em>

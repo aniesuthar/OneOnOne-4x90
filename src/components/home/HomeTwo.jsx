@@ -2,6 +2,8 @@ import React from 'react';
 import S2Image from "@/assets/images/img2.jpg";
 import Link from 'next/link';
 import BoxLayout from '../common/Box';
+import { Button } from '../ui/button';
+import defaults from '@/lib/defaults';
 
 export default function HomeTwo() {
     return (
@@ -33,10 +35,12 @@ export default function HomeTwo() {
                         {/* Right Info Text */}
                         <div className='lg:w-3/5 space-y-4'>
                             <p className='text-base lg:text-lg'>
-                                It's about caring, not just health care™. We make it possible for seniors to live in their own home. Nurse Next Door home care’s extraordinary family of Caregivers can take care of your loved one so you can get back to being a daughter or son.
+                                It's about caring, not just health care™. We make it possible for seniors to live in their own home. One-On-One home care’s extraordinary family of Caregivers can take care of your loved one so you can get back to being a daughter or son.
                             </p>
-                            <Link href="#" className='text-primary text-lg lg:text-xl font-semibold inline-block'>
-                                SERVICES WE PROVIDE
+                            <Link href={`tel:${defaults.CONTACT_NO}`} className='text-primary text-lg lg:text-xl font-semibold inline-block'>
+                            <Button>
+                                Call Us Now
+                            </Button>
                             </Link>
                         </div>
                     </div>

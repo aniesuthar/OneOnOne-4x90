@@ -33,7 +33,7 @@ export default function page() {
                 description="From golf and swimming to pottery and music, happiness is about rediscovering the fun in life. We are the experts in Happier Aging."
                 ctaDesc="Get connected immediately to our Care Team."
             />
-            <div className='bg-secondary text-secondary-foreground py-12'>
+            <div className='bg-primary text-secondary-foreground py-12'>
                 <BoxLayout>
                     <div className='lg:text-center mb-8 lg:mb-16'>
                         <h6 className='font-fancy'>IWhat is Happier Aging? It starts with one simple question...</h6>
@@ -43,12 +43,12 @@ export default function page() {
                         <img src={Img1.src} alt={Img1.src} className='max-h-[460px] w-full object-cover lg:ml-10' />
                         <img src={Img1.src} alt={Img1.src} className='hidden lg:inline-block max-h-[460px] w-full object-cover -ml-10 mt-32' />
                         <div className='mt-4 lg:-mt-28 lg:m-10'>
-                            <h4>Happier Aging is Nurse Next Door’s philosophy of care: for our clients, their families, our people and everyone we meet.</h4>
+                            <h4>Happier Aging is One-On-One’s philosophy of care: for our clients, their families, our people and everyone we meet.</h4>
                         </div>
                     </div>
                     <hr className='my-8 opacity-50' />
                     <p className='lg:text-center lg:mx-32 text-base'>
-                        At Nurse Next Door, we want to change the perceptions of aging, We believe that getting older doesnt have to feel sad or helpless; instead, aging is something worth celebrating.
+                        At One-On-One, we want to change the perceptions of aging, We believe that getting older doesnt have to feel sad or helpless; instead, aging is something worth celebrating.
                         <br></br>
                         <br></br>
                         As Atul Gawande wrote in his book, Being Mortal, “Our ultimate goal, after all, is not a good death but a good life to the very end”

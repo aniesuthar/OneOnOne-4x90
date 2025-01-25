@@ -52,7 +52,7 @@ export const PopupProvider = ({ children }: { children: ReactNode }) => {
     // const { showPopup } = usePopup();
 
     React.useEffect(() => {
-        showPopup(<OfferPopup />, 1000);
+        showPopup(<OfferPopup />, 15000);
         return () => {
         };
     }, []);
