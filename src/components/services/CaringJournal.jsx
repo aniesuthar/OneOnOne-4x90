@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 const caringJournalData = [
     {
         img: Jrnl1Img.src,
-        title: "Connect with One to One",
-        desc: "Connect with your local One to One Health Care Team to start the process of setting up in-home care services.",
+        title: "Connect with ONE-ON-ONE",
+        desc: "Connect with your local ONE-ON-ONE Health Care Team to start the process of setting up in-home care services.",
     },
     {
         img: Jrnl2Img.src,
@@ -16,7 +16,7 @@ const caringJournalData = [
     },
     {
         img: Jrnl1Img.src,
-        title: "Connect with One to One Health",
+        title: "Connect with ONE-ON-ONE Health",
         desc: "Once your care plan has been developed, our Care Team will work with you to schedule your first visit. We’ll be there to provide support and assistance every step of the way.",
     },
 ];

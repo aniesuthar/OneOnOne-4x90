@@ -8,7 +8,7 @@ import BottomBarCTA from "@/components/popups/BottomBarCTA"
 
 
 export const metadata = {
-  title: "One to One",
+  title: "ONE-ON-ONE",
   description: "Home Care Services that Make Lives Better",
 };
 

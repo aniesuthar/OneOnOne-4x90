@@ -1,5 +1,5 @@
 import React from 'react'
-import CheckMark from "@/assets/images/check.png"
+import CheckMark from "@/assets/images/icons/Icon.png"
 import { cn } from '@/lib/utils'
 
 export default function CheckPoint({text, textSize}) {

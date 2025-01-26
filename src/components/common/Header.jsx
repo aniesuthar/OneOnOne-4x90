@@ -8,7 +8,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import CallUsButton from './CallUsButton';
+import {CallUsButton} from './CallUsButton';
 import {
   Sheet,
   SheetContent,
@@ -75,7 +75,7 @@ export default function Header() {
     <nav
     className={cn(
       'p-2 bg-transparent top-0 left-0 right-0 transition-all duration-300', // Smooth transition for all properties
-      scrolledEnough ? 'fixed animate-slideDown bg-primary-foreground p-0 shadow-md' : 'absolute top-0 h-20', // Adjust height and positioning for sticky and absolute
+      scrolledEnough ? 'fixed animate-slideDown bg-primary-foreground p-0 shadow-md' : 'absolute top-0', // Adjust height and positioning for sticky and absolute
       haveBg && 'static'
     )}
     >
@@ -96,9 +96,9 @@ export default function Header() {
                   <HoverCardTrigger>
                     <span className='menu-item cursor-pointer py-2'>{menuItem.title}</span>
                   </HoverCardTrigger>
-                  <HoverCardContent className="w-fit font-medium space-y-2 text-sm hoverCard hoverCard[&::after]:shadow-md">
+                  <HoverCardContent className="w-fit font-normal space-y-1 text-xs hoverCard hoverCard[&::after]:shadow-md [&>*]:border-b last:[&>*]:border-b-0">
                     {menuItem.children.map((item, idx) => (
-                      <Link key={idx} className='block hover:underline' href={item.href}>
+                      <Link key={idx} className='block border-border/10 py-2' href={item.href}>
                         {item.title}
                       </Link>
                     ))}

@@ -21,10 +21,9 @@ export function CallUsButton({ className }) {
         <Link href="tel:+123456789" className='inline-block'>
             <Button
                 className={cn(
-                    "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-8 text-sm md:text-md lg:text-lg font-bold",
+                    "px-4 py-2 md:px-6 md:py-2 lg:px-8 lg:py-6 text-sm md:text-md lg:text-lg font-bold",
                     className
                 )}
-                variant="secondary"
             >
                 Call Us Now
             </Button>

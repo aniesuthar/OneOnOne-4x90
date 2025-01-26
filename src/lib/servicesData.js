@@ -14,7 +14,7 @@ export const servicesDatas = [
         data: {
             section1: {
                 heading: "Comprehensive Home Care Service",
-                desc: `Finding home care and nursing care services that meets your loved one’s needs can be challenging. At One to One health, it’s our mission to provide the most comprehensive home health services for seniors in your area. We design a care plan that provides the personalized support and assistance they'll need to remain independent and continue living a fun, fulfilling life as they age. </br>
+                desc: `Finding home care and nursing care services that meets your loved one’s needs can be challenging. At ONE-ON-ONE health, it’s our mission to provide the most comprehensive home health services for seniors in your area. We design a care plan that provides the personalized support and assistance they'll need to remain independent and continue living a fun, fulfilling life as they age. </br>
                     Ready to see what Happier Aging® is all about? </br>
                     
                     Contact us to set up a care consult today.`,
@@ -49,11 +49,11 @@ export const servicesDatas = [
                 cols: [
                     {
                         heading: "The benefits of in home care services",
-                        desc: "One to One Health simplifies home care administration by pairing you with a dedicated care manager. They coordinate care, communication, and planning between your family, care team, doctors, and healthcare providers, easing the stress of senior care and supporting short- and long-term goals."
+                        desc: "ONE-ON-ONE Health simplifies home care administration by pairing you with a dedicated care manager. They coordinate care, communication, and planning between your family, care team, doctors, and healthcare providers, easing the stress of senior care and supporting short- and long-term goals."
                     },
                     {
                         heading: "Home health care services you can rely on",
-                        desc: "We understand the importance of consistent, reliable caregivers for quality home nursing care. At One to One, we ensure continuity of care with a familiar, dependable team, providing daily support so you can live your life as usual. Our comprehensive home care programs are designed to bring you peace of mind and happiness every day."
+                        desc: "We understand the importance of consistent, reliable caregivers for quality home nursing care. At ONE-ON-ONE, we ensure continuity of care with a familiar, dependable team, providing daily support so you can live your life as usual. Our comprehensive home care programs are designed to bring you peace of mind and happiness every day."
                     }
                 ]
             }

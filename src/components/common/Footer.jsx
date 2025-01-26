@@ -31,7 +31,7 @@ export default function Footer() {
                             }
                             <div className="flex flex-col lg:flex-row gap-14">
                                 {!noSideText &&
-                                    <h1 className="w-full xl:w-1/3 text-5xl lg:text-8xl lg:leading-tight text-primary-foreground/60">Get Started with a Free Consult</h1>
+                                    <h1 className="w-full xl:w-1/3 text-5xl lg:text-8xl lg:leading-tight text-[#A2E7F9]">Get Started with a Free Consult</h1>
                                 }
                                 <GetFreeConsultForm />
                             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                 <div>
                     <BoxLayout className={cn("p-10 flex flex-col lg:flex-row justify-center gap-4 lg:gap-48 items-center", onHome && "p-0 pt-6")}>
                         <p className='text-base text-center'>
-                            Looking for a career with One-On-One? <Link href="#" className='underline text-primary'>Apply here</Link>
+                        Looking for a career with ONE-ON-ONE Health Care ? <Link href="/careers" className='underline text-primary'>Apply here</Link>
                         </p>
                         {onHome &&
                             <Button variant="secondary" className="rounded-none font-semibold px-16 py-8" size="lg">
@@ -72,7 +72,7 @@ export function FooterMain({ onCareer }) {
             <BoxLayout className="divide-y divide-primary-foreground/20">
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:py-10 [&>div]:border-b-2 md:[&>div]:border-b-0 border-primary'>
                     <div className='flex flex-col lg:flex-row justify-between items-start gap-6 lg:items-center py-4'>
-                        {/* <h3 className='text-secondary font-medium'>One to One Health: Healthcare That Cares</h3>
+                        {/* <h3 className='text-secondary font-medium'>ONE-ON-ONE Health: Healthcare That Cares</h3>
                             <p className='text-secondary font-medium text-end'>We are here for you.</p> */}
                         <img src={LogoFooter.src} className='w-24 lg:w-60' alt="Logo-Footer" />
                     </div>

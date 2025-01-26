@@ -34,7 +34,7 @@ export default function GetFreeConsultForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div>
+                <div className="space-y-2">
                     <FormField
                         control={form.control}
                         name="seekingHomeCare"

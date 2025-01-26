@@ -27,7 +27,7 @@ export default function HomeTwo() {
                     <div className='flex flex-col lg:flex-row gap-12 lg:gap-16'>
                         {/* Left Info Box */}
                         <div className='text-center lg:w-2/5 space-y-4'>
-                            <h4 className='text-xl lg:text-2xl font-bold'>_____ WE'RE LOCAL _____</h4>
+                            <h4 className='text-xl lg:text-2xl font-bold'>_ WE'RE LOCAL _</h4>
                             <p className='text-lg italic'>Over</p>
                             <h1 className='text-6xl lg:text-8xl font-extrabold text-secondary'>200</h1>
                             <p className='text-lg italic'>locations</p>
@@ -38,7 +38,7 @@ export default function HomeTwo() {
                                 It's about caring, not just health care™. We make it possible for seniors to live in their own home. One-On-One home care’s extraordinary family of Caregivers can take care of your loved one so you can get back to being a daughter or son.
                             </p>
                             <Link href={`tel:${defaults.CONTACT_NO}`} className='text-primary text-lg lg:text-xl font-semibold inline-block'>
-                            <Button>
+                            <Button variant="secondary">
                                 Call Us Now
                             </Button>
                             </Link>

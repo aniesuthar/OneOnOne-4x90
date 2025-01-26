@@ -55,6 +55,10 @@ export const menuList = [
                 title: "Our Team",
                 href: "/our-team",
             },
+            {
+                title: "News & Press",
+                href: "/news-and-press",
+            },
         ]
     }
 ]

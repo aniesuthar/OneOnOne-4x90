@@ -27,7 +27,7 @@ const SOCIALS = [
 
 //MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const defaults = {
-    SITE_NAME: "One to One Health",
+    SITE_NAME: "ONE-ON-ONE Health",
     SOCIALS: SOCIALS,
     CONTACT_NO: "+1987654321"
 }

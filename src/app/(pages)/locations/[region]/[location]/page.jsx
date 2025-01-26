@@ -31,65 +31,65 @@ import { slugify } from '@/lib/utils';
 export default function page() {
     const { region, location } = useParams();
     const slidesToScroll = 1;
-    const regionItem = locationsList.find((r)=>slugify(r.region)==region);
-    const locationItem = regionItem.locations.find((l)=>slugify(l.name)==location);
-    const cordinates = { lat: locationItem.lat, lng: locationItem.lng};
+    const regionItem = locationsList.find((r) => slugify(r.region) == region);
+    const locationItem = regionItem.locations.find((l) => slugify(l.name) == location);
+    const cordinates = { lat: locationItem.lat, lng: locationItem.lng };
 
     const services = [
         {
             title: "Companionship",
             description:
                 "Isolation is a leading cause of depression in seniors. Our carefully matched, trusted caregivers offer social interaction for physical and mental well-being.",
-            link: "/companionship",
+            link: "/services/companionship",
             icon: icon1,
         },
         {
             title: "Meal Preparation",
             description:
                 "A nutritious diet comes with many health benefits. Our caregivers love to prepare delicious meals, including specific ethnic dishes if requested.",
-            link: "/meal-preparation",
+            link: "/services/meal-preparation",
             icon: icon2,
         },
         {
             title: "Homemaking",
             description:
                 "We offer light housekeeping services to help our clients with daily activities. This way, seniors can stay at home in a safe and clean environment.",
-            link: "/homemaking",
+            link: "/services/homemaking",
             icon: icon3,
         },
         {
             title: "Home Nursing Care",
             description:
                 "A nutritious diet comes with many health benefits. Our caregivers love to prepare delicious meals, including specific ethnic dishes if requested.",
-            link: "/home-nursing-care",
+            link: "/services/in-home-nursing-care",
             icon: icon4,
         },
         {
             title: "Personal Care",
             description:
                 "Isolation is a leading cause of depression in seniors. Our carefully matched, trusted caregivers offer social interaction for physical and mental well-being.",
-            link: "/personal-care",
+            link: "/services/personal-care",
             icon: icon5,
         },
         {
             title: "Caregiver Relief / Respite Care",
             description:
                 "A nutritious diet comes with many health benefits. Our caregivers love to prepare delicious meals, including specific ethnic dishes if requested.",
-            link: "/respite-care",
+            link: "/services/relief-respite-care",
             icon: icon6,
         },
         {
             title: "End-of-Life Care",
             description:
                 "Everyone deserves comfort, quality of life, and respect for personal treatment decisions and cultural or spiritual concerns. We provide support—and family support—at home or in a care facility.",
-            link: "/end-of-life-care",
+            link: "/services/end-of-life-care",
             icon: icon7,
         },
         {
             title: "Around-the-Clock Care",
             description:
                 "Whether it's 3 in the afternoon, or 3 in the middle of the night, we support clients who need care any time. Services can be scheduled daily, weekly, or monthly.",
-            link: "/around-the-clock-care",
+            link: "/services/around-the-clock-care",
             icon: icon8,
         },
     ];
@@ -129,7 +129,7 @@ export default function page() {
                     <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 gap-y-16 py-10'>
                         {services.map((service, i) => (
                             <div className='text-center text-primary space-y-2' key={i}>
-                                <img src={service.icon.src} alt="" className='w-14 m-auto' />
+                                <img src={service.icon.src} alt="" className='w-20 m-auto' />
                                 <h3>{service.title}</h3>
                                 <p className='text-base'>{service.description}</p>
                                 <Link href={service.link} className='text-secondary inline-block mt-2 underline'>Learn more.</Link>
@@ -139,7 +139,7 @@ export default function page() {
                 </BoxLayout>
             </div>
             <div className='bg-secondary/10 flex gap-24 py-8'>
-                <BoxLayout className='text-center space-y-16'>
+                <BoxLayout className='text-center space-y-16 text-primary'>
                     <h2 className='font-medium mx-6'>What people say about us</h2>
                     <Carousel className="max-w-[300px] lg:max-w-[660px] m-auto" opts={{ slidesToScroll: slidesToScroll }}>
                         <CarouselContent>
@@ -163,15 +163,17 @@ export default function page() {
                                     <div className='space-y-10 lg:mx-20'>
                                         <FormatQuoteIcon />
                                         <p className='font-fancy'>{item.quote}</p>
-                                        <h4 className='mt-8'>{item.author}</h4>
-                                        <h6 className='font-normal'>{item.designation}</h6>
+                                        <div>
+                                            <h4 className='mt-8'>{item.author}</h4>
+                                            <h6 className='font-normal'>{item.designation}</h6>
+                                        </div>
                                     </div>
                                 </CarouselItem>
                             ))
                             }
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
+                        {/* <CarouselPrevious />
+                        <CarouselNext /> */}
                     </Carousel>
                 </BoxLayout>
             </div>
@@ -180,9 +182,9 @@ export default function page() {
                     {/* Left Section */}
                     <div
                         className='lg:w-2/5 w-full h-60 lg:h-auto bg-cover z-10'
-                        // style={{ backgroundImage: `url(${MapImage.src})` }}
+                    // style={{ backgroundImage: `url(${MapImage.src})` }}
                     >
-                        <HereMapWithCircle cordinate={cordinates}/>
+                        <HereMapWithCircle cordinate={cordinates} />
                     </div>
 
                     {/* Right Section */}
@@ -211,7 +213,7 @@ export default function page() {
                 </div>
             </div>
             <div className='my-20'>
-            
+
             </div>
         </div>
     )
