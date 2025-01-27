@@ -31,14 +31,16 @@ export default function page() {
                             <Input placeholder="Where do you need care?" className="lg:min-w-72" />
                             <Button> <LocationOn /> Use my location </Button>
                         </div>
+                        <Link href="#locations-list">
                         <Button variant="secondary" className="py-7"><West /> See Locations List </Button>
+                        </Link>
                     </div>
                     <p className='text-center text-base'>Senior home health care is available in the communities surrounding each of these One-On-One locations.</p>
                 </BoxLayout>
             </div>
             <div>
                 <BoxLayout className="py-20">
-                    <div className='max-w-[840px] m-auto'>
+                    <div className='max-w-[840px] m-auto' id="locations-list">
 
                         {/* <Tabs defaultValue="canada" className=" max-w-[840px] m-auto">
                         <TabsList className="block m-auto w-fit mb-12">

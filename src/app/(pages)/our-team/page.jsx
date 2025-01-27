@@ -137,7 +137,7 @@ export default function page() {
             </BoxLayout>
 
 
-            <div className='bg-secondary'>
+            <div className='bg-primary/10'>
                 <BoxLayout className="flex flex-col lg:flex-row gap-12 lg:gap-96 py-12 lg:py-24 text-primary lg:items-center">
                     <div className='min-w-fit'>
                         <p>Always Ready</p>

@@ -47,7 +47,7 @@ export default function HeroSection({ backgroundImage, heading, description, noC
 
       {/* Content on Top */}
       <BoxLayout className="relative z-10 flex items-center h-full">
-        <div className="w-full xl:w-3/5 px-2 py-6 lg:pt-24 lg:px-0 space-y-8">
+        <div className="w-full xl:w-3/5 px-2 py-6 pt-32 lg:pt-48 lg:py-10 lg:px-0 space-y-8">
           <h1 className="text-primary text-4xl lg:text-6xl lg:mr-60">{heading}</h1>
           <p>
             {description.split("<br>").map((line, index) => (

@@ -39,7 +39,7 @@ export default function GetFreeConsultForm() {
                         control={form.control}
                         name="seekingHomeCare"
                         render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="space-x-2">
                                 <FormControl>
                                     <Checkbox className="bg-primary-foreground data-[state=checked]:bg-primary-primary-foreground data-[state=checked]:text-primary" id="seekingHomeCare" {...field} />
                                 </FormControl>
@@ -55,7 +55,7 @@ export default function GetFreeConsultForm() {
                         control={form.control}
                         name="seekingCareer"
                         render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="space-x-2">
                                 <FormControl>
                                     <Checkbox className="bg-primary-foreground data-[state=checked]:bg-primary-primary-foreground data-[state=checked]:text-primary" id="seekingCareer" {...field} />
                                 </FormControl>
