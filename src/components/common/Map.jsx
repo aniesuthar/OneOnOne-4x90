@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 const APIKEY = process.env.NEXT_PUBLIC_MAP_APIKEY;
 const defaultLocation = { //Ontario
-    lat: 51.2538,
-    lng: 85.3232
+    lat: 50.000000,
+    lng: -85.000000
 }
 
 
