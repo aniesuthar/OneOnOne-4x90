@@ -61,14 +61,11 @@ const CareerSearch = () => {
                         <SelectGroup>
                             {/* <SelectLabel>US States</SelectLabel> */}
                             <SelectItem value="canada">Canada</SelectItem>
-                            <SelectItem value="La">La</SelectItem>
-                            <SelectItem value="CAL">CAL</SelectItem>
-                            <SelectItem value="NY">NY</SelectItem>
                         </SelectGroup>
                     </SelectContent>
                 </Select>
                 {!!(searchParams.get("q") || searchParams.get("location"))
-                 &&
+                    &&
                     <Button onClick={handleClear} className="w-full lg:max-w-fit rounded-none size-full px-12 py-2" variant="outline">
                         Clear
                     </Button>
