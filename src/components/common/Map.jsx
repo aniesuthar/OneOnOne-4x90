@@ -2,12 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const APIKEY = process.env.NEXT_PUBLIC_MAP_APIKEY
+const APIKEY = process.env.NEXT_PUBLIC_MAP_APIKEY;
+const defaultLocation = { //Ontario
+    lat: 51.2538,
+    lng: 85.3232
+}
 
 
 const HereMapWithCircle = ({ cordinate, radius = 1000 }) => {
-    const lat = cordinate?.lat ? cordinate.lat : 37.7749;
-    const lng = cordinate?.lng ? cordinate.lng : -122.4194;
+    const lat = cordinate?.lat ? cordinate.lat : defaultLocation.lat;
+    const lng = cordinate?.lng ? cordinate.lng : defaultLocation.lng;
     const center = { lat, lng };
 
     const mapContainer = useRef(null);

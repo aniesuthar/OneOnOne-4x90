@@ -51,23 +51,23 @@ const HoverCardContent = React.forwardRef(({ className, align = "start", sideOff
         )}
         {...props}
       />
-      <style>
-        {`
-    .hoverCard::after {
-      content: "";
-      position: absolute;
-      transition: all 0.5s ease-out;
-      top: 0;
-      left: 10px;
-      transform: translateY(-100%);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-      border-width: 6px;
-      border-style: solid;
-      border-color: transparent transparent hsl(var(--secondary)) transparent;
-    }
-  `}
-      </style>
+        <style>
+          {`
+      .hoverCard::after {
+        content: "";
+        position: absolute;
+        transition: all 0.5s ease-out;
+        top: 0;
+        left: 10px;
+        transform: translateY(-100%);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        border-width: 6px;
+        border-style: solid;
+        border-color: transparent transparent hsl(var(--secondary)) transparent;
+      }
+    `}
+        </style>
     </>
   );
 });

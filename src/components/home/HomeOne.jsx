@@ -42,7 +42,7 @@ export default function HomeOne() {
                         <h2 className='text-2xl lg:text-4xl text-center lg:text-left'>Where do you need care?</h2>
                         <Input 
                             className="border-primary border-2 lg:border-8 rounded-md lg:rounded-none p-4 lg:p-8" 
-                            placeholder="Find location by ZipCode" 
+                            placeholder="Find location by PinCode" 
                             type="search" 
                         />
                     </div>
