@@ -1,13 +1,14 @@
 import React from 'react';
 import Jrnl1Img from "@/assets/images/jrnl1.jpg";
 import Jrnl2Img from "@/assets/images/jrnl2.png";
+import Jrnl3Img from "@/assets/images/jrnl3.jpg";
 import { cn } from '@/lib/utils';
 
 const caringJournalData = [
     {
         img: Jrnl1Img.src,
         title: "Connect with ONE-ON-ONE",
-        desc: "Connect with your local ONE-ON-ONE Health Care Team to start the process of setting up in-home care services.",
+        desc: "Connect with your local ONE-ON-ONE Health Care Teapm to start the process of setting up in-home care services.",
     },
     {
         img: Jrnl2Img.src,
@@ -15,7 +16,7 @@ const caringJournalData = [
         desc: "We’ll work with you to schedule a free consultation with one of our care experts, who will assess your needs and develop a customized care plan.",
     },
     {
-        img: Jrnl1Img.src,
+        img: Jrnl3Img.src,
         title: "Connect with ONE-ON-ONE Health",
         desc: "Once your care plan has been developed, our Care Team will work with you to schedule your first visit. We’ll be there to provide support and assistance every step of the way.",
     },

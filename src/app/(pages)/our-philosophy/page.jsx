@@ -1,7 +1,10 @@
+"use client"
 import React from 'react'
 import BoxLayout from '@/components/common/Box'
 import HeroSection from '@/components/common/SectionComponents'
-import Img1 from "@/assets/images/service-hero.png";
+import Img1 from "@/assets/images/philHero.jpg";
+import Phil1 from "@/assets/images/phil1.jpg"
+import Phil2 from "@/assets/images/phil2.jpg"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import ImageCards from '@/components/common/ImageCard';
 import {
@@ -33,6 +36,7 @@ export default function page() {
                 heading="A Home Care Agency That Helps Seniors Do What They Love"
                 description="From golf and swimming to pottery and music, happiness is about rediscovering the fun in life. We are the experts in Happier Aging."
                 ctaDesc="Get connected immediately to our Care Team."
+                backgroundImage={Img1.src}
             />
             <div className='bg-primary text-secondary-foreground py-12'>
                 <BoxLayout>
@@ -41,8 +45,8 @@ export default function page() {
                         <h1>What did you use to love doing that you no longer do?</h1>
                     </div>
                     <div className='lg:mx-32 grid grid-cols-1 lg:grid-cols-2'>
-                        <img src={Img1.src} alt={Img1.src} className='max-h-[460px] w-full object-cover lg:ml-10' />
-                        <img src={Img1.src} alt={Img1.src} className='hidden lg:inline-block max-h-[460px] w-full object-cover -ml-10 mt-32' />
+                        <img src={Phil1.src} alt={Phil1.src} className='max-h-[460px] w-full object-cover lg:ml-10' />
+                        <img src={Phil2.src} alt={Phil2.src} className='hidden lg:inline-block max-h-[460px] w-full object-cover -ml-10 mt-32' />
                         <div className='mt-4 lg:-mt-28 lg:m-10'>
                             <h4>Happier Aging is One-On-One’s philosophy of care: for our clients, their families, our people and everyone we meet.</h4>
                         </div>
