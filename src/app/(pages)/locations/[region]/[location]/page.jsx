@@ -12,6 +12,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
+    CarouselDots
 } from "@/components/ui/carousel";
 import MapImage from "@/assets/images/map.png";
 
@@ -25,7 +26,7 @@ import icon6 from "@/assets/images/icons/6.png";
 import icon7 from "@/assets/images/icons/7.png";
 import icon8 from "@/assets/images/icons/8.png";
 import HereMapWithCircle from '@/components/common/Map';
-import Img3 from "@/assets/images/img3.jpg";
+import Img3 from "@/assets/images/img3.jpg";    
 import { locationsList } from '@/lib/locations-list';
 import { slugify } from '@/lib/utils';
 import FAQs from '@/components/common/FAQs'
@@ -174,6 +175,7 @@ export default function page() {
                             ))
                             }
                         </CarouselContent>
+                        <CarouselDots />
                         {/* <CarouselPrevious />
                         <CarouselNext /> */}
                     </Carousel>

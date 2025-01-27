@@ -11,6 +11,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
+    CarouselDots,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
@@ -63,16 +64,21 @@ export default function VideoSection() {
             >
                 <CarouselContent>
                     {videos.map((item, index) => (
-                        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 h-fit">
-                            <Link href={item.videoLink} target="_blank"  className="bg-cover bg-center block bg-no-repeat min-h-[340px] content-center relative" style={{ backgroundImage: `url(${item.thumbnail})`}}>
+                        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 h-fit flex">
+                            <Link href={item.videoLink} target="_blank" className="bg-cover bg-center block bg-no-repeat min-h-[340px] content-center relative w-full" style={{ backgroundImage: `url(${item.thumbnail})` }}>
                                 <img src={PlayIcon.src} className='w-16 m-auto' alt="" />
                                 <span className='absolute bottom-4 left-6 text-primary-foreground font-medium text-xl'>{item.title}</span>
                             </Link>
+                            {index < videos.length - 1 &&
+                                <div className='w-6 h-full opacity-0'></div>
+                            }
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden lg:static"/>
-                <CarouselNext className="hidden lg:static"/>
+                <CarouselDots/>
+                <CarouselPrevious className="hidden lg:block" />
+                <CarouselNext className="hidden lg:block" />
+
             </Carousel>
         </BoxLayout>
 

@@ -7,6 +7,7 @@ import ImageCards from '@/components/common/ImageCard';
 import {
     Carousel,
     CarouselContent,
+    CarouselDots,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
@@ -167,6 +168,7 @@ export default function page() {
                                     </CarouselItem>
                                 ))}
                             </CarouselContent>
+                            <CarouselDots/>
                             <CarouselPrevious />
                             <CarouselNext />
                         </Carousel>
