@@ -60,6 +60,10 @@ export const menuList = [
                 href: "/news-and-press",
             },
         ]
+    },
+    {
+        title: "Blogs",
+        href: "/blog",
     }
 ]
 

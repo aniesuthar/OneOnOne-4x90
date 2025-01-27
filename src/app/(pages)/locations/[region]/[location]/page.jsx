@@ -99,10 +99,10 @@ export default function page() {
         <div>
             <div
                 style={{ backgroundImage: `url(${Img1.src})` }}
-                className={`bg-cover bg-center min-h-[60vh] lg:h-[80vh] overlay lg:content-center content-end`}
+                className={`bg-cover bg-center min-h-[45vh] lg:h-[80vh] overlay lg:content-center content-end`}
             >
                 <BoxLayout className="flex items-center" >
-                    <div className="w-full lg:w-1/2 py-8 px-4 lg:pt-28 lg:py-20 lg:px-0 space-y-4 lg:space-y-6">
+                    <div className="w-full lg:w-1/2 py-12 px-4 lg:pt-28 lg:py-20 lg:px-0 space-y-4 lg:space-y-6">
                         <h1 className="text-primary text-4xl lg:text-6xl lg:mr-60">
                             Home Care Services in <span className='capitalize'>{location}</span>, ON
                         </h1>
@@ -160,11 +160,11 @@ export default function page() {
                             },
                             ].map((item, i) => (
                                 <CarouselItem key={i} style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
-                                    <div className='space-y-10 lg:mx-20'>
+                                    <div className='space-y-4 lg:mx-20'>
                                         <FormatQuoteIcon />
                                         <p className='font-fancy'>{item.quote}</p>
                                         <div>
-                                            <h4 className='mt-8'>{item.author}</h4>
+                                            <h4>{item.author}</h4>
                                             <h6 className='font-normal'>{item.designation}</h6>
                                         </div>
                                     </div>

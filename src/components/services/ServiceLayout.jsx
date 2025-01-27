@@ -40,11 +40,11 @@ export default function ServiceLayout() {
             <div className='bg-primary text-center p-8 lg:p-20 text-primary-foreground'>
                 <BoxLayout className='space-y-4'>
                     {!!serviceData.section2.heading.length &&
-                        <h2 className='text-xl lg:text-3xl'>{serviceData.section2.heading}</h2>
+                        <h2 className='text-xl lg:text-5xl'>{serviceData.section2.heading}</h2>
                     }
 
                     {!!serviceData.section2.desc.length &&
-                        <p className='pt-1 lg:pr-28'>
+                        <p className='text-base pt-1 lg:pr-28'>
                             {serviceData.section2.desc.split("</br>").map((line, index) => (
                                 <span key={index} className="block my-4">
                                     {line}
@@ -57,7 +57,7 @@ export default function ServiceLayout() {
 
             {/* SEC 3  */}
             <BoxLayout className='flex flex-col lg:flex-row'>
-                <div className={cn('order-2 lg:order-1 w-full p-8 lg:p-16 lg:pl-0', !!serviceData.section3.img && "lg:w-3/5")}>
+                <div className={cn('order-2 lg:order-1 w-full py-8 px-0 lg:p-16 lg:pl-0', !!serviceData.section3.img && "lg:w-3/5")}>
                     {!!serviceData.section3.quote &&
                         <p className='pt-8 text-lg mb-12 font-fancy'>
                             {serviceData.section3.quote.quote}
@@ -68,10 +68,10 @@ export default function ServiceLayout() {
                         </p>
                     }
                     {!!serviceData.section3.heading.length &&
-                        <h2 className='text-xl lg:text-3xl'>{serviceData.section3.heading}</h2>
+                        <h2 className='text-xl lg:text-5xl'>{serviceData.section3.heading}</h2>
                     }
                     {!!serviceData.section3.desc.length &&
-                        <p className='lg:pr-28'>
+                        <p className='text-base lg:pr-28'>
                             {serviceData.section3.desc.split("</br>").map((line, index) => (
                                 <span key={index} className="block my-4">
                                     {line}
@@ -107,7 +107,7 @@ export default function ServiceLayout() {
                 </div>
                 {!!serviceData.section3.img &&
                     <div
-                        className='order-1 lg:order-2 w-full lg:w-2/5 bg-cover bg-center h-60 lg:h-auto'
+                        className='order-1 lg:hidden xl:block lg:order-2 w-full lg:w-2/5 bg-cover bg-center h-60 lg:h-auto'
                         style={{ backgroundImage: `url(${serviceData.section3.img})` }}
                     >
                     </div>
@@ -157,8 +157,8 @@ export default function ServiceLayout() {
                             serviceData.section4.cols?.map((col, i) => (
                                 <React.Fragment key={i}>
                                     <div className='space-y-4'>
-                                        <h2 className='text-lg lg:text-2xl'>{col.heading}</h2>
-                                        <p>{col.desc}</p>
+                                        <h2 className='text-lg lg:text-4xl'>{col.heading}</h2>
+                                        <p className='text-base'>{col.desc}</p>
                                     </div>
                                     {i < serviceData.section4?.cols?.length - 1 &&
                                         <span className='block w-full lg:w-2 bg-primary mx-auto'></span>

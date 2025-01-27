@@ -2,14 +2,19 @@ import React from 'react';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { usePopup } from '@/contexts/PopupProvider';
+import OfferPopup from '../popups/Offer';
 
 export default function ContactUsButton({ className }) {
+    const {showPopup} = usePopup();
+
     return (
         <Button
             className={cn(
                 "rounded-none px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-8 text-sm md:text-md lg:text-lg font-bold",
                 className
             )}
+            onClick={()=>showPopup(<OfferPopup />, 0)}
         >
             CONTACT US
         </Button>

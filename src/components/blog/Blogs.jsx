@@ -51,7 +51,7 @@ const BlogItem = ({ blog }) => {
             className="block p-5 border shadow-sm my-8"
         >
             <article className='flex gap-4 lg:gap-12 justify-between flex-col lg:flex-row'>
-                <div className='space-y-4 order-2 lg:order-1'>
+                <div className='lg:basis-3/5 space-y-4 order-2 lg:order-1'>
                     <h3 className="mb-1 font-medium text-primary">
                         {blog.title}
                     </h3>
@@ -77,7 +77,7 @@ const BlogItem = ({ blog }) => {
                         }
                         {blog.author.name}</p>
                 </div>
-                <SanityImageComponent className="my-0 order-1 lg:order-2" maxHeight={240} value={blog.mainImage} />
+                <SanityImageComponent className="lg:basis-2/5 my-0 order-1 lg:order-2" maxHeight={240} value={blog.mainImage} />
             </article>
         </Link>
     );
