@@ -25,8 +25,10 @@ import icon6 from "@/assets/images/icons/6.png";
 import icon7 from "@/assets/images/icons/7.png";
 import icon8 from "@/assets/images/icons/8.png";
 import HereMapWithCircle from '@/components/common/Map';
+import Img3 from "@/assets/images/img3.jpg";
 import { locationsList } from '@/lib/locations-list';
 import { slugify } from '@/lib/utils';
+import FAQs from '@/components/common/FAQs'
 
 export default function page() {
     const { region, location } = useParams();
@@ -212,9 +214,87 @@ export default function page() {
                     </div>
                 </div>
             </div>
-            <div className='my-20'>
+            <div className='bg-primary/10'>
+                <BoxLayout className="text-primary text-center py-6 lg:p-12 space-y-12">
+                    <h2>It's as Simple as 1,2,3!</h2>
+                    <div className='flex  flex-col lg:flex-row justify-between gap-8 items-center'>
+                        {
+                            steps.map((item, i) => (
+                                <>
+                                    <div className='w-full space-y-4'>
+                                        <h1 className='!text-6xl lg:text-8xl'>{i + 1}</h1>
+                                        <h4>{item.title}</h4>
+                                        <p className='!text-sm max-w-1/5'>{item.desc}</p>
+                                    </div>
+                                    {i < steps.length - 1 &&
+                                        <div className='w-[420px] hidden lg:block -mt-36 -mx-12 h-0.5 bg-primary'></div>
+                                    }
+                                </>
 
+                            ))
+                        }
+                    </div>
+                </BoxLayout>
+            </div>
+            <div className='mt-20 bg-primary/5'>
+                <BoxLayout className='flex flex-col lg:flex-row'>
+
+                    {/* Left Image Section */}
+                    <div className='lg:w-1/2 w-full h-44 lg:h-auto bg-cover bg-no-repeat' style={{ backgroundImage: `url(${Img3.src})` }}>
+                    </div>
+                    {/* Right Content Section */}
+                    <div className='lg:w-1/2 w-full space-y-12 lg:space-y-14 p-8 px-0 lg:py-14 lg:pl-12'>
+                        <div className='space-y-4 lg:space-y-12'>
+                            <h2 className='text-3xl text-primary !leading-tight lg:text-5xl'>Our Story</h2>
+                            <p className='text-sm lg:text-base'>
+                                ONE-ON-ONE mission is to make lives better every day. It starts with a team of compassionate, dedicated, and caring staff who are passionate about making a difference. We always hear amazing stories from clients about our devoted caregivers and the love they bring to their work.
+                                <br></br>
+                                <br></br>
+                                We’re proud to serve local communities near you. Nurse Next Door provides in home care; a 24/7 Care Team; experts in Alzheimer’s & dementia; and licensed and bonded caregivers where needed – all with no long-term contracts.
+                            </p>
+                        </div>
+                    </div>
+                </BoxLayout>
+
+            </div>
+
+            <div className='mt-20 bg-primary/5'>
+                <BoxLayout className='flex flex-col lg:flex-row'>
+                    {/* Left Image Section */}
+                    <div className='lg:w-1/2 w-full space-y-12 lg:space-y-14 p-8 lg:px-0 lg:py-14 lg:pr-12  order-2 lg:order-1'>
+                        <div className='space-y-6 lg:space-y-12  text-right'>
+                            <h2 className='text-3xl text-primary !leading-tight lg:text-5xl'>Watch Joyce's Happier Aging Story</h2>
+                            <p className='text-sm lg:text-base'>See how ONE-ON-ONE Happier Aging® approach helped Joyce keep her independence while living at home.</p>
+                        </div>
+                    </div>
+                    {/* Right Content Section */}
+                    <div className='lg:w-1/2 w-full h-44 lg:h-auto bg-cover bg-no-repeat order-1 lg:order-2' style={{ backgroundImage: `url(${Img3.src})` }}>
+                    </div>
+                </BoxLayout>
+            </div>
+
+            <div className='mt-20 bg-primary/5 pb-16'>
+
+                <BoxLayout className='space-y-12'>
+                    <h2 className='text-center'>Frequently Asked Questions</h2>
+                    <FAQs />
+                </BoxLayout>
             </div>
         </div>
     )
 }
+
+const steps = [
+    {
+        title: "Contact Us",
+        desc: "Call us anytime to book a FREE Caring Consult. Service can start in as little as 48 hours."
+    },
+    {
+        title: "Free Caring Consult",
+        desc: "Our Care Designer comes to you. We assess your needs and answer any questions you have. Learning about you allows us to send a perfect match Caregiver."
+    },
+    {
+        title: "First Visit",
+        desc: "You'll always be covered by a familiar Caregiver, selected for you to match your needs and personality. We ensure your Caregiver is someone you can trust."
+    },
+]
