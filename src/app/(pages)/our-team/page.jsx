@@ -1,122 +1,68 @@
-import BoxLayout from '@/components/common/Box'
-import { CallUsButton } from '@/components/common/CallUsButton'
-import ImageCards from '@/components/common/ImageCard'
-import HeroSection from '@/components/common/SectionComponents'
-import HeadingSection from '@/components/common/SectionComponents'
 import React from 'react'
-import Img1 from "@/assets/images/service-hero.png";    
-import CaringJournal from '@/components/services/CaringJournal'
-
-import T1 from "@/assets/images/t1.png"
-import T2 from "@/assets/images/t2.png"
-import T3 from "@/assets/images/t2.png"
-import T4 from "@/assets/images/t4.png"
-import T5 from "@/assets/images/t5.jpg"
-
+import BoxLayout from '@/components/common/Box'
+import HeroSection from '@/components/common/SectionComponents'
+import bgImageHero from '@/assets/images/img4.jpg'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
+import TeamCrImg1 from '@/assets/images/teamcr1.jpg'
+import TeamCrImg2 from '@/assets/images/teamcr2.jpg'
+import TeamCrImg3 from '@/assets/images/teamcr3.jpg'
 
 export default function page() {
-    const cardData = [
-        {
-            title: "Care Designers",
-            img: T1.src,
-            desc: "Our experienced Care Designers evaluate your loved one’s needs during the initial Caring Consult. By getting to know Mom or Dad, they can reassess services as health and care requirements change over time."
-        },
-        {
-            title: "Caregivers",
-            img: T2.src,
-            desc: "We select caregivers or nurses based on their personality, languages, and hobbies shared with each senior for ongoing companionship that makes a difference."
-        },
-        {
-            title: "24/7 Care Team",
-            img: T3.src,
-            desc: "From your first visit onwards, our Care Team is available 24/7 to provide monitoring services, respond to immediate change requests, and make sure caregivers are always available as scheduled."
-        },
-    ]
-
+    const slidesToScroll = 1;
     return (
-        <div>
+        <>
             <HeroSection
-                heading="Life is better when caregivers come to you"
-                description="Our Talent Is Caring™. Having a caregiver come to your home should be reassuring, not overwhelming. We manage everything, every step of the way."
-                ctaDesc="Get connected immediately to our Care Team."
+                heading="One Provider + One Patient = Better Health"
+                description="We’re just people taking care of people."
+                noCta
+                backgroundImage={bgImageHero.src}
             />
-            <div className='bg-primary text-secondary-foreground pt-12 pb-36'>
-                <BoxLayout>
-                    <div className='lg:text-center mb-8 lg:mb-16'>
-                        <h6 className='font-fancy'>Introducing</h6>
-                        <h1 className='lg:text-center' >Your Care Team</h1>
-                    </div>
-                    <div className='flex flex-col lg:flex-row gap-4 lg:gap-24'>
-                        <div className='space-y-8'>
-                            <p>
-                                Mom and Dad deserve the best. To find a perfect match, each One-On-One caregiver is carefully screened, interviewed, and selected not only for experience, but their passion for making a difference.
-                            </p>
-                            <p>
-                                From daily grocery shopping, meal preparation, and walks in the park to medication reminders and companionship, our caregivers make it possible for seniors to live in their own home. It’s about caring, not just healthcare™.
-                            </p>
-                        </div>
-                        <div>
-                            <p>If for some reason your caregiver is unavailable, we’ll quickly find another good match. If you need to change the schedule or suddenly require immediate care, our Care Team is available 24/7 to take your call.</p>
-                        </div>
-                    </div>
-                </BoxLayout>
-            </div>
-            <BoxLayout className="pb-4 lg:pb-24">
-                <div className='-mt-20'>
-                    <ImageCards className="text-left" cardData={cardData} />
-                </div>
+            <Carousel className="w-full bg-primary my-2" opts={{ slidesToScroll: slidesToScroll }}>
+                <CarouselContent>
+                    {[{
+                        title: "Our Story",
+                        description: `Our founder, Dr. Keith Helton, previously spent 20 years practicing internal medicine and pediatrics. He even led Physician Services for one of the region’s largest health systems. One patient, responsible for their organization’s benefits plan saw costs spiraling and employee satisfaction dwindling. He asked Dr. Helton, “Can you help us?`,
+                        img: TeamCrImg1
+                    },
+                    {
+                        title: "Our Story",
+                        description: `The traditional healthcare system can work against the best interests of the patient and the employers footing the bill. “There has to be a better way,” Dr. Helton thought. And upon answering that patient’s call for help, he quickly realized that his new model of direct care works. Costs dropped dramatically, and employees raved about their easy access to compassionate, fair-cost care.`,
+                        img: TeamCrImg2
+                    },
+                    {
+                        title: "Our Story",
+                        description: `Word spread, and many listened and jumped on board with Dr. Helton’s innovative solution. Over the next seven years, the company’s reach would expand throughout the region and country, positively impacting over 160,000 lives. And, his mission continues… for partners and patients alike, one-to-one.`,
+                        img: TeamCrImg3
+                    },
+                    ].map((item, i) => (
+                        <CarouselItem key={i} style={{ flexBasis: (1 / slidesToScroll) * 100 + "%" }}>
+                            <div className='size-full flex flex-col lg:flex-row gap-8'>
+                                <div className='basis-1 lg:basis-2/3 space-y-52 p-24'>
+                                    <div className='text-[#A2E7F9]'>
+                                        <p className='text-sm'>0{i+1}</p>
+                                        <h1 className='font-normal'>{item.title}</h1>
+                                    </div>
+                                    <p className='text-primary-foreground text-base'>{item.description}</p>
+                                </div>
+                                <div style={{backgroundImage: `url(${item.img.src})`}} className='basis-1 lg:basis-1/3 bg-center bg-cover'></div>
+                            </div>
+                        </CarouselItem>
+                    ))
+                    }
+                </CarouselContent>
+                {/* <CarouselPrevious />
+                        <CarouselNext /> */}
+            </Carousel>
+
+            <BoxLayout>
+
             </BoxLayout>
-            <div className='bg-secondary/10'>
-                <BoxLayout className="flex flex-col lg:flex-row gap-4 lg:gap-16 items-center space-y-4 py-8 lg:py-16" >
-                    <div className='space-y-8'>
-                        <div className='space-y-4'>
-                            <h2 className='text-primary'>Rigorous Hiring and Screening</h2>
-                            <p>All of our caregivers and nurses are qualified, attentive, and willing to go above and beyond. Here’s how we train the team at One-On-One.</p>
-                        </div>
-                        <div className='space-y-4'>
-                            <div>
-                                <h3 className='text-primary'>Screened and Tested</h3>
-                                <p className='text-base'>Our caregivers come in all shapes and sizes. Companions, home support workers and live-in caregivers have a variety of backgrounds, and our Certified Nursing Aides, Licensed Practical Nurses and Registered Nurses come with years of medical experience and training.</p>
-                            </div>
-                            <div>
-                                <h3 className='text-primary'>Licensed and Insured</h3>
-                                <p className='text-base'>Your loved one is in great hands. All caregivers are licensed and insured. We run criminal record checks, Tuberculosis tests and reference checks. With such in-depth screening and protection, you’ll have complete peace of mind.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src={T4.src} alt=""  className='max-h-[1240px] object-cover'/>
-                    </div>
-                </BoxLayout>
-            </div>
-            <div>
-                <BoxLayout className="flex flex-col lg:flex-row gap-4 py-6 lg:py-0 lg:gap-16 items-center" >
-                    <div className='order-2 lg:order-1 '>
-                        <img src={T5.src} alt="" className='max-h-[1260px]' />
-                    </div>
-                    <div className='space-y-6 order-1 lg:order-2'>
-                        {[{
-                            title: "Comprehensive Training",
-                            desc: "To set them up for success, our training prepares caregivers to align with our core values and brand promises. They get access to scenarios for providing quality home health care."
-                        },
-                        {
-                            title: "Practical Orientation",
-                            desc: "We train caregivers in an educational environment where they can ask questions, gain practical knowledge for consistent care, and get familiar with our support teams and systems."
-                        },
-                        {
-                            title: "Long-Term Retraining",
-                            desc: "To stay up-to-date with our rapidly growing systems and procedures, caregivers who have worked with us long-term are invited back for retraining to refresh their skills, and realign with our initiatives and standards."
-                        }].map((item) => (
-                            <div>
-                                <h3 className='text-secondary'>{item.title}</h3>
-                                <p className="text-base">{item.desc}</p>
-                            </div>
-                        ))
-                        }
-                    </div>
-                </BoxLayout>
-            </div>
-            <CaringJournal className="mt-10" />
-        </div>
+        </>
     )
 }
