@@ -48,11 +48,8 @@ export default function page() {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>US States</SelectLabel>
-                  <SelectItem value="argentina">Argentina</SelectItem>
-                  <SelectItem value="La">La</SelectItem>
-                  <SelectItem value="CAL">CAL</SelectItem>
-                  <SelectItem value="NY">NY</SelectItem>
+                  {/* <SelectLabel>US States</SelectLabel> */}
+                  <SelectItem value="canada">Canada</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -200,11 +197,8 @@ export default function page() {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectLabel>US States</SelectLabel>
-                <SelectItem value="argentina">Argentina</SelectItem>
-                <SelectItem value="La">La</SelectItem>
-                <SelectItem value="CAL">CAL</SelectItem>
-                <SelectItem value="NY">NY</SelectItem>
+                {/* <SelectLabel>US States</SelectLabel> */}
+                <SelectItem value="canada">Canada</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>
